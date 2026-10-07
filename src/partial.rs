@@ -282,7 +282,10 @@ pub fn binary(
         return Ok(result);
     };
     let count = input.len();
-    if !matches!(opcode, "lshr" | "shl" | "ashr") || constant % 8 != 0 || constant as usize / 8 >= count {
+    if !matches!(opcode, "lshr" | "shl" | "ashr")
+        || constant % 8 != 0
+        || constant as usize / 8 >= count
+    {
         return Ok(result);
     }
     let shift = constant as usize / 8;
@@ -321,7 +324,11 @@ pub fn binary(
 /// The same value with every bit treated as defined, to read off the
 /// conditions an operation's flags add on top of operand definedness.
 fn whole(value: &Value) -> Value {
-    Value::bits(value.expr.clone(), value.width().unwrap_or(0), "true".into())
+    Value::bits(
+        value.expr.clone(),
+        value.width().unwrap_or(0),
+        "true".into(),
+    )
 }
 
 /// Per-byte flags and whole-value poison of an operand; a value without byte
@@ -341,7 +348,13 @@ fn byte(expr: &str, i: usize) -> String {
 /// bytes are, or when one is a defined absorbing byte (0 for `and`, 0xff for
 /// `or`). `or disjoint` additionally needs, per byte, either both bytes
 /// defined with no common bit or one side a defined zero.
-fn bitwise(opcode: &str, flags: &[&str], left: &Value, right: &Value, result: Value) -> Result<Value, String> {
+fn bitwise(
+    opcode: &str,
+    flags: &[&str],
+    left: &Value,
+    right: &Value,
+    result: Value,
+) -> Result<Value, String> {
     let width = left.width()?;
     if width != right.width()? || !width.is_multiple_of(8) {
         return Ok(result);
@@ -394,7 +407,12 @@ fn bitwise(opcode: &str, flags: &[&str], left: &Value, right: &Value, result: Va
 
 /// `and`/`or` with a constant: a constant 0 byte in `and` (0xff in `or`) fixes
 /// that result byte; the others keep the input byte's flag.
-fn constant_mask(opcode: &str, left: &Value, right: &Value, result: Value) -> Result<Value, String> {
+fn constant_mask(
+    opcode: &str,
+    left: &Value,
+    right: &Value,
+    result: Value,
+) -> Result<Value, String> {
     let Kind::Bytes {
         flags: input,
         poison,
@@ -494,7 +512,10 @@ mod tests {
         assert!(exact.defined.contains('a') && exact.defined.contains('b'));
         // A non-byte-aligned shift keeps the coarse result.
         let odd = Value::bits(bv(3, 32), 32, "true".into());
-        assert_eq!(binary("shl", &[], &x, &odd, coarse(32)).unwrap().defined, "coarse");
+        assert_eq!(
+            binary("shl", &[], &x, &odd, coarse(32)).unwrap().defined,
+            "coarse"
+        );
         let widened = cast(
             "sext",
             &x,
@@ -507,7 +528,11 @@ mod tests {
     #[test]
     fn bitwise_bytes_combine_and_absorb() {
         let x = loaded("false");
-        let y = bytes("y".into(), vec!["e".into(), "f".into(), "g".into(), "h".into()], "q".into());
+        let y = bytes(
+            "y".into(),
+            vec!["e".into(), "f".into(), "g".into(), "h".into()],
+            "q".into(),
+        );
         let x_or_y = binary("or", &[], &x, &y, coarse(32)).unwrap();
         // Defined where both are, or one side is a defined 0xff byte.
         assert!(flags(&x_or_y)[0].contains('a') && flags(&x_or_y)[0].contains('e'));
@@ -520,7 +545,10 @@ mod tests {
         let disjoint = binary("or", &["disjoint"], &x, &y, coarse(32)).unwrap();
         assert!(disjoint.defined.contains("bvand"));
         // Any other flag keeps the coarse result.
-        assert_eq!(binary("and", &["nuw"], &x, &y, coarse(32)).unwrap().defined, "coarse");
+        assert_eq!(
+            binary("and", &["nuw"], &x, &y, coarse(32)).unwrap().defined,
+            "coarse"
+        );
     }
     #[test]
     fn a_poison_byte_poisons_every_extraction() {

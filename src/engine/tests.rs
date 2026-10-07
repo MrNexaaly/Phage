@@ -471,7 +471,10 @@ fn absorbing_boolean_operations_mask_integer_undef_but_not_poison() {
             "start:\n br i1 %some, label %load, label %join\nload:\n br label %join\njoin:\n %v = phi i16 [ %x, %load ], [ {payload}, %start ]\n %nz = icmp ne i16 %v, 0\n %take = and i1 %some, %nz\n %r = select i1 %take, i16 %v, i16 7\n %ok = icmp ne i16 %r, 0\n ret i1 %ok"
         )
     };
-    assert_eq!(verify("i1 %some, i16 %x", &filter("undef"), 16, 1000), "proved");
+    assert_eq!(
+        verify("i1 %some, i16 %x", &filter("undef"), 16, 1000),
+        "proved"
+    );
     // The same shape with poison is still poison on the None path.
     assert_eq!(
         verify("i1 %some, i16 %x", &filter("poison"), 16, 1000),
@@ -479,7 +482,12 @@ fn absorbing_boolean_operations_mask_integer_undef_but_not_poison() {
     );
     // An undef integer comparison that reaches the result stays observable.
     assert_eq!(
-        verify("", "start:\n %u = icmp eq i16 undef, 0\n ret i1 %u", 16, 1000),
+        verify(
+            "",
+            "start:\n %u = icmp eq i16 undef, 0\n ret i1 %u",
+            16,
+            1000
+        ),
         "counterexample"
     );
 }
@@ -496,7 +504,10 @@ fn multi_index_struct_gep_matches_the_byte_layout() {
     };
     let run = |text: String| {
         let (mut engine, function) = load(&text, 5000, 16, 1000);
-        engine.verify(&function).map(|v| v.status).unwrap_or_else(|e| format!("unknown: {e}"))
+        engine
+            .verify(&function)
+            .map(|v| v.status)
+            .unwrap_or_else(|e| format!("unknown: {e}"))
     };
     assert_eq!(run(module(32)), "proved");
     // i = 32 lands past the 768-byte allocation: poison pointer, store is UB.

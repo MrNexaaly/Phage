@@ -26,6 +26,8 @@ Three shared-source parser checks against **Kani 0.68.0**:
 
 ## Try it
 
+[Download Linux x86_64 v0.1.0](https://github.com/MrNexaaly/Phage/releases/tag/v0.1.0) — binary, usage notes and SHA-256 checksums.
+
 Requirements: Rust, Z3 and matching LLVM tools on Linux x86_64.
 
 ```sh

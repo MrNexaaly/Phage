@@ -191,7 +191,8 @@ impl Engine {
                     checked("mul", &index, &value::constant(&size.to_string(), 64)?)
                 };
                 let size = |ty: &str| {
-                    crate::constants::size_of(ty, &module.types).ok_or("GEP element size is unknown")
+                    crate::constants::size_of(ty, &module.types)
+                        .ok_or("GEP element size is unknown")
                 };
                 // One index scales by the element size; an array type takes a
                 // leading zero index and scales the second by its element.
