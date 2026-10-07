@@ -1,7 +1,7 @@
 # Phage codebase map
 
 Read this file first when maintaining Phage. Read [README.md](README.md)
-for commands and result meanings. Phage owns its interpreter and path
+for the short introduction and [docs/guide.md](docs/guide.md) for commands and result meanings. Phage owns its interpreter and path
 exploration. rustc is its frontend; Z3 solves SMT queries. Kani and CBMC
 are not called.
 
