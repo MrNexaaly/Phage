@@ -1,0 +1,11 @@
+run: results/1790774057779801253-2830394
+counterexample: Rust panic call _ZN4core9panicking5panic17h8bbbe005ba322b34E at LLVM line 18
+function: ruhealth_target | completed paths: 0 | states: 2 | solver queries: 4 | elapsed: 0.073s
+[rustPanic] /home/zero/Dev/Nexaaly/RuHealth/examples/issue-4874-false-assert.rs:8:14
+slowest query: 0.009s (path entering block start)
+solver: 4 checks, 11 assertions, 0.009s
+artifact: results/1790774057779801253-2830394/artifact.ll | block visit bound: 32
+report: results/1790774057779801253-2830394/RESULT.json
+input mapping: input0=x
+((input0 #xff))
+

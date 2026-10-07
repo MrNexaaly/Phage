@@ -1,0 +1,77 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "counterexample",
+  "detail": "Rust panic call _ZN4core9panicking5panic17h8bbbe005ba322b34E at LLVM line 18",
+  "source": "/home/zero/Dev/Nexaaly/Phage/examples/issue-4874-false-assert.rs",
+  "function": "phage_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "artifactSha256": "7bfb7128ae490649822c897fd14d273ab1a8105d9b709b20bbae1e721d9e92ca",
+  "llvmSha256": "7bfb7128ae490649822c897fd14d273ab1a8105d9b709b20bbae1e721d9e92ca",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/examples/issue-4874-false-assert.rs",
+      "sha256": "86b4ec6098cdf5c11db77f43745a55f4eb1b6b3bf70951d272dbfa44cfd5e88d"
+    },
+    {
+      "path": "/tmp/phage-readiness-build.ewRESm/release/phage",
+      "sha256": "d8d532eaad8c0e553cc765f3f5d634d0c9c300ccbc82f47eba406d06f66039eb"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 0,
+  "states": 2,
+  "queries": 4,
+  "elapsedSeconds": 0.068011,
+  "solverChecks": 4,
+  "solverAssertions": 5,
+  "solverWallSeconds": 0.013296,
+  "diagnostics": [
+    {
+      "code": "rustPanic",
+      "message": "Rust panic call _ZN4core9panicking5panic17h8bbbe005ba322b34E at LLVM line 18",
+      "llvmLine": 18,
+      "mirLine": null,
+      "source": {
+        "file": "/home/zero/Dev/Nexaaly/Phage/examples/issue-4874-false-assert.rs",
+        "line": 8,
+        "column": 14
+      }
+    }
+  ],
+  "slowestQuerySeconds": 0.011842,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "x"
+  ],
+  "model": "((input0 #xff))\n",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

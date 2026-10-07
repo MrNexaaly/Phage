@@ -1,0 +1,67 @@
+{
+  "schema": 3,
+  "engine": "llvm",
+  "callDepth": 32,
+  "ruhealth": "0.1.0",
+  "status": "proved",
+  "detail": "all reachable paths within the explicit block bound completed",
+  "source": "/home/zero/Dev/Nexaaly/RuHealth/examples/intrinsics.rs",
+  "function": "ruhealth_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "artifactSha256": "313c94d0291e9f860d09dd35cd65cef581fe770a41f0a514fcea421978a35d4c",
+  "llvmSha256": "313c94d0291e9f860d09dd35cd65cef581fe770a41f0a514fcea421978a35d4c",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/examples/intrinsics.rs",
+      "sha256": "6a90964c8297355815e40e1408dcf01d24cee63efd81660b8c0f29d76e787c4a"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/target/release/ruhealth",
+      "sha256": "8c474fca2a64a3567f47c07431d88c9e6abc83a69984f10022ae2e697f6ac43c"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 37,
+  "states": 320,
+  "queries": 1076,
+  "elapsedSeconds": 0.68437,
+  "solverChecks": 796,
+  "solverAssertions": 2858,
+  "solverWallSeconds": 0.550741,
+  "diagnostics": [],
+  "slowestQuerySeconds": 0.012285,
+  "slowestQueryContext": "path entering block bb71",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "0",
+    "y",
+    "k"
+  ],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

@@ -1,0 +1,15 @@
+run: results/1790874536434462598-3016284
+proved: all reachable paths within the explicit block bound completed
+function: phage_target | completed paths: 2 | states: 257 | solver queries: 1186 | elapsed: 9.220s
+assumption: gimli bodies come from the rustc sysroot's embedded LLVM bitcode
+assumption: heap allocation succeeds (the allocator never returns null)
+assumption: mutable statics start at their initializers: a fresh program, as in Kani
+assumption: one thread: a thread-local is the global's own copy
+assumption: std bodies come from the rustc sysroot's embedded LLVM bitcode
+assumption: the OS random source (getrandom) fills the whole buffer with arbitrary bytes
+assumption: values mixed from the OS random source (e.g. hash keys) are uninterpreted functions of their inputs; counterexamples were confirmed with exact semantics
+assumption: 116 solver queries were decided by a racing fresh Z3 or cvc5 (int-blasting)
+slowest query: 0.144s (path entering block bb11.i.i.i.i)
+solver: 391 checks, 2681 assertions, 8.584s, 116 interrupted, 0 restarts
+artifact: results/1790874536434462598-3016284/artifact.ll | block visit bound: 32
+report: results/1790874536434462598-3016284/RESULT.json

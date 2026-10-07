@@ -1,0 +1,52 @@
+{
+  "schema": 3,
+  "engine": "llvm",
+  "callDepth": 32,
+  "ruhealth": "0.1.0",
+  "status": "unknown",
+  "detail": "reachable block loop exceeds visit bound 2",
+  "source": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/reachable-loop.ll",
+  "function": "ruhealth_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [],
+  "artifactSha256": "b934a6e7a5c2a770e35fd02f49076a60c987c03462751cf71382c78a2b556afa",
+  "llvmSha256": "b934a6e7a5c2a770e35fd02f49076a60c987c03462751cf71382c78a2b556afa",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/reachable-loop.ll",
+      "sha256": "b934a6e7a5c2a770e35fd02f49076a60c987c03462751cf71382c78a2b556afa"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/target/release/ruhealth",
+      "sha256": "334e591a9c03d2a3dc6f0bdf7a34c17d4bca69d56ceea4b04e4949a83fcafc03"
+    }
+  ],
+  "blockVisitBound": 2,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 0,
+  "states": 4,
+  "queries": 4,
+  "elapsedSeconds": 0.044802,
+  "solverChecks": 4,
+  "solverAssertions": 4,
+  "solverWallSeconds": 0.01341,
+  "diagnostics": [
+    {
+      "code": "blockLimit",
+      "message": "reachable block loop exceeds visit bound 2",
+      "llvmLine": null,
+      "mirLine": null,
+      "source": null
+    }
+  ],
+  "slowestQuerySeconds": 0.013283,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

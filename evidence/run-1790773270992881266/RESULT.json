@@ -1,0 +1,68 @@
+[
+  {
+    "case": "safe-add",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.07192895500338636,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773270994314504-2646289/RESULT.json"
+  },
+  {
+    "case": "overflow",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.06792653500451706,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773271066176463-2646373/RESULT.json",
+    "nativeReplayExit": 0
+  },
+  {
+    "case": "nexagate-quic",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.8422303870029282,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773271227747583-2646492/RESULT.json"
+  },
+  {
+    "case": "nexagate-hpack-before",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 19.39534774600179,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773272070737479-2646990/RESULT.json",
+    "nativeReplayExit": 0
+  },
+  {
+    "case": "nexagate-hpack-after",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 4.315032115991926,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773291789884243-2654391/RESULT.json"
+  },
+  {
+    "case": "unsupported",
+    "expectedExit": 2,
+    "exit": 2,
+    "wallSeconds": 0.06942012600484304,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773296105109781-2657670/RESULT.json"
+  },
+  {
+    "case": "issue-4874-assert-forms",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.07025690001319163,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773296175267416-2657796/RESULT.json"
+  },
+  {
+    "case": "issue-4874-false-assert",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.06563907099189237,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773296245685457-2657895/RESULT.json",
+    "nativeReplayExit": 0
+  },
+  {
+    "case": "issue-4876-const-generics",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.06845199700910598,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773296414340995-2658141/RESULT.json"
+  }
+]

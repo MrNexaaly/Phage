@@ -1,0 +1,5 @@
+confirmed: Rust panicked
+
+thread 'main' (2754386) panicked at /home/zero/Dev/Nexaaly/Phage/results/1790860835724855752-2754083/sources/home/zero/Dev/Nexaaly/Phage/examples/../fixtures/nexagate-before/hpack/mod.rs:78:18:
+attempt to shift left with overflow
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

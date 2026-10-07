@@ -1,0 +1,3 @@
+string-map baseline: ['unknown'], median 6.000s
+string-map phage: ['proved'], median 9.948s
+string-map kani: ['unknown-timeout'], median 180.101s

@@ -1,0 +1,24 @@
+run: results/1790775902017811746-3063452
+counterexample: Rust panic call _ZN4core9panicking11panic_const24panic_const_shl_overflow17hc69eab5018f16ee8E at LLVM line 677
+function: ruhealth_target | completed paths: 29 | states: 217 | solver queries: 566 | elapsed: 2.670s
+[rustPanic] /home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/mod.rs:78:18
+slowest query: 0.055s (path entering block panic3.i)
+solver: 486 checks, 1271 assertions, 2.050s
+artifact: results/1790775902017811746-3063452/artifact.ll | block visit bound: 32
+report: results/1790775902017811746-3063452/RESULT.json
+input mapping: input0=a, input1=b, input2=c, input3=d, input4=e, input5=f, input6=g, input7=h, input8=i, input9=j, input10=k, input11=l, input12=len, input13=prefix
+((input0 #xff)
+(input1 #x81)
+(input2 #xfe)
+(input3 #xff)
+(input4 #xff)
+(input5 #x87)
+(input6 #x80)
+(input7 #x80)
+(input8 #x80)
+(input9 #x80)
+(input10 #x84)
+(input11 #x08)
+(input12 #x0c)
+(input13 #x08))
+

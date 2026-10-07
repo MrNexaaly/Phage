@@ -1,0 +1,9 @@
+run: results/1790879933734485480-712
+proved: all reachable paths within the explicit block bound completed
+function: phage_target | completed paths: 336 | states: 6146 | solver queries: 16904 | elapsed: 8.585s
+assumption: addr2line bodies come from the rustc sysroot's embedded LLVM bitcode
+assumption: core bodies come from the rustc sysroot's embedded LLVM bitcode
+slowest query: 0.028s (instruction at LLVM line 1414)
+solver: 10673 checks, 37399 assertions, 6.649s, 0 interrupted, 0 restarts
+artifact: results/1790879933734485480-712/artifact.ll | block visit bound: 32
+report: results/1790879933734485480-712/RESULT.json

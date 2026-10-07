@@ -1,0 +1,11 @@
+run: results/1790879504155227943-353
+counterexample: Rust panic call _ZN4core9panicking5panic17h8bbbe005ba322b34E at LLVM line 18
+function: phage_target | completed paths: 0 | states: 2 | solver queries: 4 | elapsed: 0.076s
+[rustPanic] /home/zero/Dev/Nexaaly/Phage/examples/issue-4874-false-assert.rs:8:14
+slowest query: 0.008s (path entering block start)
+solver: 4 checks, 5 assertions, 0.009s, 0 interrupted, 0 restarts
+artifact: results/1790879504155227943-353/artifact.ll | block visit bound: 32
+report: results/1790879504155227943-353/RESULT.json
+input mapping: input0=x
+((input0 #xff))
+

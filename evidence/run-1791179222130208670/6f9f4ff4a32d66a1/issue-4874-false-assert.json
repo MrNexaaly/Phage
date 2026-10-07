@@ -1,0 +1,88 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "counterexample",
+  "detail": "Rust panic call _RNvNtCsevLNFiNqfJP_4core9panicking5panic at LLVM line 18",
+  "source": "/home/zero/Dev/Nexaaly/Phage/examples/issue-4874-false-assert.rs",
+  "function": "phage_target",
+  "rustc": "rustc 1.99.0 (b940084d7 2026-09-28)\nbinary: rustc\ncommit-hash: b940084d7eb6a299eb4bfeb8e34901bc051e7ac4\ncommit-date: 2026-09-28\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.0\nLLVM version: 23.1.1",
+  "compilerPath": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc",
+  "compilerSysroot": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "artifactSha256": "0ae57d25f5e254d1fd7fa9614a5794d47cde3dd0fe03d6c4cc570913f7574dd5",
+  "llvmSha256": "0ae57d25f5e254d1fd7fa9614a5794d47cde3dd0fe03d6c4cc570913f7574dd5",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/examples/issue-4874-false-assert.rs",
+      "sha256": "86b4ec6098cdf5c11db77f43745a55f4eb1b6b3bf70951d272dbfa44cfd5e88d"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/target/release/phage",
+      "sha256": "acb84548f1586eb05c89d2f0bfc211864e5736b0cb89b99fcdc6c508a25a8d01"
+    },
+    {
+      "path": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "f3834d26669b03f6855fa54bd2381443123e860167bc0c7a8dd137e5cf6e5e4f"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "maxMemoryMiB": 8192,
+  "completedPaths": 0,
+  "states": 2,
+  "queries": 4,
+  "elapsedSeconds": 0.356474,
+  "solverChecks": 4,
+  "solverInterrupts": 0,
+  "solverRestarts": 0,
+  "solverAssertions": 5,
+  "solverWallSeconds": 0.01166,
+  "diagnostics": [
+    {
+      "code": "rustPanic",
+      "message": "Rust panic call _RNvNtCsevLNFiNqfJP_4core9panicking5panic at LLVM line 18",
+      "llvmLine": 18,
+      "mirLine": null,
+      "source": {
+        "file": "/home/zero/Dev/Nexaaly/Phage/examples/issue-4874-false-assert.rs",
+        "line": 8,
+        "column": 14
+      }
+    }
+  ],
+  "slowestQuerySeconds": 0.009665,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "x"
+  ],
+  "model": "((input0 #xff))\n",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [
+    "core bodies come from the rustc sysroot's embedded LLVM bitcode"
+  ],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

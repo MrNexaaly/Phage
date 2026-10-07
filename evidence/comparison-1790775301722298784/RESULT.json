@@ -1,0 +1,847 @@
+{
+  "platform": "Linux-6.18.21-nexaOS-x86_64-with-glibc2.44",
+  "processor": "",
+  "kani": "Kani Rust Verifier 0.68.0 (cargo plugin)\nCBMC 6.11.0",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "sourceSha256": {
+    "/home/zero/Dev/Nexaaly/RuHealth/src/engine.rs": "f100190dc15d532a857fe7521f1df7c577f21ca467866d2b4954dadadaf8a5d7",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/memory.rs": "1352ae323923e32d16a5562957afe508aa2b573f589ec06e1b01faf19160aabc",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/solver.rs": "116f4cd14cb2885171866c25e7eedf69753b7539208e54d2036dae55348a8c8b",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/ir.rs": "514b2510bec8d3772981533b99becc3a6bbdeff2d6db486272398ffcfe2bbe83",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/debug.rs": "a69e0e93317655d4f79120d1a27d8ad9ee2da1665e7f58146638035f6831fb41",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/execute.rs": "42565d0c7e77bf23e3d8e22b72989972e9c45ad120de111d53ae3fe5e470bc91",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/diagnostics.rs": "564b808cbf42bae6fc64169cbb7afa3004b9b40d08c2c114fcff5d0fde50e346",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/report.rs": "446475bb5e2e03c69d1a75003524f3b7bc5b65dd72067fd8b868245c4d4b4527",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/value.rs": "f3d8133257ab772b88c27acfc29b4fa6dab6ee622a0a1c551c980276cdb51c6c",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/pointers.rs": "a6e0b68c243568fc19108a9d5f49c7c67e7f32565a8d192af41032f98a204e7e",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/main.rs": "274a7f114bcf939901a041face5b67cf0769d9909800fe7f7fc574cc14528b0e",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/solver/tests.rs": "521b335a6807bba7df8f5b765f55bcbdb92447961c8a734ff10bd16759a4a89f",
+    "/home/zero/Dev/Nexaaly/RuHealth/src/engine/tests.rs": "416ca17d7195329d61464fa43350254567832314e7b63c3f6e57eb78c000d66f",
+    "/home/zero/Dev/Nexaaly/RuHealth/comparison/src/lib.rs": "f6b34aeb8ca3e5b8e6cc4f42a726cb97001ff6b7e15ff03868ec9a6a15da6f2b",
+    "/home/zero/Dev/Nexaaly/RuHealth/Cargo.toml": "6a6a283724cb7466d6c3fc35f59f501f29a1db19142f5d94d730bc73e15a04d4",
+    "/home/zero/Dev/Nexaaly/RuHealth/comparison/Cargo.toml": "2f50ad451bd05a7145643f09cbaafe86611089500e2007d21bcc9293c2357c83",
+    "/home/zero/Dev/Nexaaly/RuHealth/target/release/ruhealth": "e3efb8d9d1e3918fb5cbb753b9508edaf2e58562506623fa9c8daa5639557f52",
+    "/home/zero/Dev/Nexaaly/RuHealth/examples/nexagate-quic.rs": "baec5e32c94c2ff7e235f1eae9f430a8e142d41c22c5c251f395bdc7580d3f54",
+    "/home/zero/Dev/Nexaaly/RuHealth/examples/nexagate-hpack-after.rs": "9a6cd378e60cffc0e7ad9ae803f797656f07b5f7bfdfb7b39a6aeb80a08752d5",
+    "/home/zero/Dev/Nexaaly/RuHealth/examples/nexagate-hpack-before.rs": "b0d80b8f50669869ace51b21ef10a5d12d803bd33f65867bc919ed1b6b2f63b5",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/huffman.rs": "6368eb7e52effd73a3e5e011f9286e17026a1f0db6a5b86e77427ddbb7b74b70",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/table.rs": "202030730c82ff287d5c13b2636066acfb0d009208929b22d88e96cc0368b07f",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/encoder.rs": "a31d61f7920d627ffebbbd6c0337fd60bb6ad17b5fc8f452605a9d03e5f86f55",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/tables.rs": "32964a232d8ca23940544576729ec906e901df775b7c022eaa911ee789058ab5",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/mod.rs": "f071e61537cc86949b061b399f7b47e9cf192e9eec56e32be0eab6eff9a5a2b3",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/decoder.rs": "183d3f0662fb97a804f2b70d073bd92a26380087f83353eade3a5bdc587126df",
+    "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/huffman.rs": "6368eb7e52effd73a3e5e011f9286e17026a1f0db6a5b86e77427ddbb7b74b70",
+    "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/table.rs": "202030730c82ff287d5c13b2636066acfb0d009208929b22d88e96cc0368b07f",
+    "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/encoder.rs": "a31d61f7920d627ffebbbd6c0337fd60bb6ad17b5fc8f452605a9d03e5f86f55",
+    "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/tables.rs": "32964a232d8ca23940544576729ec906e901df775b7c022eaa911ee789058ab5",
+    "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/mod.rs": "4beb2e2659d80146be95c4e9e553f7c4095f6cbc6f3cda4736702ea8e4a57951",
+    "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/decoder.rs": "183d3f0662fb97a804f2b70d073bd92a26380087f83353eade3a5bdc587126df",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-quic/src/varint.rs": "b5946c35f6705de501d649b271404dc3fff4566540c6a8558b03f096f398d911"
+  },
+  "repeats": 5,
+  "timeoutSeconds": 180,
+  "timingScope": "full CLI process wall time; one unmeasured warmup per tool/case retained",
+  "runs": [
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.47847568200086243,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-ruhealth-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775302446751958-2973273/RESULT.json",
+      "solverSeconds": 0.12528,
+      "status": "proved",
+      "case": "quic",
+      "warmup": true
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "quic",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 14.990799769992009,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-kani-warmup.log",
+      "solverSeconds": 7.7107344,
+      "status": "proved",
+      "case": "quic",
+      "warmup": true
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.5526916939998046,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-ruhealth-0.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775317915692885-2973750/RESULT.json",
+      "solverSeconds": 0.189663,
+      "status": "proved",
+      "case": "quic",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "quic",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 15.507807819987647,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-kani-0.log",
+      "solverSeconds": 9.501654,
+      "status": "proved",
+      "case": "quic",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "quic",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 12.11459944100352,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-kani-1.log",
+      "solverSeconds": 7.350423,
+      "status": "proved",
+      "case": "quic",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.4755439050204586,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-ruhealth-1.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775346098247380-2978207/RESULT.json",
+      "solverSeconds": 0.154468,
+      "status": "proved",
+      "case": "quic",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.6759272859781049,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-ruhealth-2.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775346574816500-2978295/RESULT.json",
+      "solverSeconds": 0.250726,
+      "status": "proved",
+      "case": "quic",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "quic",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 12.675305028009461,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-kani-2.log",
+      "solverSeconds": 6.694618,
+      "status": "proved",
+      "case": "quic",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "quic",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 10.640658782998798,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-kani-3.log",
+      "solverSeconds": 7.4296427,
+      "status": "proved",
+      "case": "quic",
+      "trial": 3,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.6716062540072016,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-ruhealth-3.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775370569929476-2983767/RESULT.json",
+      "solverSeconds": 0.314266,
+      "status": "proved",
+      "case": "quic",
+      "trial": 3,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.6510217470058706,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-ruhealth-4.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775371241656736-2983837/RESULT.json",
+      "solverSeconds": 0.268626,
+      "status": "proved",
+      "case": "quic",
+      "trial": 4,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "quic",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 10.814168288983637,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/quic-kani-4.log",
+      "solverSeconds": 7.1836524,
+      "status": "proved",
+      "case": "quic",
+      "trial": 4,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 1.9138180399895646,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-ruhealth-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775382714322628-2984421/RESULT.json",
+      "solverSeconds": 1.234615,
+      "status": "proved",
+      "case": "hpack",
+      "warmup": true
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 5.583116178022465,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-kani-warmup.log",
+      "solverSeconds": 2.7579367,
+      "status": "proved",
+      "case": "hpack",
+      "warmup": true
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 2.1036588400020264,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-ruhealth-0.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775390212546014-2984743/RESULT.json",
+      "solverSeconds": 1.333971,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 6.51003071499872,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-kani-0.log",
+      "solverSeconds": 3.2758386,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 6.814614407980116,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-kani-1.log",
+      "solverSeconds": 3.362859,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 2.3610074509924743,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-ruhealth-1.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775405646916550-2985749/RESULT.json",
+      "solverSeconds": 1.673913,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 2.4962714060093276,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-ruhealth-2.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775408007869160-2986477/RESULT.json",
+      "solverSeconds": 1.76858,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 8.671085569978459,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-kani-2.log",
+      "solverSeconds": 4.0385003,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 7.332002397015458,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-kani-3.log",
+      "solverSeconds": 3.3548465,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 3,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 2.210272234020522,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-ruhealth-3.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775426512971410-2987972/RESULT.json",
+      "solverSeconds": 1.548813,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 3,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 2.5788476669986267,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-ruhealth-4.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775428725534775-2988076/RESULT.json",
+      "solverSeconds": 1.86067,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 4,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 6.201842457987368,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/hpack-kani-4.log",
+      "solverSeconds": 2.9328938,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 4,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-before.rs"
+      ],
+      "exit": 1,
+      "wallSeconds": 4.03117616000236,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-ruhealth-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775437514089913-2988485/RESULT.json",
+      "solverSeconds": 3.255273,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "warmup": true
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "old-hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 1,
+      "wallSeconds": 10.404904350987636,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-kani-warmup.log",
+      "solverSeconds": 5.0826993,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "warmup": true
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-before.rs"
+      ],
+      "exit": 1,
+      "wallSeconds": 4.205094452016056,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-ruhealth-0.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775451950182737-2988974/RESULT.json",
+      "solverSeconds": 3.502591,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "old-hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 1,
+      "wallSeconds": 8.06342969299294,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-kani-0.log",
+      "solverSeconds": 4.8840075,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "old-hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 1,
+      "wallSeconds": 9.306692427984672,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-kani-1.log",
+      "solverSeconds": 5.563228,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-before.rs"
+      ],
+      "exit": 1,
+      "wallSeconds": 4.2168915910006035,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-ruhealth-1.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775473523969179-2989669/RESULT.json",
+      "solverSeconds": 3.382916,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-before.rs"
+      ],
+      "exit": 1,
+      "wallSeconds": 3.188147317006951,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-ruhealth-2.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775477742354631-2989815/RESULT.json",
+      "solverSeconds": 2.153213,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "old-hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 1,
+      "wallSeconds": 8.312539887992898,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-kani-2.log",
+      "solverSeconds": 5.077286,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "old-hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 1,
+      "wallSeconds": 7.453567318007117,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-kani-3.log",
+      "solverSeconds": 4.36312,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "trial": 3,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-before.rs"
+      ],
+      "exit": 1,
+      "wallSeconds": 3.0186962820007466,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-ruhealth-3.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775496701473121-2990118/RESULT.json",
+      "solverSeconds": 2.19792,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "trial": 3,
+      "warmup": false
+    },
+    {
+      "tool": "ruhealth",
+      "command": [
+        "target/release/ruhealth",
+        "check",
+        "examples/nexagate-hpack-before.rs"
+      ],
+      "exit": 1,
+      "wallSeconds": 2.3874710359959863,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-ruhealth-4.log",
+      "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790775499723460792-2990217/RESULT.json",
+      "solverSeconds": 1.770982,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "trial": 4,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "old-hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 1,
+      "wallSeconds": 7.427380505978363,
+      "log": "/home/zero/Dev/Nexaaly/RuHealth/evidence/comparison-1790775301722298784/old-hpack-kani-4.log",
+      "solverSeconds": 4.522379,
+      "status": "counterexample",
+      "case": "old-hpack",
+      "trial": 4,
+      "warmup": false
+    }
+  ],
+  "summaries": [
+    {
+      "case": "quic",
+      "tool": "ruhealth",
+      "statuses": [
+        "proved",
+        "proved",
+        "proved",
+        "proved",
+        "proved"
+      ],
+      "medianWallSeconds": 0.6510217470058706,
+      "minWallSeconds": 0.4755439050204586,
+      "maxWallSeconds": 0.6759272859781049
+    },
+    {
+      "case": "quic",
+      "tool": "kani",
+      "statuses": [
+        "proved",
+        "proved",
+        "proved",
+        "proved",
+        "proved"
+      ],
+      "medianWallSeconds": 12.11459944100352,
+      "minWallSeconds": 10.640658782998798,
+      "maxWallSeconds": 15.507807819987647
+    },
+    {
+      "case": "hpack",
+      "tool": "ruhealth",
+      "statuses": [
+        "proved",
+        "proved",
+        "proved",
+        "proved",
+        "proved"
+      ],
+      "medianWallSeconds": 2.3610074509924743,
+      "minWallSeconds": 2.1036588400020264,
+      "maxWallSeconds": 2.5788476669986267
+    },
+    {
+      "case": "hpack",
+      "tool": "kani",
+      "statuses": [
+        "proved",
+        "proved",
+        "proved",
+        "proved",
+        "proved"
+      ],
+      "medianWallSeconds": 6.814614407980116,
+      "minWallSeconds": 6.201842457987368,
+      "maxWallSeconds": 8.671085569978459
+    },
+    {
+      "case": "old-hpack",
+      "tool": "ruhealth",
+      "statuses": [
+        "counterexample",
+        "counterexample",
+        "counterexample",
+        "counterexample",
+        "counterexample"
+      ],
+      "medianWallSeconds": 3.188147317006951,
+      "minWallSeconds": 2.3874710359959863,
+      "maxWallSeconds": 4.2168915910006035
+    },
+    {
+      "case": "old-hpack",
+      "tool": "kani",
+      "statuses": [
+        "counterexample",
+        "counterexample",
+        "counterexample",
+        "counterexample",
+        "counterexample"
+      ],
+      "medianWallSeconds": 8.06342969299294,
+      "minWallSeconds": 7.427380505978363,
+      "maxWallSeconds": 9.306692427984672
+    }
+  ]
+}

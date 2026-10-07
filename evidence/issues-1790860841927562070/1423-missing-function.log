@@ -1,0 +1,8 @@
+run: results/1790860842154938540-2755400
+unknown: unmodeled call external_result at LLVM line 9
+function: phage_target | completed paths: 0 | states: 1 | solver queries: 2 | elapsed: 0.097s
+[unsupportedCall] /home/zero/Dev/Nexaaly/Phage/examples/unsupported.rs:8:14
+slowest query: 0.015s (path entering block start)
+solver: 1 checks, 1 assertions, 0.015s, 0 interrupted, 0 restarts
+artifact: results/1790860842154938540-2755400/artifact.ll | block visit bound: 32
+report: results/1790860842154938540-2755400/RESULT.json

@@ -1,0 +1,8 @@
+run: results/1790790493088658355-3941046
+unknown: reachable block loop exceeds visit bound 2
+function: ruhealth_target | completed paths: 0 | states: 4 | solver queries: 4 | elapsed: 0.047s
+[blockLimit] reachable block loop exceeds visit bound 2
+slowest query: 0.013s (path entering block start)
+solver: 4 checks, 4 assertions, 0.013s
+artifact: results/1790790493088658355-3941046/artifact.ll | block visit bound: 2
+report: results/1790790493088658355-3941046/RESULT.json

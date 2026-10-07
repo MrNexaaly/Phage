@@ -1,0 +1,100 @@
+[
+  {
+    "case": "4874-positive",
+    "command": [
+      "target/release/phage",
+      "check",
+      "examples/issue-4874-assert-forms.rs"
+    ],
+    "exit": 0,
+    "expectedExit": 0,
+    "reasonCodes": [],
+    "passed": true
+  },
+  {
+    "case": "4874-negative",
+    "command": [
+      "target/release/phage",
+      "check",
+      "examples/issue-4874-false-assert.rs"
+    ],
+    "exit": 1,
+    "expectedExit": 1,
+    "reasonCodes": [
+      "rustPanic"
+    ],
+    "passed": true
+  },
+  {
+    "case": "4876-explicit",
+    "command": [
+      "target/release/phage",
+      "check",
+      "examples/issue-4876-const-generics.rs"
+    ],
+    "exit": 0,
+    "expectedExit": 0,
+    "reasonCodes": [],
+    "passed": true
+  },
+  {
+    "case": "1423-missing-function",
+    "command": [
+      "target/release/phage",
+      "check",
+      "examples/unsupported.rs"
+    ],
+    "exit": 2,
+    "expectedExit": 2,
+    "reasonCodes": [
+      "unsupportedCall"
+    ],
+    "passed": true
+  },
+  {
+    "case": "4867-vector-unknown",
+    "command": [
+      "target/release/phage",
+      "check",
+      "fixtures/issue-4867-pointer-vector.ll"
+    ],
+    "exit": 2,
+    "expectedExit": 2,
+    "reasonCodes": [
+      "unsupportedType"
+    ],
+    "passed": true
+  },
+  {
+    "case": "4877-block-limit",
+    "command": [
+      "target/release/phage",
+      "check",
+      "fixtures/reachable-loop.ll",
+      "--blockVisits",
+      "2"
+    ],
+    "exit": 2,
+    "expectedExit": 2,
+    "reasonCodes": [
+      "blockLimit"
+    ],
+    "passed": true
+  },
+  {
+    "case": "4877-state-limit",
+    "command": [
+      "target/release/phage",
+      "check",
+      "fixtures/reachable-loop.ll",
+      "--maxStates",
+      "1"
+    ],
+    "exit": 2,
+    "expectedExit": 2,
+    "reasonCodes": [
+      "stateLimit"
+    ],
+    "passed": true
+  }
+]

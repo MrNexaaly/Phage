@@ -1,0 +1,68 @@
+[
+  {
+    "case": "safe-add",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.06726857300964184,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790774911415238977-2946563/RESULT.json"
+  },
+  {
+    "case": "overflow",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.06411181500880048,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790774911482755172-2946635/RESULT.json",
+    "nativeReplayExit": 0
+  },
+  {
+    "case": "nexagate-quic",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.13628657499793917,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790774911640684350-2946768/RESULT.json"
+  },
+  {
+    "case": "nexagate-hpack-before",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 1.1000859120103996,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790774911777000971-2946852/RESULT.json",
+    "nativeReplayExit": 0
+  },
+  {
+    "case": "nexagate-hpack-after",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.6653116540110204,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790774913182230872-2947478/RESULT.json"
+  },
+  {
+    "case": "unsupported",
+    "expectedExit": 2,
+    "exit": 2,
+    "wallSeconds": 0.06586934899678454,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790774913848162384-2947783/RESULT.json"
+  },
+  {
+    "case": "issue-4874-assert-forms",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.07148432900430635,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790774913914420249-2947831/RESULT.json"
+  },
+  {
+    "case": "issue-4874-false-assert",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.06397254500188865,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790774913986367954-2947878/RESULT.json",
+    "nativeReplayExit": 0
+  },
+  {
+    "case": "issue-4876-const-generics",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.07472437201067805,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790774914150838352-2948040/RESULT.json"
+  }
+]

@@ -1,0 +1,5 @@
+run: results/1790773975322905634-2823834
+proved: all reachable paths within the explicit block bound completed
+function: ruhealth_target | completed paths: 7 | states: 51 | solver queries: 148 | elapsed: 2.444s
+artifact: results/1790773975322905634-2823834/artifact.ll | block visit bound: 32
+report: results/1790773975322905634-2823834/RESULT.json

@@ -1,0 +1,12 @@
+transfer: original: proved (expected proved) 2.9s ok
+transfer: bvor known zeros: counterexample (expected counterexample) 2.2s ok
+transfer: bvadd lower bound: counterexample (expected counterexample) 1.9s ok
+transfer: bvashr sign fill: counterexample (expected counterexample) 0.3s ok
+transfer: add_carry carry-in: counterexample (expected counterexample) 2.1s ok
+transfer: bvmul trailing zeros: counterexample (expected counterexample) 1.8s ok
+transfer: not lower bound: counterexample (expected counterexample) 0.8s ok
+cache: original: proved (expected proved) 3.1s ok
+cache: wrong value returned from cache: counterexample (expected counterexample) 4.1s ok
+literal: original: proved (expected proved) 8.6s ok
+literal: hex digits read as decimal: counterexample (expected counterexample) 0.4s ok
+selfcheck: all passed; work in /home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-current/1790879914634829115

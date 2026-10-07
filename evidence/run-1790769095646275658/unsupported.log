@@ -1,0 +1,5 @@
+run: results/1790769172138914500-1556572
+unknown: unmodeled call external_result at LLVM line 9
+function: ruhealth_target | completed paths: 0 | states: 1 | solver queries: 1 | elapsed: 0.073s
+artifact: results/1790769172138914500-1556572/artifact.ll | block visit bound: 32
+report: results/1790769172138914500-1556572/RESULT.json

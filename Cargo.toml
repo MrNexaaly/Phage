@@ -1,0 +1,15 @@
+[package]
+name = "phage"
+version = "0.1.0"
+edition = "2024"
+description = "An independent bounded symbolic verifier for compiled Rust"
+publish = false
+autoexamples = false
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+
+[lints.rust]
+unsafe_code = "forbid"

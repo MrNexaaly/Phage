@@ -1,0 +1,3 @@
+cache: original: proved (expected proved) 3.1s ok
+cache: wrong value returned from cache: counterexample (expected counterexample) 4.0s ok
+selfcheck: all passed; work in /home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-work-btree/1790878600359967711

@@ -1,0 +1,18 @@
+[
+  {
+    "harness": "cache",
+    "case": "original",
+    "status": "unknown-timeout",
+    "expected": "proved",
+    "wallSeconds": 180.21395145799033,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-work-btree/1790878681210852484/cache/original"
+  },
+  {
+    "harness": "cache",
+    "case": "wrong identity through cache",
+    "status": "unknown-timeout",
+    "expected": "counterexample",
+    "wallSeconds": 180.13442050898448,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-work-btree/1790878681210852484/cache/mutant0"
+  }
+]

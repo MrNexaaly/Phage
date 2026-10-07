@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "ruhealth": "0.1.0",
+  "status": "counterexample",
+  "detail": "Rust panic call _ZN4core9panicking11panic_const24panic_const_shl_overflow17hc69eab5018f16ee8E at LLVM line 677",
+  "source": "/home/zero/Dev/Nexaaly/RuHealth/examples/nexagate-hpack-before.rs",
+  "function": "ruhealth_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "llvmSha256": "98423a8862d6daefd45b3b263e8a4d92915998628e88f37ab6b476d76dd2e9d5",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/examples/nexagate-hpack-before.rs",
+      "sha256": "b0d80b8f50669869ace51b21ef10a5d12d803bd33f65867bc919ed1b6b2f63b5"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/target/release/ruhealth",
+      "sha256": "e3efb8d9d1e3918fb5cbb753b9508edaf2e58562506623fa9c8daa5639557f52"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/mod.rs",
+      "sha256": "4beb2e2659d80146be95c4e9e553f7c4095f6cbc6f3cda4736702ea8e4a57951"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/huffman.rs",
+      "sha256": "6368eb7e52effd73a3e5e011f9286e17026a1f0db6a5b86e77427ddbb7b74b70"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/table.rs",
+      "sha256": "202030730c82ff287d5c13b2636066acfb0d009208929b22d88e96cc0368b07f"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/decoder.rs",
+      "sha256": "183d3f0662fb97a804f2b70d073bd92a26380087f83353eade3a5bdc587126df"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/encoder.rs",
+      "sha256": "a31d61f7920d627ffebbbd6c0337fd60bb6ad17b5fc8f452605a9d03e5f86f55"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/tables.rs",
+      "sha256": "32964a232d8ca23940544576729ec906e901df775b7c022eaa911ee789058ab5"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 29,
+  "states": 217,
+  "queries": 566,
+  "elapsedSeconds": 3.005941,
+  "solverChecks": 486,
+  "solverAssertions": 1271,
+  "solverWallSeconds": 2.19792,
+  "diagnostics": [
+    {
+      "code": "rustPanic",
+      "message": "Rust panic call _ZN4core9panicking11panic_const24panic_const_shl_overflow17hc69eab5018f16ee8E at LLVM line 677",
+      "llvmLine": 677,
+      "source": {
+        "file": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/mod.rs",
+        "line": 78,
+        "column": 18
+      }
+    }
+  ],
+  "slowestQuerySeconds": 0.053826,
+  "slowestQueryContext": "instruction at LLVM line 673",
+  "slowestQuerySource": {
+    "file": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/mod.rs",
+    "line": 78,
+    "column": 9
+  },
+  "inputLabels": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "len",
+    "prefix"
+  ],
+  "model": "((input0 #xff)\n(input1 #x81)\n(input2 #xfe)\n(input3 #xff)\n(input4 #xff)\n(input5 #x87)\n(input6 #x80)\n(input7 #x80)\n(input8 #x80)\n(input9 #x80)\n(input10 #x84)\n(input11 #x08)\n(input12 #x0c)\n(input13 #x08))\n",
+  "nativeReplay": "not run by verifier",
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

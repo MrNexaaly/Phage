@@ -1,0 +1,8 @@
+run: results/1790773893570066492-2789591
+unknown: state exploration limit reached
+function: ruhealth_target | completed paths: 0 | states: 2 | solver queries: 2 | elapsed: 0.037s
+[stateLimit] state exploration limit reached
+slowest query: 0.012s (path entering block start)
+solver: 2 checks, 2 assertions, 0.013s
+artifact: results/1790773893570066492-2789591/artifact.ll | block visit bound: 32
+report: results/1790773893570066492-2789591/RESULT.json

@@ -1,0 +1,3 @@
+cache: original: error (expected proved) 1152.2s FAIL
+cache: wrong known zeros through cache: error (expected counterexample) 53.9s FAIL
+selfcheck: 2 failed; work in /home/zero/.cache/phage/selfcheck/1790874705258185920

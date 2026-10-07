@@ -1,0 +1,19 @@
+run: results/1790879531292586918-881
+counterexample: property returned false at LLVM line 1490
+function: phage_target | completed paths: 3 | states: 96 | solver queries: 252 | elapsed: 0.466s
+assumption: addr2line bodies come from the rustc sysroot's embedded LLVM bitcode
+assumption: core bodies come from the rustc sysroot's embedded LLVM bitcode
+[falseProperty] /home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/literal/mutant0/check.rs:49:2
+slowest query: 0.023s (instruction at LLVM line 4196)
+solver: 144 checks, 390 assertions, 0.164s, 0 interrupted, 0 restarts
+artifact: results/1790879531292586918-881/artifact.ll | block visit bound: 32
+report: results/1790879531292586918-881/RESULT.json
+input mapping: input0=b0, input1=b1, input2=b2, input3=b3, input4=b4
+((input0 #x00)
+(input1 #x01)
+(input2 #x02)
+(input3 #x06)
+(input4 #x02)
+(v14 #x0800000000000000))
+placement: v14 = address of object13 (declared alignment 1); a native run picks its own
+

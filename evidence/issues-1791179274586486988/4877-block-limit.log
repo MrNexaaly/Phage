@@ -1,0 +1,9 @@
+run: results/1791179275614116761-1740730
+unknown: reachable block loop of phage_target exceeds visit bound 2
+function: phage_target | completed paths: 0 | states: 4 | solver queries: 4 | elapsed: 0.083s
+[blockLimit] reachable block loop of phage_target exceeds visit bound 2
+slowest query: 0.008s (path entering block start)
+solver: 4 checks, 4 assertions, 0.009s, 0 interrupted, 0 restarts
+memory budget: 8192 MiB (sampled process-tree RSS)
+artifact: results/1791179275614116761-1740730/artifact.ll | block visit bound: 2
+report: results/1791179275614116761-1740730/RESULT.json

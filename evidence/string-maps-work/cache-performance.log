@@ -1,0 +1,7 @@
+quic baseline: ['proved', 'proved', 'proved'], median 0.133s
+quic phage: ['proved', 'proved', 'proved'], median 0.127s
+quic kani: ['proved', 'proved', 'proved'], median 3.619s
+hpack baseline: ['proved', 'proved', 'proved'], median 0.299s
+hpack phage: ['proved', 'proved', 'proved'], median 0.306s
+hpack kani: ['proved', 'proved', 'proved'], median 2.319s
+comparison: /home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593

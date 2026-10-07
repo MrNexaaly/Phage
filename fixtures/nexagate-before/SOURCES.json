@@ -1,0 +1,11 @@
+{
+  "repository_head": "8e7daf258bc8f6cd4ca808857162e4b59b81afa2",
+  "source_sha256": {
+    "crates/gate-http/src/hpack/decoder.rs": "183d3f0662fb97a804f2b70d073bd92a26380087f83353eade3a5bdc587126df",
+    "crates/gate-http/src/hpack/encoder.rs": "a31d61f7920d627ffebbbd6c0337fd60bb6ad17b5fc8f452605a9d03e5f86f55",
+    "crates/gate-http/src/hpack/huffman.rs": "6368eb7e52effd73a3e5e011f9286e17026a1f0db6a5b86e77427ddbb7b74b70",
+    "crates/gate-http/src/hpack/mod.rs": "4beb2e2659d80146be95c4e9e553f7c4095f6cbc6f3cda4736702ea8e4a57951",
+    "crates/gate-http/src/hpack/table.rs": "202030730c82ff287d5c13b2636066acfb0d009208929b22d88e96cc0368b07f",
+    "crates/gate-http/src/hpack/tables.rs": "32964a232d8ca23940544576729ec906e901df775b7c022eaa911ee789058ab5"
+  }
+}

@@ -1,0 +1,4794 @@
+{
+  "checkedUnix": 1790772578.528616,
+  "repository": "model-checking/kani",
+  "issues": [
+    {
+      "number": 4921,
+      "title": "Kani panics on a SIMD intrinsic instantiated with a scalar type",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4921",
+      "updatedAt": "2026-09-30T08:40:31Z",
+      "labels": []
+    },
+    {
+      "number": 4919,
+      "title": "Autoharness ICE: SIMD codegen unwraps vector length for a generic helper instantiated with a scalar",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4919",
+      "updatedAt": "2026-09-30T04:59:07Z",
+      "labels": []
+    },
+    {
+      "number": 4918,
+      "title": "perf CI: re-run a harness whose solver time trips the regression check, and fail only if it reproduces",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4918",
+      "updatedAt": "2026-09-30T04:32:06Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 4914,
+      "title": "Contract targets that omit defaulted generic parameters fail to resolve",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4914",
+      "updatedAt": "2026-09-30T03:25:11Z",
+      "labels": []
+    },
+    {
+      "number": 4911,
+      "title": "Loop contract: `get_unchecked` precondition not discharged when the slice element is passed into a closure",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4911",
+      "updatedAt": "2026-09-30T00:04:28Z",
+      "labels": [
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4909,
+      "title": "Contract targets with fn-pointer type arguments fail to resolve (Map/Filter-style adapters)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4909",
+      "updatedAt": "2026-09-30T03:25:10Z",
+      "labels": []
+    },
+    {
+      "number": 4908,
+      "title": "Support stubs and function contracts on trait functions with their own generic parameters (e.g. `<String as FromIterator<char>>::from_iter`)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4908",
+      "updatedAt": "2026-09-29T16:55:45Z",
+      "labels": [
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4907,
+      "title": "Loop contracts: `for` loops over iterators without a `KaniIntoIter` impl (e.g. `char::DecodeUtf16`) cannot carry a contract",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4907",
+      "updatedAt": "2026-09-29T16:58:11Z",
+      "labels": [
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4906,
+      "title": "Loop contracts: explicit `loop_modifies` rejects writes to temporaries declared in the loop body (`Check that var_N is assignable`)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4906",
+      "updatedAt": "2026-09-29T16:55:16Z",
+      "labels": [
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4905,
+      "title": "Kani reports VERIFICATION SUCCESSFUL when CBMC runs out of memory while writing its JSON results",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4905",
+      "updatedAt": "2026-09-29T16:57:40Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4902,
+      "title": "Nested `forall!` crashes goto-cc with an invariant abort (\"quantifier must not contain side effects\") instead of a user-facing error",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4902",
+      "updatedAt": "2026-09-28T21:02:49Z",
+      "labels": [
+        "Z-Contracts",
+        "Z-Quantifiers"
+      ]
+    },
+    {
+      "number": 4893,
+      "title": "Loop contracts have no attach site for loops inside called iterator combinators (`fold`/`try_for_each`/`collect`)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4893",
+      "updatedAt": "2026-09-30T03:25:10Z",
+      "labels": []
+    },
+    {
+      "number": 4891,
+      "title": "Autoharness umbrella: no function body (NoBody)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4891",
+      "updatedAt": "2026-09-30T03:23:17Z",
+      "labels": []
+    },
+    {
+      "number": 4890,
+      "title": "Autoharness umbrella: requires bounded arguments (RequiresBoundedArguments)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4890",
+      "updatedAt": "2026-09-30T03:23:16Z",
+      "labels": []
+    },
+    {
+      "number": 4889,
+      "title": "Autoharness umbrella: non-usize const generic parameters (GenericFn)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4889",
+      "updatedAt": "2026-09-27T22:51:12Z",
+      "labels": []
+    },
+    {
+      "number": 4888,
+      "title": "Autoharness umbrella: generic function with no candidate type (GenericFn)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4888",
+      "updatedAt": "2026-09-27T22:56:34Z",
+      "labels": []
+    },
+    {
+      "number": 4887,
+      "title": "Autoharness umbrella: Missing Arbitrary (MissingArbitraryImpl)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4887",
+      "updatedAt": "2026-09-27T22:55:20Z",
+      "labels": []
+    },
+    {
+      "number": 4885,
+      "title": "LLBC backend: constructs that still abort translation",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4885",
+      "updatedAt": "2026-09-27T19:19:07Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 4879,
+      "title": "Autoharness: umbrella issue classifying open issues by skip reason",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4879",
+      "updatedAt": "2026-09-30T04:00:46Z",
+      "labels": []
+    },
+    {
+      "number": 4877,
+      "title": "Autoharness: \"no candidate type\" skip message doesn't distinguish causes",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4877",
+      "updatedAt": "2026-09-27T22:50:15Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 4876,
+      "title": "Autoharness: support non-usize const generic parameters",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4876",
+      "updatedAt": "2026-09-27T22:50:15Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 4859,
+      "title": "Autoharness: generate `&Wtf8` values with unpaired surrogates",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4859",
+      "updatedAt": "2026-09-30T03:23:16Z",
+      "labels": []
+    },
+    {
+      "number": 4858,
+      "title": "`deref_box` and the `is_box()` place branch appear unreachable",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4858",
+      "updatedAt": "2026-09-24T19:25:51Z",
+      "labels": []
+    },
+    {
+      "number": 4857,
+      "title": "CBMC symex fails on a function item called through `Box<dyn Fn>`: l2_rename_rvalues case address_of not handled",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4857",
+      "updatedAt": "2026-09-24T19:25:50Z",
+      "labels": []
+    },
+    {
+      "number": 4854,
+      "title": "panic: uninit checks: unreachable",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4854",
+      "updatedAt": "2026-09-25T19:11:54Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4853,
+      "title": "panic: uninint checks: internal error: entered unreachable code: Cannot change the initialization state of a trait object directly.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4853",
+      "updatedAt": "2026-09-25T19:11:52Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4852,
+      "title": "panic: uninit-checks: delayed_ub: called `Option::unwrap()` on a `None` value",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4852",
+      "updatedAt": "2026-09-25T19:11:51Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4851,
+      "title": "panic: uninit checks: Failed to resolve  kani::Arbitrary::any",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4851",
+      "updatedAt": "2026-09-25T19:11:49Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4850,
+      "title": "panic: uninit checks assertion failed: 128 == 64",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4850",
+      "updatedAt": "2026-09-25T19:11:47Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4843,
+      "title": "Support variadic functions: non-C calling conventions, and generating `VaList` arguments in autoharness",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4843",
+      "updatedAt": "2026-09-30T03:23:15Z",
+      "labels": [
+        "Z-Autoharness"
+      ]
+    },
+    {
+      "number": 4842,
+      "title": "panic: autoharness: Failed to get ABI for OfInstance",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4842",
+      "updatedAt": "2026-09-25T19:11:46Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4841,
+      "title": "panic: autoharness: Unexpected return type",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4841",
+      "updatedAt": "2026-09-25T19:11:44Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4840,
+      "title": "panic: autoharness: called `Result::unwrap()` on an `Err` value: Error(\"Failed to get layout for `[usize; usize::MAX]`: values of the type `[usize; usize::MAX]` are too big for the target architecture\")",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4840",
+      "updatedAt": "2026-09-25T19:11:42Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4838,
+      "title": "panic: assertion failed: blank_splits[1] == \"-\"",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4838",
+      "updatedAt": "2026-09-25T19:14:55Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4832,
+      "title": "Remove the `-Znext-solver=coherence` pin: reimplement `pointer_generator` without `generic_const_exprs`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4832",
+      "updatedAt": "2026-09-23T20:42:20Z",
+      "labels": [
+        "T-High Priority"
+      ]
+    },
+    {
+      "number": 4831,
+      "title": "Projection of an uninhabited (`!`) field is reported as an unsupported construct instead of unreachable code",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4831",
+      "updatedAt": "2026-09-23T20:42:10Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4830,
+      "title": "Path resolution: replace string comparison of generic arguments with semantic type resolution",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4830",
+      "updatedAt": "2026-09-30T03:25:08Z",
+      "labels": []
+    },
+    {
+      "number": 4826,
+      "title": "autoharness: E0080 can still abort a run when the substituted *type* decides a `const {}` block",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4826",
+      "updatedAt": "2026-09-30T03:23:14Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4822,
+      "title": "perf-benchcomp: count solver invocations and judge solver time against noise",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4822",
+      "updatedAt": "2026-09-24T00:17:28Z",
+      "labels": []
+    },
+    {
+      "number": 4821,
+      "title": "Emitted GOTO programs are not reproducible: constant allocations are named after rustc `AllocId`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4821",
+      "updatedAt": "2026-09-21T01:46:38Z",
+      "labels": []
+    },
+    {
+      "number": 4817,
+      "title": "panic: autoharness: assertion failed: !self.c_variadic || matches!(self.conv, CanonAbi::C)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4817",
+      "updatedAt": "2026-09-25T19:01:08Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Autoharness"
+      ]
+    },
+    {
+      "number": 4814,
+      "title": "panic: autoharness: Instance with polymorphic constant",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4814",
+      "updatedAt": "2026-09-30T03:32:57Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4811,
+      "title": "Autoharness: support the `MultiCharEq` searcher types in `core::str::pattern`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4811",
+      "updatedAt": "2026-09-30T03:23:13Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 4807,
+      "title": "Autoharness: models for `alloc` types in the `verify-std` flow",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4807",
+      "updatedAt": "2026-09-30T03:23:13Z",
+      "labels": []
+    },
+    {
+      "number": 4796,
+      "title": "`#[kani::loop_invariant]` with a method call lowers the call with \"not enough arguments\", substituting a non-deterministic value",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4796",
+      "updatedAt": "2026-09-29T16:56:35Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4790,
+      "title": "Loop contracts: locals of the builtin `memcmp` model fail the assigns check when the loop body compares slices with `==`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4790",
+      "updatedAt": "2026-09-14T19:22:27Z",
+      "labels": [
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4779,
+      "title": "`<[u8]>::contains` does not converge even on fully concrete data (memchr specialization); `iter().any` verifies in 0.2s",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4779",
+      "updatedAt": "2026-09-30T03:25:08Z",
+      "labels": []
+    },
+    {
+      "number": 4773,
+      "title": "Add ESBMC as a verification backend",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4773",
+      "updatedAt": "2026-08-28T16:09:04Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-RFC"
+      ]
+    },
+    {
+      "number": 4770,
+      "title": "Unsupported: calls to LLVM intrinsics (InstanceKind::LlvmIntrinsic)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4770",
+      "updatedAt": "2026-08-27T04:38:04Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 4763,
+      "title": "Autoharness --constructor-args: assumed mined invariants may exclude valid values (heuristic under-approximation)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4763",
+      "updatedAt": "2026-08-26T02:10:38Z",
+      "labels": [
+        "Z-Autoharness"
+      ]
+    },
+    {
+      "number": 4761,
+      "title": "loop_modifies over a Vec no longer establishes drop_in_place's new reference-creation precondition",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4761",
+      "updatedAt": "2026-08-26T02:10:08Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4759,
+      "title": "vtable_size_align_drop no longer checks the drop slot holds the right type's drop glue",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4759",
+      "updatedAt": "2026-08-26T02:08:37Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4757,
+      "title": "Autoharness --constructor-args: an unsatisfiable constructor yields a vacuous (always-Success) harness",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4757",
+      "updatedAt": "2026-08-26T02:08:21Z",
+      "labels": [
+        "[F] Soundness",
+        "Z-Autoharness"
+      ]
+    },
+    {
+      "number": 4752,
+      "title": "Arbitrary/autoharness: nondeterministic `Rc<T>`/`Arc<T>` values always have `strong_count == 1`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4752",
+      "updatedAt": "2026-08-24T03:52:17Z",
+      "labels": [
+        "[F] Soundness",
+        "Z-Autoharness"
+      ]
+    },
+    {
+      "number": 4750,
+      "title": "Autoharness: model caller-controlled aliasing between reference/pointer arguments",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4750",
+      "updatedAt": "2026-08-26T02:07:31Z",
+      "labels": [
+        "Z-Autoharness"
+      ]
+    },
+    {
+      "number": 4747,
+      "title": "CBMC 6.8.0 + CaDiCaL 2.0.0 via Kani 0.67.0: SIGSEGV under ulimit -v where a lower limit gives a clean Out of memory",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4747",
+      "updatedAt": "2026-08-19T15:58:54Z",
+      "labels": []
+    },
+    {
+      "number": 4746,
+      "title": "CBMC 6.8.0 via Kani 0.67.0: deterministic SIGFPE (exit 136) during symex unwinding of core u128::pow",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4746",
+      "updatedAt": "2026-08-19T15:58:42Z",
+      "labels": []
+    },
+    {
+      "number": 4736,
+      "title": "tracking issue for algebraic_ float functions in kani",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4736",
+      "updatedAt": "2026-08-14T21:36:26Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 4720,
+      "title": "Performance: symbolic array index plus carry chain does not close (34-limb fixed-point accumulator)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4720",
+      "updatedAt": "2026-09-30T03:25:07Z",
+      "labels": []
+    },
+    {
+      "number": 4690,
+      "title": "Field reads through Err(Box<T>) of a Result<f64, Box<T>> function report invalid-pointer/misalignment failures and garbage values (f32 same shape verifies)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4690",
+      "updatedAt": "2026-07-29T13:42:12Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4667,
+      "title": "Reading a symbolic-length Vec back through a slice loop blows the SAT formula ~14x (heap read-back, not allocation)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4667",
+      "updatedAt": "2026-08-12T18:46:36Z",
+      "labels": [
+        "[E] Performance"
+      ]
+    },
+    {
+      "number": 4620,
+      "title": "Package kani for homebrew",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4620",
+      "updatedAt": "2026-07-04T18:11:41Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 4591,
+      "title": "`#[kani::stub]` on contracted functions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4591",
+      "updatedAt": "2026-07-11T15:05:14Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4590,
+      "title": "kani-verifier 0.67.0: SMT-solver harness verifies SUCCESSFUL on aarch64 but emits CBMC ERROR (driver panic) on x86_64",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4590",
+      "updatedAt": "2026-07-29T13:40:15Z",
+      "labels": [
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 4588,
+      "title": "Stubbing non-overridden default trait methods fails with type mismatch",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4588",
+      "updatedAt": "2026-04-22T22:37:33Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4586,
+      "title": "Support multi-dimensional (lexicographic) decreases clauses in `#[kani::loop_decreases]`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4586",
+      "updatedAt": "2026-04-22T21:53:18Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4585,
+      "title": "`#[kani::loop_decreases]` does not support struct field projections or arithmetic expressions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4585",
+      "updatedAt": "2026-04-22T21:48:08Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4574,
+      "title": "Unable to run example after successful install",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4574",
+      "updatedAt": "2026-04-09T12:54:00Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4538,
+      "title": "Loop invariant spuriously fails in `for x in a` syntax",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4538",
+      "updatedAt": "2026-03-27T19:34:50Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4507,
+      "title": "Call to format! causes an infinite loop",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4507",
+      "updatedAt": "2026-04-01T01:52:52Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance"
+      ]
+    },
+    {
+      "number": 4475,
+      "title": "gxhash causes some issues because of sse2",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4475",
+      "updatedAt": "2026-04-01T01:52:51Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4438,
+      "title": "Untrustworthy outputs of multi-threaded verifications",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4438",
+      "updatedAt": "2026-08-18T16:11:47Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4399,
+      "title": "Ubuntu install_deps.sh script doesn't work on 25.04",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4399",
+      "updatedAt": "2026-04-01T01:52:51Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 4326,
+      "title": "Loop contracts in closure run too slow",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4326",
+      "updatedAt": "2026-03-27T19:34:50Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4310,
+      "title": "Quantifier failure for arbitrary range",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4310",
+      "updatedAt": "2026-04-01T01:57:21Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Quantifiers"
+      ]
+    },
+    {
+      "number": 4282,
+      "title": "Quantifier failure in loop invariant",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4282",
+      "updatedAt": "2026-04-01T01:57:21Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Quantifiers"
+      ]
+    },
+    {
+      "number": 4263,
+      "title": "Quantifier panic when array size is greater than 64",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4263",
+      "updatedAt": "2026-04-01T01:57:20Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Quantifiers"
+      ]
+    },
+    {
+      "number": 4252,
+      "title": "Use more `rustc_public` APIs for path resolution and attribute handling",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4252",
+      "updatedAt": "2025-07-30T02:03:58Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 4251,
+      "title": "Reduce redundant path validation for attributes",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4251",
+      "updatedAt": "2026-03-27T19:34:49Z",
+      "labels": [
+        "[I] Refactoring / Clean Up",
+        "[C] Internal",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4237,
+      "title": "Merge `cprover_bindings` serialization passes",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4237",
+      "updatedAt": "2025-07-25T17:03:14Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 4212,
+      "title": "Avoid `rustc` re-lowering when Kani options change?",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4212",
+      "updatedAt": "2025-07-15T16:00:11Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 4168,
+      "title": "Bloated MIR remains for `Result` functions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4168",
+      "updatedAt": "2025-06-24T22:15:57Z",
+      "labels": [
+        "[E] Performance",
+        "Z-Kani Compiler"
+      ]
+    },
+    {
+      "number": 4132,
+      "title": "Slowdown in hashset performance regression",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4132",
+      "updatedAt": "2026-04-01T01:52:49Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance"
+      ]
+    },
+    {
+      "number": 4094,
+      "title": "Invoke cargo once to build all packages in the workspace",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4094",
+      "updatedAt": "2025-05-21T20:04:25Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 4084,
+      "title": "Kani not resolving qualified paths in verify-std",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4084",
+      "updatedAt": "2026-03-27T19:34:49Z",
+      "labels": [
+        "[C] Bug",
+        "T-User",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 4079,
+      "title": "Kani always rebuilds when running verify-std",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4079",
+      "updatedAt": "2026-08-18T16:11:46Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 4027,
+      "title": "Redundancy between BoundedArbitrary Vec implementation and kani::any_vec",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4027",
+      "updatedAt": "2025-04-17T23:24:01Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 4021,
+      "title": "Verification results of `#[proof]` and #[proof_for_contract] are different",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/4021",
+      "updatedAt": "2026-03-27T19:34:48Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3987,
+      "title": "`kani-cov` is not documented",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3987",
+      "updatedAt": "2026-04-01T03:58:39Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[C] Documentation"
+      ]
+    },
+    {
+      "number": 3977,
+      "title": "Create a release bundle with an older glibc",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3977",
+      "updatedAt": "2025-04-02T19:11:34Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3881,
+      "title": "Delayed UB instrumentation regression: slices",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3881",
+      "updatedAt": "2026-04-01T01:52:49Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3875,
+      "title": "Tracking Issue: Disabling CBMC's NaN checks",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3875",
+      "updatedAt": "2026-04-01T03:56:18Z",
+      "labels": [
+        "[F] Spurious Failure"
+      ]
+    },
+    {
+      "number": 3866,
+      "title": "Support dereference in loop contracts",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3866",
+      "updatedAt": "2026-03-27T19:34:48Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3864,
+      "title": "Failed Checks: Check that ptr is freeable",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3864",
+      "updatedAt": "2026-03-27T19:34:47Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3832,
+      "title": "Tracking Issue: Automatic Harnesses",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3832",
+      "updatedAt": "2026-08-22T17:47:43Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-TrackingIssue",
+        "Z-Autoharness"
+      ]
+    },
+    {
+      "number": 3783,
+      "title": "Add support for Coroutine Closures",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3783",
+      "updatedAt": "2024-12-16T16:48:10Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] Unsupported Construct"
+      ]
+    },
+    {
+      "number": 3778,
+      "title": "Kani module stubs for development",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3778",
+      "updatedAt": "2026-01-12T22:24:53Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 3771,
+      "title": "Recursion unwinding does not terminate",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3771",
+      "updatedAt": "2026-03-27T19:34:47Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3769,
+      "title": "Set Kani's `--default-unwind` to 1",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3769",
+      "updatedAt": "2025-02-25T22:46:00Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 3765,
+      "title": "Casting pointer to usize and back have unexpected behavior",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3765",
+      "updatedAt": "2026-04-01T01:52:48Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3763,
+      "title": "Limitation in Annotating Function Contracts for Pointers to dyn Trait",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3763",
+      "updatedAt": "2026-03-27T19:34:46Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3762,
+      "title": "Add support to validity checks in the presence of `copy_nonoverlapping`, `copy`.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3762",
+      "updatedAt": "2024-12-19T20:20:09Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3761,
+      "title": "Validity for enumerations with multiple variants.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3761",
+      "updatedAt": "2024-12-19T20:19:59Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3760,
+      "title": "Implement validity check for FnPtr",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3760",
+      "updatedAt": "2024-12-19T20:19:50Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3759,
+      "title": "Extend validity checks for references and Box",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3759",
+      "updatedAt": "2024-12-19T20:19:41Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3743,
+      "title": "Abnormal Test Failure with Pointer Generator in Rust Standard Library Verification",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3743",
+      "updatedAt": "2026-04-01T01:52:47Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3738,
+      "title": "Check vtable validity when explicitly creating wide pointer",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3738",
+      "updatedAt": "2024-11-25T23:37:15Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] Unsupported UB"
+      ]
+    },
+    {
+      "number": 3732,
+      "title": "Compilation Error When Stubbing Functions That Return Pointers Using Function Contracts",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3732",
+      "updatedAt": "2026-03-27T19:34:46Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3696,
+      "title": "Generate non-deterministic pointer variables",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3696",
+      "updatedAt": "2024-11-08T11:04:01Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3693,
+      "title": "Propose new Kani API to compare two objects byte-by-byte",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3693",
+      "updatedAt": "2024-11-08T02:55:59Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3685,
+      "title": "Failed to use loop contracts to prove contracts harness for proofs with nested loops",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3685",
+      "updatedAt": "2026-03-27T19:34:45Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3681,
+      "title": "Add option `--stack-trace` to print the stack trace of a failure",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3681",
+      "updatedAt": "2026-03-27T19:34:44Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3679,
+      "title": "Crash in CBMC output parser with aws-lc-sys crate",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3679",
+      "updatedAt": "2026-04-01T01:52:46Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash"
+      ]
+    },
+    {
+      "number": 3672,
+      "title": "Proposal for new Kani API similar to `CPROVER_r_ok` and `CPROVER_w_ok`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3672",
+      "updatedAt": "2026-03-27T19:34:44Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3647,
+      "title": "Support deriving `kani::Invariant` for enums",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3647",
+      "updatedAt": "2026-03-27T19:34:43Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3611,
+      "title": "High memory consumption for interior mutability function contract test ",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3611",
+      "updatedAt": "2026-09-29T16:54:14Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3599,
+      "title": "Loop contracts in closures and coroutines",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3599",
+      "updatedAt": "2026-03-27T19:34:42Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3596,
+      "title": "ICE: `unable to find field 0 for type StructTag` (`never_type`)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3596",
+      "updatedAt": "2026-09-25T19:14:51Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3587,
+      "title": "Support `malloc` and `free` in loops with loop contracts",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3587",
+      "updatedAt": "2026-03-27T19:34:42Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3585,
+      "title": "Tracking Issue: Address follow-up comments on #3514 (LLBC Backend)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3585",
+      "updatedAt": "2026-09-30T03:25:06Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 3579,
+      "title": "Create a new `#[proof_for_safety(fn)]`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3579",
+      "updatedAt": "2026-03-27T19:34:41Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3567,
+      "title": "Separate safety contract from correctness / panic freedom",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3567",
+      "updatedAt": "2026-03-27T19:34:41Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3566,
+      "title": "Enable thorough Rust safety verification",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3566",
+      "updatedAt": "2026-03-27T19:34:40Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3543,
+      "title": "Some coverage results point to non-existing regions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3543",
+      "updatedAt": "2026-04-01T03:56:17Z",
+      "labels": [
+        "[C] Bug",
+        "[E] User Experience",
+        "[F] Spurious Failure",
+        "Z-UnstableFeature"
+      ]
+    },
+    {
+      "number": 3542,
+      "title": "Filenames stored in raw coverage results should be absolute",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3542",
+      "updatedAt": "2026-04-01T01:42:53Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 3541,
+      "title": "Check structures and other code is duplicated in `kani-cov`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3541",
+      "updatedAt": "2024-09-23T21:45:18Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 3475,
+      "title": "Stacked Borrows In Kani -- Extend Feature to handle more code",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3475",
+      "updatedAt": "2026-03-27T19:34:39Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3471,
+      "title": "Enums that are #[repr(u8)] are slower than u8",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3471",
+      "updatedAt": "2026-04-01T01:53:30Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3456,
+      "title": "Confusing coverage result: Uncovered argument for `match`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3456",
+      "updatedAt": "2026-04-01T03:56:17Z",
+      "labels": [
+        "[C] Bug",
+        "[E] User Experience",
+        "[F] Spurious Failure",
+        "Z-UnstableFeature"
+      ]
+    },
+    {
+      "number": 3455,
+      "title": "Confusing coverage result: Uncovered end of block on `if` statement",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3455",
+      "updatedAt": "2026-04-01T03:56:16Z",
+      "labels": [
+        "[C] Bug",
+        "[E] User Experience",
+        "[F] Spurious Failure",
+        "Z-UnstableFeature"
+      ]
+    },
+    {
+      "number": 3451,
+      "title": "thread 'main' panicked at ...kani-verifier-0.54.0/src/lib.rs:156:38: No exit code?",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3451",
+      "updatedAt": "2024-10-07T23:43:23Z",
+      "labels": [
+        "[C] Internal",
+        "T-User"
+      ]
+    },
+    {
+      "number": 3446,
+      "title": "ICE: `missing tokens for node: Expr `",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3446",
+      "updatedAt": "2026-09-25T19:29:58Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3445,
+      "title": "Coverage metadata should include mappings for all source code",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3445",
+      "updatedAt": "2026-04-01T01:42:52Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 3441,
+      "title": "Rust's coverage instrumentation assumes function calls never panic",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3441",
+      "updatedAt": "2026-04-01T01:53:28Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Soundness",
+        "Z-UnstableFeature"
+      ]
+    },
+    {
+      "number": 3440,
+      "title": "Move kani APIs that are visible only to the compiler to a private `instrumentation` module",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3440",
+      "updatedAt": "2024-08-15T17:23:22Z",
+      "labels": [
+        "[I] Refactoring / Clean Up",
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 3412,
+      "title": "Adding regressions tests for output based on output configuration",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3412",
+      "updatedAt": "2024-08-04T17:57:15Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 3396,
+      "title": "The `#[safety_constraint(...)]` can be specified without deriving `Arbitrary` or `Invariant`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3396",
+      "updatedAt": "2026-03-27T19:34:39Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3385,
+      "title": "question: semantics of rust",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3385",
+      "updatedAt": "2024-11-03T16:32:42Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3372,
+      "title": "Add support for transitive modifies clause",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3372",
+      "updatedAt": "2026-03-27T17:58:34Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3357,
+      "title": "Remove terse output requirement for parallel jobs ",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3357",
+      "updatedAt": "2024-09-07T17:43:46Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 3349,
+      "title": "Function Contracts: Modifies for str",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3349",
+      "updatedAt": "2026-03-27T17:44:57Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3345,
+      "title": "Add contract support to intrinsics",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3345",
+      "updatedAt": "2026-03-27T17:57:21Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3336,
+      "title": "Modifies property points to a temporary variable",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3336",
+      "updatedAt": "2026-03-27T17:57:11Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3331,
+      "title": "Build bundle jobs could test bundles before upload",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3331",
+      "updatedAt": "2024-07-08T23:11:07Z",
+      "labels": [
+        "[C] Internal",
+        "[I] CI / Infrastructure"
+      ]
+    },
+    {
+      "number": 3328,
+      "title": "Performance drastically differs across two string indexing operations",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3328",
+      "updatedAt": "2025-08-26T21:38:10Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3325,
+      "title": "Allow users to annotate functions without body with contracts",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3325",
+      "updatedAt": "2026-03-27T17:57:04Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3316,
+      "title": "Function Contracts: Mutual recursion function contract wrapper for replace code stub",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3316",
+      "updatedAt": "2026-03-27T17:56:56Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3311,
+      "title": "Overwriting a composite object in an array causes a blowup in variables",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3311",
+      "updatedAt": "2024-07-02T21:45:13Z",
+      "labels": [
+        "[E] Performance",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 3308,
+      "title": "Add core intrisincs tests for f16 and f128 ",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3308",
+      "updatedAt": "2024-06-28T22:15:11Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 3300,
+      "title": "Tracking Issue: Automatically Verify Memory Initialization",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3300",
+      "updatedAt": "2025-05-07T02:09:42Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-TrackingIssue"
+      ]
+    },
+    {
+      "number": 3298,
+      "title": "Mutable static variables usage in contract verification trigger UB",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3298",
+      "updatedAt": "2026-04-01T03:56:16Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Spurious Failure",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3273,
+      "title": "Function Contracts: Better error messages",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3273",
+      "updatedAt": "2026-03-27T17:45:12Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3265,
+      "title": "Ensure that `Arbitrary` respects `Invariant` somehow",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3265",
+      "updatedAt": "2026-03-27T19:26:47Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3263,
+      "title": "Reachability analysis cannot see through FFI",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3263",
+      "updatedAt": "2026-03-27T19:42:57Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3262,
+      "title": "Review where we might be incorrectly ignoring projects into ZSTs",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3262",
+      "updatedAt": "2026-04-01T01:53:28Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3240,
+      "title": "Property representing `unreachable!()` is marked as SUCCESS instead of UNREACHABLE",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3240",
+      "updatedAt": "2026-04-01T01:53:28Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3213,
+      "title": "Disallow side effects in contract expressions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3213",
+      "updatedAt": "2026-03-27T17:56:29Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3203,
+      "title": "Implement validity checks for unsupported constructs",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3203",
+      "updatedAt": "2025-07-14T20:10:24Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3163,
+      "title": "```--tests``` flag should enable ```#[test]``` attributes and behavior",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3163",
+      "updatedAt": "2024-04-26T17:03:53Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3112,
+      "title": "Add support for uninterpreted function stub",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3112",
+      "updatedAt": "2026-05-13T05:51:44Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 3111,
+      "title": "Avoid weaker comparison for targets in `run_cargo`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3111",
+      "updatedAt": "2024-03-26T22:23:10Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 3110,
+      "title": "Concrete playback tests could include more information",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3110",
+      "updatedAt": "2024-07-24T17:22:34Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience",
+        "T-User"
+      ]
+    },
+    {
+      "number": 3106,
+      "title": "Missing modifies clause triggers very confusing error",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3106",
+      "updatedAt": "2026-03-27T18:08:29Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3089,
+      "title": "Kani should detect Rust specific undefined behavior",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3089",
+      "updatedAt": "2025-08-12T18:04:44Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3070,
+      "title": "Kani crashes when coverage is enabled and an unwind assertion fails",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3070",
+      "updatedAt": "2026-04-01T01:53:28Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3060,
+      "title": "Cleanup flow to setup cargo kani",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3060",
+      "updatedAt": "2024-03-28T22:52:42Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 3029,
+      "title": "crates.io stub and docs.rs documentation",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3029",
+      "updatedAt": "2024-02-27T16:15:34Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 3027,
+      "title": "Contracts: Can't include non-`Copy` types in contract",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3027",
+      "updatedAt": "2026-03-27T17:56:21Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 3021,
+      "title": "ice: `Expected '&[T]' to point to a single buffer`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3021",
+      "updatedAt": "2026-09-25T19:14:33Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3020,
+      "title": "panic  `Error(\"Unexpected value for bool: `2`\")` on transmute shenanigans",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3020",
+      "updatedAt": "2026-09-25T19:14:47Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3016,
+      "title": "Advise on verifying state machines with kani",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3016",
+      "updatedAt": "2026-09-30T03:25:06Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 3012,
+      "title": "Standalone assert statements lose information when converted to the irep format",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3012",
+      "updatedAt": "2026-04-01T01:53:25Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 3006,
+      "title": "Support harness partition",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3006",
+      "updatedAt": "2026-08-18T16:11:45Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2998,
+      "title": "Tracking Issue: Automatically ensure validity invariants of unsafe operations",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2998",
+      "updatedAt": "2026-03-27T19:27:07Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 2982,
+      "title": "Kani unwinds forever on semver-pubgrub",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2982",
+      "updatedAt": "2024-01-24T18:42:38Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2944,
+      "title": "Replacing `Vec` with `SmallVec` causes CMBC's memory usage to grow unboundedly during post-processing",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2944",
+      "updatedAt": "2026-09-30T03:25:05Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2936,
+      "title": "Investigate if optimizing constant generation to avoid allocations improve solver performance",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2936",
+      "updatedAt": "2023-12-11T20:20:34Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2927,
+      "title": "goto-synthesizer crash",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2927",
+      "updatedAt": "2026-09-30T03:25:04Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash",
+        "T-User",
+        "T-CBMC",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 2907,
+      "title": "Support for encapsulated mutability in `modifies` clauses ",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2907",
+      "updatedAt": "2026-03-27T17:49:30Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 2876,
+      "title": "ice: None  , gats",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2876",
+      "updatedAt": "2026-09-25T19:14:54Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash",
+        "[E] Unsupported Construct",
+        "Z-Kani Compiler"
+      ]
+    },
+    {
+      "number": 2861,
+      "title": "Create optimal generation of Arbitrary values for types with no constraint",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2861",
+      "updatedAt": "2023-11-06T23:46:53Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2832,
+      "title": "Simplify installation",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2832",
+      "updatedAt": "2024-06-21T20:07:12Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2823,
+      "title": "Users Should Have the Option to Opt-out of Inductive Function Contract Verification",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2823",
+      "updatedAt": "2026-03-27T17:55:02Z",
+      "labels": [
+        "[E] User Experience",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 2818,
+      "title": "Add unsafe function that creates valid (but potentially unsafe) ADT without reference",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2818",
+      "updatedAt": "2023-10-16T20:06:53Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2801,
+      "title": "Division with concrete and constant operands causes long verification times",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2801",
+      "updatedAt": "2026-04-01T01:53:24Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance",
+        "T-User",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 2795,
+      "title": "Adding support for code coverage",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2795",
+      "updatedAt": "2026-04-01T01:42:50Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2793,
+      "title": "Add vacuity test for contradictory requires clause",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2793",
+      "updatedAt": "2026-03-27T17:54:46Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 2792,
+      "title": "fail harness if `cover` is not satisfied",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2792",
+      "updatedAt": "2025-05-07T02:11:06Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2786,
+      "title": "Improve documentation and error messaing around concrete playback crashes",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2786",
+      "updatedAt": "2026-04-01T01:47:45Z",
+      "labels": [
+        "[E] User Experience",
+        "[C] Documentation"
+      ]
+    },
+    {
+      "number": 2751,
+      "title": "Evaluate Profile-Guided Optimization (PGO) and LLVM BOLT",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2751",
+      "updatedAt": "2023-09-22T17:25:59Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2747,
+      "title": "Comprehensive Documentation of Contract Usage",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2747",
+      "updatedAt": "2026-03-27T17:54:23Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 2741,
+      "title": "Warn the user if contracts are unused",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2741",
+      "updatedAt": "2026-03-27T17:54:12Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 2732,
+      "title": "ice: unconditional panic (array index out of bounds) `assertion failed: length >= min_length`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2732",
+      "updatedAt": "2026-09-25T19:14:39Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash"
+      ]
+    },
+    {
+      "number": 2723,
+      "title": "Poor performance for a serialization/deserialization example with variable-length data",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2723",
+      "updatedAt": "2026-04-01T01:53:54Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance"
+      ]
+    },
+    {
+      "number": 2710,
+      "title": "Support target x86_64-unknown-freebsd",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2710",
+      "updatedAt": "2023-09-28T14:18:08Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2693,
+      "title": "An API to prevent against false assumptions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2693",
+      "updatedAt": "2023-08-21T16:44:21Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2684,
+      "title": "hang with thread join",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2684",
+      "updatedAt": "2026-09-25T19:11:57Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2682,
+      "title": "ICE: `entered unreachable code: Only expected constant index for arrays and slices: also found it for:` `*mut [isize]`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2682",
+      "updatedAt": "2026-09-25T19:14:36Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2681,
+      "title": "Invalid path reported for Rust toolchain",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2681",
+      "updatedAt": "2026-04-01T01:53:52Z",
+      "labels": [
+        "[C] Bug",
+        "[E] User Experience",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2652,
+      "title": "Feature Request: Function Contracts",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2652",
+      "updatedAt": "2026-03-27T19:40:03Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 2648,
+      "title": "Kani does not lock access to build artifacts, leading to crashes if executed concurrently",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2648",
+      "updatedAt": "2026-04-01T01:53:51Z",
+      "labels": [
+        "[C] Bug",
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2642,
+      "title": "Investigate how coverage checks affect performance",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2642",
+      "updatedAt": "2023-07-31T17:09:35Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2641,
+      "title": "Create a tool for aggregating coverage results",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2641",
+      "updatedAt": "2023-07-31T17:09:35Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2640,
+      "title": "Report source-based coverage results",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2640",
+      "updatedAt": "2024-04-11T14:31:03Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2639,
+      "title": "Avoid confusing results in coverage reports",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2639",
+      "updatedAt": "2023-07-31T17:09:34Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2638,
+      "title": "Export coverage results to a well-supported output",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2638",
+      "updatedAt": "2023-07-31T17:09:33Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2637,
+      "title": "Improve benchcomp documentation",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2637",
+      "updatedAt": "2023-07-28T20:08:02Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2636,
+      "title": "Create user-friendly output for coverage",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2636",
+      "updatedAt": "2023-07-31T17:09:33Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2635,
+      "title": "Improve tests for coverage",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2635",
+      "updatedAt": "2023-07-31T17:09:32Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2632,
+      "title": "Implement `simd_reduce_all`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2632",
+      "updatedAt": "2023-07-27T23:42:23Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2626,
+      "title": "Kani crates aren't forced to have the same version",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2626",
+      "updatedAt": "2023-07-25T21:49:14Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2618,
+      "title": "Error `failed printing to stdout: Broken pipe (os error 32)` when piping to `head` or similar commands",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2618",
+      "updatedAt": "2026-04-01T01:53:51Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2592,
+      "title": "Create schema for benchcomp.yaml",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2592",
+      "updatedAt": "2023-09-22T06:41:25Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2579,
+      "title": "Remove Kani redundant checks",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2579",
+      "updatedAt": "2026-04-01T01:53:51Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2574,
+      "title": "RFC: Output - Reduce reported checks/properties",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2574",
+      "updatedAt": "2024-10-02T19:43:19Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-RFC"
+      ]
+    },
+    {
+      "number": 2567,
+      "title": "Generated unit test does not contain enough values",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2567",
+      "updatedAt": "2026-04-01T01:53:50Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash"
+      ]
+    },
+    {
+      "number": 2563,
+      "title": "RFC: Output - Multi-harness runner with progression",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2563",
+      "updatedAt": "2023-06-27T21:58:10Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-RFC"
+      ]
+    },
+    {
+      "number": 2562,
+      "title": "RFC: Output - Alternative check format",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2562",
+      "updatedAt": "2024-10-02T19:43:10Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-RFC"
+      ]
+    },
+    {
+      "number": 2559,
+      "title": "Tracking issue for Kani's unstable async library, feature `async-lib`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2559",
+      "updatedAt": "2023-09-22T19:25:51Z",
+      "labels": [
+        "T-TrackingIssue"
+      ]
+    },
+    {
+      "number": 2558,
+      "title": "We should measure and record Kani's memory consumption in CI",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2558",
+      "updatedAt": "2023-06-22T23:09:27Z",
+      "labels": [
+        "[C] Internal",
+        "[I] CI / Infrastructure",
+        "Z-Benchcomp"
+      ]
+    },
+    {
+      "number": 2549,
+      "title": "Implement handling of C String",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2549",
+      "updatedAt": "2024-11-05T23:52:03Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2548,
+      "title": "Turn on vtable pointer restriction by default",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2548",
+      "updatedAt": "2023-06-21T18:19:46Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2543,
+      "title": "Integrate `mmap` model from CBMC",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2543",
+      "updatedAt": "2024-06-07T17:14:45Z",
+      "labels": [
+        "[E] Unsupported Construct",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 2541,
+      "title": "Implement UB checks for producing invalid values",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2541",
+      "updatedAt": "2023-06-19T23:40:33Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2538,
+      "title": "[Bug] Infinite unwinding of `std::ptr::drop_in_place` in program containing enum wrapping std::io::Error in very specific manner",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2538",
+      "updatedAt": "2023-09-22T20:03:24Z",
+      "labels": [
+        "[E] Performance",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2525,
+      "title": "Global verification conditions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2525",
+      "updatedAt": "2023-06-13T21:50:46Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2520,
+      "title": "Create schema for suite.yaml and result.yaml",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2520",
+      "updatedAt": "2023-09-22T06:41:41Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2497,
+      "title": "ICE: `Argument doesn't check` / `Function call does not type check` ",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2497",
+      "updatedAt": "2026-09-25T19:11:59Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2467,
+      "title": "Playback subcommand should respect Cargo.toml configuration",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2467",
+      "updatedAt": "2026-04-01T01:53:47Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2435,
+      "title": "Use InternedString in other parts of our code (such as Metadata)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2435",
+      "updatedAt": "2023-05-09T20:20:28Z",
+      "labels": [
+        "[I] Refactoring / Clean Up",
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2430,
+      "title": "`_tlv_atexit` definition is missing",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2430",
+      "updatedAt": "2026-04-01T01:53:47Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2426,
+      "title": "Kani should verify the existance of clashing C functions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2426",
+      "updatedAt": "2026-04-01T01:53:47Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2423,
+      "title": "Add proper support to C-FFI calls",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2423",
+      "updatedAt": "2024-07-18T19:38:10Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2414,
+      "title": "Implement CSV visualization for benchcomp",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2414",
+      "updatedAt": "2023-04-27T21:46:53Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Benchcomp"
+      ]
+    },
+    {
+      "number": 2402,
+      "title": "Command-line flag to change model target or environment ",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2402",
+      "updatedAt": "2024-10-02T19:42:50Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2392,
+      "title": "Integrate benchcomp solver comparison with VSCode Extension",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2392",
+      "updatedAt": "2023-04-18T19:12:41Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2387,
+      "title": "Compare proposed release performance with previous release",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2387",
+      "updatedAt": "2023-04-18T04:01:30Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Benchcomp"
+      ]
+    },
+    {
+      "number": 2363,
+      "title": "Improve symbolic execution performance when running against concrete values",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2363",
+      "updatedAt": "2023-06-12T23:24:53Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Feature / Enhancement",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 2346,
+      "title": "Make parsers self-documenting",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2346",
+      "updatedAt": "2023-04-18T18:45:33Z",
+      "labels": [
+        "Z-Benchcomp"
+      ]
+    },
+    {
+      "number": 2345,
+      "title": "Create getting started documentation",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2345",
+      "updatedAt": "2023-04-18T18:45:37Z",
+      "labels": [
+        "Z-Benchcomp"
+      ]
+    },
+    {
+      "number": 2343,
+      "title": "Create schema for suite.yaml",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2343",
+      "updatedAt": "2023-04-03T23:12:02Z",
+      "labels": [
+        "Z-Benchcomp"
+      ]
+    },
+    {
+      "number": 2342,
+      "title": "Create schema for result.yaml",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2342",
+      "updatedAt": "2023-04-03T23:12:02Z",
+      "labels": [
+        "Z-Benchcomp"
+      ]
+    },
+    {
+      "number": 2337,
+      "title": "Re-add Generator/discriminant test",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2337",
+      "updatedAt": "2026-04-01T01:54:13Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2325,
+      "title": "Automate release",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2325",
+      "updatedAt": "2023-09-22T06:44:56Z",
+      "labels": [
+        "[I] CI / Infrastructure"
+      ]
+    },
+    {
+      "number": 2310,
+      "title": "`set-output` workflow commands are being deprecated",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2310",
+      "updatedAt": "2023-03-24T19:51:27Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2309,
+      "title": "Poor performance scaling for string comparison function",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2309",
+      "updatedAt": "2026-04-01T01:54:13Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance"
+      ]
+    },
+    {
+      "number": 2302,
+      "title": "Memory blows up on a small program involving String split",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2302",
+      "updatedAt": "2026-04-01T01:54:13Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 2300,
+      "title": "Add support for non-deterministic pointer",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2300",
+      "updatedAt": "2026-03-27T17:53:32Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 2299,
+      "title": "Option that causes verification to fail for uncoverable cover statements",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2299",
+      "updatedAt": "2024-10-02T19:43:02Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2298,
+      "title": "Delay declaring variables",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2298",
+      "updatedAt": "2023-03-10T23:38:31Z",
+      "labels": [
+        "[C] Internal",
+        "Z-Kani Compiler"
+      ]
+    },
+    {
+      "number": 2289,
+      "title": "Check CaDiCaL version on regression script",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2289",
+      "updatedAt": "2026-04-01T01:54:12Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2284,
+      "title": "Kani doesn't handle system calls",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2284",
+      "updatedAt": "2026-04-01T03:56:15Z",
+      "labels": [
+        "[F] Spurious Failure",
+        "T-User",
+        "[E] Unsupported Construct",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 2279,
+      "title": "Create mechanism to enable / disable APIs",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2279",
+      "updatedAt": "2023-03-08T23:27:33Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-RFC"
+      ]
+    },
+    {
+      "number": 2275,
+      "title": "Develop a more reliable mechanism for overriding `std` macros",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2275",
+      "updatedAt": "2025-01-24T00:06:49Z",
+      "labels": [
+        "[C] Internal",
+        "Z-Kani Compiler"
+      ]
+    },
+    {
+      "number": 2265,
+      "title": "va_arg is currently not supported by kani",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2265",
+      "updatedAt": "2026-09-25T19:29:57Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2256,
+      "title": "ICE: Can't apply .member operation to ...",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2256",
+      "updatedAt": "2026-09-25T19:14:42Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash"
+      ]
+    },
+    {
+      "number": 2255,
+      "title": "ICE:   `Function should've been declared before usage`, was: `Can't take address of Expr`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2255",
+      "updatedAt": "2026-09-25T19:14:44Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash"
+      ]
+    },
+    {
+      "number": 2253,
+      "title": "ICE: place: Unexpected type mismatch in projection:",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2253",
+      "updatedAt": "2026-09-25T19:12:01Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash"
+      ]
+    },
+    {
+      "number": 2244,
+      "title": "add kani sanity checks to release script",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2244",
+      "updatedAt": "2023-09-22T06:45:13Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2233,
+      "title": "RUSTC_WRAPPER handling could be improved",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2233",
+      "updatedAt": "2026-09-25T19:00:44Z",
+      "labels": [
+        "[C] Bug",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2231,
+      "title": "Add a test that the build cache is sensitive to different Kani versions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2231",
+      "updatedAt": "2023-02-23T20:47:42Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2229,
+      "title": "Build cache should consider changes to the compiler",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2229",
+      "updatedAt": "2023-03-03T19:39:06Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2226,
+      "title": "Loop-contracts synthesizer is not compatible  with ```kani::cover```",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2226",
+      "updatedAt": "2026-09-30T03:25:04Z",
+      "labels": [
+        "[C] Bug",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 2223,
+      "title": "Restore clang-format check with a pinned down version",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2223",
+      "updatedAt": "2023-02-21T15:10:47Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2203,
+      "title": "Autocomplete feature for CLI options",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2203",
+      "updatedAt": "2023-05-03T17:32:04Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2197,
+      "title": "Review documentation regarding platform support",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2197",
+      "updatedAt": "2023-09-25T17:54:32Z",
+      "labels": [
+        "[C] Documentation"
+      ]
+    },
+    {
+      "number": 2192,
+      "title": "Attribute validation should be done in kani_macros crate",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2192",
+      "updatedAt": "2023-02-06T22:31:55Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2180,
+      "title": "Kani fails to use static string in assertion message",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2180",
+      "updatedAt": "2026-04-01T01:54:08Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2154,
+      "title": "Add GOTO binary deserializer to `cprover_bindings`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2154",
+      "updatedAt": "2023-01-24T18:23:00Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2153,
+      "title": "C-FFI: support build of C files using build.rs",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2153",
+      "updatedAt": "2023-04-28T02:21:30Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2151,
+      "title": "C-FFI: Support for void vs unit return type in CBMC linker",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2151",
+      "updatedAt": "2023-04-28T02:21:29Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2150,
+      "title": "C-FFI: Set of test-cases for FFI linking",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2150",
+      "updatedAt": "2023-04-28T02:21:29Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2143,
+      "title": "Automatically cover any assertion directly written in a proof harness",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2143",
+      "updatedAt": "2023-01-23T18:24:18Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2120,
+      "title": "We need tests to verify that Kani works correctly when making cross ABI calls",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2120",
+      "updatedAt": "2023-01-16T20:02:52Z",
+      "labels": [
+        "[I] Refactoring / Clean Up",
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2112,
+      "title": "Kani builds don't enable features the same as ordinary cargo builds",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2112",
+      "updatedAt": "2026-04-01T01:54:08Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2107,
+      "title": "Tracking issue: common unsupported features",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2107",
+      "updatedAt": "2023-08-17T21:52:10Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] Unsupported Construct"
+      ]
+    },
+    {
+      "number": 2084,
+      "title": "Implement automatic stubbing for unreachable function",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2084",
+      "updatedAt": "2026-03-27T19:37:19Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2083,
+      "title": "KR3: publish the GOTO back-to-back checking tool on the github model-checking org",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2083",
+      "updatedAt": "2023-01-05T20:59:25Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2082,
+      "title": "KR2: publish the GOTO reference evaluator on the github model-checking org",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2082",
+      "updatedAt": "2023-01-05T20:58:46Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2081,
+      "title": "KR1: publish the GOTO syntax and semantics reference document on the github model-checking or ",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2081",
+      "updatedAt": "2023-01-05T20:58:12Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2079,
+      "title": "Develop GOTO trace loader/deserialiser",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2079",
+      "updatedAt": "2023-01-05T20:57:10Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2078,
+      "title": "Develop back-to-back testing tool using the evaluator",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2078",
+      "updatedAt": "2023-01-05T20:56:27Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2077,
+      "title": "Develop reference trace evaluator for GOTO models",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2077",
+      "updatedAt": "2023-01-05T20:51:54Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2076,
+      "title": "Develop type-checking and invariant checking for GOTO models",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2076",
+      "updatedAt": "2023-01-05T20:51:19Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2075,
+      "title": "Develop GOTO model AST for the evaluator",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2075",
+      "updatedAt": "2023-01-05T20:50:42Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2073,
+      "title": "Abstract Syntax Specification Document for GOTO traces",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2073",
+      "updatedAt": "2023-01-05T20:49:10Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2072,
+      "title": "Typing Rules and Semantics Specification Document for GOTO models",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2072",
+      "updatedAt": "2023-01-05T20:48:07Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2071,
+      "title": "Abstract Syntax Specification Document for GOTO models",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2071",
+      "updatedAt": "2023-01-05T20:46:25Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2068,
+      "title": "Enable verification of code that uses C-FFI",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2068",
+      "updatedAt": "2026-03-27T19:42:56Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2038,
+      "title": "Kani compilation fails when running cargo kani in a proc macro crate with `crate-type` specified.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2038",
+      "updatedAt": "2026-04-01T03:56:15Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Spurious Failure"
+      ]
+    },
+    {
+      "number": 2035,
+      "title": "Stabilize `Arbitrary` trait?",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2035",
+      "updatedAt": "2023-09-22T20:48:42Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 2025,
+      "title": "Kani does not allow duplicate flags in Cargo.toml",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2025",
+      "updatedAt": "2026-04-01T01:54:06Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 2015,
+      "title": "Poor performance scaling for a simple program involving String push/pop",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2015",
+      "updatedAt": "2023-08-22T17:13:41Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Feature / Enhancement",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 2012,
+      "title": "Monitor Kani's slow tests in some way",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2012",
+      "updatedAt": "2022-12-16T14:40:18Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2007,
+      "title": "Address validation of stubs with mismatched lifetimes",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2007",
+      "updatedAt": "2023-05-10T19:50:25Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 2004,
+      "title": "Cleanup PropProof",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2004",
+      "updatedAt": "2022-12-15T17:05:05Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 2001,
+      "title": "Memory blows up on a simple program that uses String find",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2001",
+      "updatedAt": "2026-01-14T01:08:52Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2000,
+      "title": "Feature request: mechanism to run subsets of proofs with `cargo kani`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2000",
+      "updatedAt": "2022-12-14T16:47:57Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1966,
+      "title": "Provide an option to disable automatically-generated assumptions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1966",
+      "updatedAt": "2026-01-12T22:25:22Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 1960,
+      "title": "`simd_shuffle*` doesn't check that `indexes` contains constant values which are within expected bounds",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1960",
+      "updatedAt": "2024-10-02T19:42:44Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1954,
+      "title": "Windows support",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1954",
+      "updatedAt": "2025-03-16T19:44:03Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 1933,
+      "title": "Handle `VarDebugInfoContents::Composite` in  `GotocCtx::find_debug_info`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1933",
+      "updatedAt": "2022-11-23T16:40:37Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1899,
+      "title": "Add user friendly Kani driver messages",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1899",
+      "updatedAt": "2022-11-15T02:10:48Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 1895,
+      "title": "compiletest doesn't check cargo-kani's exit status",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1895",
+      "updatedAt": "2022-11-14T21:52:25Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1890,
+      "title": "`target/kani` collides, Kani development repo corrupts itself",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1890",
+      "updatedAt": "2026-04-01T01:54:05Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1884,
+      "title": "Tutorial enhancement: Suggest constant allocation sizes",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1884",
+      "updatedAt": "2022-11-11T22:27:32Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1879,
+      "title": "`cargo kani --keep-temps` should report where temporaries are located",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1879",
+      "updatedAt": "2022-11-09T23:21:44Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1876,
+      "title": "Slowdown when moving code from the harness file to the Kani library",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1876",
+      "updatedAt": "2026-04-01T01:54:39Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance"
+      ]
+    },
+    {
+      "number": 1865,
+      "title": "Mechanism to enable users to select a suite of harnesses to run",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1865",
+      "updatedAt": "2026-08-18T16:11:44Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1831,
+      "title": "`kani-driver` argument parsing needs restructuring",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1831",
+      "updatedAt": "2025-05-27T22:34:20Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1817,
+      "title": "Unit types for external `void` functions shouldn't be needed",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1817",
+      "updatedAt": "2026-03-27T19:42:56Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1809,
+      "title": "Tracking issue for function and method stubbing",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1809",
+      "updatedAt": "2026-03-27T19:37:30Z",
+      "labels": [
+        "T-RFC",
+        "Z-Kani Compiler"
+      ]
+    },
+    {
+      "number": 1808,
+      "title": "Specify finer-grained unwinding values",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1808",
+      "updatedAt": "2025-03-30T22:14:27Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 1777,
+      "title": "Generate LCOV coverage",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1777",
+      "updatedAt": "2026-04-01T01:42:47Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 1765,
+      "title": "Unsupported features / codegen_unimplemented refactoring",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1765",
+      "updatedAt": "2022-11-14T17:41:31Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1758,
+      "title": "`kani-driver` needs its own notion of Kani Metadata",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1758",
+      "updatedAt": "2022-11-14T17:41:48Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1751,
+      "title": "Run Kani on Kani using the CI action",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1751",
+      "updatedAt": "2022-11-09T19:49:47Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1743,
+      "title": "Unexpected failure: \"Function `mmap` with missing definition is unreachable\"",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1743",
+      "updatedAt": "2026-04-01T01:54:38Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1740,
+      "title": "`debug_assert` is disabled in the standard library due to poor assertion messages",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1740",
+      "updatedAt": "2025-01-24T00:11:29Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 1734,
+      "title": "Improve existing documentation for concrete playback (for VSCode)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1734",
+      "updatedAt": "2026-04-01T01:54:38Z",
+      "labels": [
+        "[C] Bug",
+        "[C] Documentation"
+      ]
+    },
+    {
+      "number": 1718,
+      "title": "Refactor where in kani-driver the `--gen-c` and concrete playback options work",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1718",
+      "updatedAt": "2026-04-01T01:47:43Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1711,
+      "title": "UI unclear: reported results need to be clearer about the harness",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1711",
+      "updatedAt": "2026-08-18T16:11:43Z",
+      "labels": [
+        "[C] Bug",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 1710,
+      "title": "Allow disabling unwinding assertions for specific harnesses",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1710",
+      "updatedAt": "2026-08-18T16:11:43Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1706,
+      "title": "Generate GCOV coverage output from `cargo kani`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1706",
+      "updatedAt": "2026-04-01T01:42:47Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 1705,
+      "title": "Run clippy on tutorial code",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1705",
+      "updatedAt": "2026-04-01T01:54:36Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1690,
+      "title": "RFC: New default output for Kani",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1690",
+      "updatedAt": "2025-05-29T15:52:45Z",
+      "labels": [
+        "[E] User Experience",
+        "T-RFC"
+      ]
+    },
+    {
+      "number": 1687,
+      "title": "RFC: Resource limits for proof harnesses",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1687",
+      "updatedAt": "2023-07-11T17:53:07Z",
+      "labels": [
+        "T-RFC"
+      ]
+    },
+    {
+      "number": 1685,
+      "title": "Replace manual spawning code in test case by kani::spawn library once it's merged",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1685",
+      "updatedAt": "2023-10-10T14:34:46Z",
+      "labels": [
+        "[I] Refactoring / Clean Up"
+      ]
+    },
+    {
+      "number": 1682,
+      "title": "Concrete playback injecting into different file. ",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1682",
+      "updatedAt": "2026-04-01T01:54:36Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1681,
+      "title": "Cannot run test generated by concrete playback feature",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1681",
+      "updatedAt": "2026-04-01T01:54:36Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1675,
+      "title": "Report memory usage for verification step",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1675",
+      "updatedAt": "2022-11-14T22:53:56Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1668,
+      "title": "Tutorial: example of buggy specifications",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1668",
+      "updatedAt": "2022-11-14T17:37:18Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1663,
+      "title": "Adding async verification examples to the Kani test suite",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1663",
+      "updatedAt": "2023-09-22T19:38:33Z",
+      "labels": [
+        "[C] Internal",
+        "[I] CI / Infrastructure"
+      ]
+    },
+    {
+      "number": 1646,
+      "title": "Autoformat yaml files",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1646",
+      "updatedAt": "2022-11-14T17:38:01Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1643,
+      "title": "Remove .vscode from gitignore?",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1643",
+      "updatedAt": "2022-11-14T17:38:00Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1636,
+      "title": "Support constants in unwind attribute",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1636",
+      "updatedAt": "2022-09-06T23:25:13Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1627,
+      "title": "Start releasing tags with \\@latest",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1627",
+      "updatedAt": "2022-11-09T19:43:00Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 1609,
+      "title": "Concrete playback requires nightly rustc",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1609",
+      "updatedAt": "2026-04-01T01:54:35Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1597,
+      "title": "Ambiguous name error with `assert!` macro",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1597",
+      "updatedAt": "2026-04-01T01:54:35Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1570,
+      "title": "Allow users to view Kani Documentation on Hover",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1570",
+      "updatedAt": "2022-08-29T15:29:34Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-IDE Extension"
+      ]
+    },
+    {
+      "number": 1564,
+      "title": "Check over-contraining assumptions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1564",
+      "updatedAt": "2024-06-27T19:10:04Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1562,
+      "title": "Doc request: \"How Kani works\"",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1562",
+      "updatedAt": "2022-11-14T17:34:58Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1554,
+      "title": "Assignment in stdlib has lhs that isn't lvalue",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1554",
+      "updatedAt": "2026-04-01T01:54:35Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash"
+      ]
+    },
+    {
+      "number": 1553,
+      "title": "Minor cleanup: codegen_mimic_unimplemented",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1553",
+      "updatedAt": "2022-11-14T17:15:22Z",
+      "labels": [
+        "[I] Refactoring / Clean Up"
+      ]
+    },
+    {
+      "number": 1551,
+      "title": "Minor cleanup: PropertyClass",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1551",
+      "updatedAt": "2022-11-14T17:15:22Z",
+      "labels": [
+        "[I] Refactoring / Clean Up"
+      ]
+    },
+    {
+      "number": 1536,
+      "title": "Tracking issue for UX improvements to the concrete playback feature",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1536",
+      "updatedAt": "2026-04-01T01:47:41Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1529,
+      "title": "Standardize how we handle smart pointers in the compiler",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1529",
+      "updatedAt": "2022-11-09T19:44:06Z",
+      "labels": [
+        "[I] Refactoring / Clean Up"
+      ]
+    },
+    {
+      "number": 1527,
+      "title": "Investigate whether we can use interpreted values rather than byte array values for playback",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1527",
+      "updatedAt": "2024-10-02T19:42:18Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1525,
+      "title": "Investigate whether concrete playback can be used for test case generation",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1525",
+      "updatedAt": "2026-04-01T01:47:41Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1524,
+      "title": "Investigate whether concrete playback works for `lazy_static!`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1524",
+      "updatedAt": "2026-04-01T01:47:41Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1518,
+      "title": "Rename `kani::unwind` (current name can be confused with stack unwinding on panics)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1518",
+      "updatedAt": "2024-10-02T19:42:11Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1517,
+      "title": "Warn if async harness does not have an unwind bound",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1517",
+      "updatedAt": "2026-08-18T16:11:42Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1499,
+      "title": "Type mismatch for `FnDefStruct`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1499",
+      "updatedAt": "2026-04-01T01:54:34Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash"
+      ]
+    },
+    {
+      "number": 1483,
+      "title": "Replace remaining usage of old arithmetic overflow operations",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1483",
+      "updatedAt": "2026-04-01T01:54:34Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1482,
+      "title": "Document support for thread local and for async/.await",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1482",
+      "updatedAt": "2022-11-14T22:59:18Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1481,
+      "title": "Tracking Issue: Concrete playback",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1481",
+      "updatedAt": "2026-04-01T01:47:40Z",
+      "labels": [
+        "T-TrackingIssue"
+      ]
+    },
+    {
+      "number": 1480,
+      "title": "Refactor string formatting in new output parser",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1480",
+      "updatedAt": "2022-11-09T19:31:47Z",
+      "labels": [
+        "T-Good First Issue",
+        "[I] Refactoring / Clean Up"
+      ]
+    },
+    {
+      "number": 1472,
+      "title": "Tracking Issue: Hack for finding workspace root.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1472",
+      "updatedAt": "2022-11-09T19:47:00Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1470,
+      "title": "\"Installing from source\" documentation",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1470",
+      "updatedAt": "2022-11-14T22:59:42Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1423,
+      "title": "Kani should warn on missing functions that CBMC replaced with assert(false)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1423",
+      "updatedAt": "2022-11-14T23:00:33Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1397,
+      "title": "We should refactor \"magic strings\" into constants",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1397",
+      "updatedAt": "2022-11-14T23:03:00Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1394,
+      "title": "Improvements needed for the 'kani' library",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1394",
+      "updatedAt": "2026-03-27T19:28:12Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "Z-Contracts"
+      ]
+    },
+    {
+      "number": 1393,
+      "title": "Tracking issue for async/await in Kani (feature `async-lib`)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1393",
+      "updatedAt": "2025-12-05T20:13:34Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-TrackingIssue"
+      ]
+    },
+    {
+      "number": 1377,
+      "title": "Single use of `type_map`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1377",
+      "updatedAt": "2022-11-14T23:03:04Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1376,
+      "title": "Create a benchmark workflow",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1376",
+      "updatedAt": "2025-06-24T00:09:48Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1375,
+      "title": "Our `std` library cannot properly handle different editions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1375",
+      "updatedAt": "2026-04-01T01:54:34Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1374,
+      "title": "We should not rely on pretty-printed function names",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1374",
+      "updatedAt": "2022-11-14T23:03:28Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1368,
+      "title": "Investigate blockers in s2n-quic Bolero harnesses",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1368",
+      "updatedAt": "2026-04-01T01:54:33Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1342,
+      "title": "Sinf/Cosf not being correctly evaluated",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1342",
+      "updatedAt": "2026-04-01T01:54:32Z",
+      "labels": [
+        "[C] Bug",
+        "T-User",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 1329,
+      "title": "`any_vec` with size zero performs significantly worse than equivalent vector of size 0.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1329",
+      "updatedAt": "2026-04-01T01:54:32Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance"
+      ]
+    },
+    {
+      "number": 1322,
+      "title": "kani::vec::any_vec performance performance is subpar compared to exact_vec",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1322",
+      "updatedAt": "2026-04-01T01:54:32Z",
+      "labels": [
+        "[C] Bug",
+        "[E] Performance"
+      ]
+    },
+    {
+      "number": 1306,
+      "title": "Pretty names missing for some types in the symbol table (but present in type map)",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1306",
+      "updatedAt": "2026-04-01T01:54:31Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1304,
+      "title": "How to verify mmio access?",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1304",
+      "updatedAt": "2024-10-02T19:40:09Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "T-User"
+      ]
+    },
+    {
+      "number": 1257,
+      "title": "Kani fails with `l2_rename_values case `struct' not handled`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1257",
+      "updatedAt": "2026-04-01T01:54:30Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Crash"
+      ]
+    },
+    {
+      "number": 1246,
+      "title": "cargo-kani self-test",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1246",
+      "updatedAt": "2022-11-14T17:02:18Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1222,
+      "title": "CBMC API doc",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1222",
+      "updatedAt": "2024-10-02T19:40:05Z",
+      "labels": [
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 1219,
+      "title": "compiletest --help panics",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1219",
+      "updatedAt": "2026-04-01T01:55:02Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1217,
+      "title": "Combine proof annotation with attributes",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1217",
+      "updatedAt": "2022-11-14T23:10:22Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1214,
+      "title": "Proposal: always building in \"test mode\"",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1214",
+      "updatedAt": "2022-12-23T16:43:23Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1194,
+      "title": "Cleanup Kani's output",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1194",
+      "updatedAt": "2024-10-02T19:42:03Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 1170,
+      "title": "Using native exchange_malloc causes regression failures",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1170",
+      "updatedAt": "2026-04-01T01:55:02Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 1168,
+      "title": "Investigate what to do with `align` when doing alloc",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1168",
+      "updatedAt": "2024-10-02T19:33:34Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1163,
+      "title": "Restore and audit remaining intrinsics",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1163",
+      "updatedAt": "2024-10-02T19:32:46Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1150,
+      "title": "High offsets cause wrapping-around behavior in CBMC",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1150",
+      "updatedAt": "2026-09-30T03:25:03Z",
+      "labels": [
+        "[C] Bug",
+        "[F] Soundness"
+      ]
+    },
+    {
+      "number": 1128,
+      "title": "Remove development RPATH from released binaries",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1128",
+      "updatedAt": "2022-11-14T23:12:39Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1111,
+      "title": "Figure out how operators like `CBMC_r_ok` fit into the goto expr scheme",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1111",
+      "updatedAt": "2022-11-14T23:13:03Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 1097,
+      "title": "Option to sign off on unsupported constructs",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1097",
+      "updatedAt": "2024-07-04T02:18:15Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 1045,
+      "title": "kani-verifier tracking issue",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1045",
+      "updatedAt": "2023-01-04T21:53:56Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 996,
+      "title": "Kani generates int constants that cannot fit into their bitwidth on some regressions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/996",
+      "updatedAt": "2026-04-01T01:55:01Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 989,
+      "title": "Integrate a subset of the rustc tests",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/989",
+      "updatedAt": "2024-10-02T19:32:23Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 968,
+      "title": "Documentation: Add a \"Debugging coverage\" section",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/968",
+      "updatedAt": "2026-04-01T01:43:19Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 967,
+      "title": "Documentation: Add a \"Debugging non-termination\" section",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/967",
+      "updatedAt": "2022-11-09T19:42:41Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 966,
+      "title": "Documentation: Add a \"Debugging failures\" section",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/966",
+      "updatedAt": "2022-11-09T19:42:41Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 957,
+      "title": "Kani should make use of CBMC's internal consistency checks.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/957",
+      "updatedAt": "2026-09-30T03:25:02Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 946,
+      "title": "panic::set_hook does not work as expected",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/946",
+      "updatedAt": "2026-04-01T01:55:01Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 942,
+      "title": "Design Machine Readable Output - RFC",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/942",
+      "updatedAt": "2024-10-02T19:41:53Z",
+      "labels": [
+        "T-RFC"
+      ]
+    },
+    {
+      "number": 937,
+      "title": "Clear documentation of Kani TCB",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/937",
+      "updatedAt": "2025-05-10T00:48:12Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[C] Documentation"
+      ]
+    },
+    {
+      "number": 934,
+      "title": "Signed integer versions of bit-manipulation intrinsics cannot be thoroughly tested",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/934",
+      "updatedAt": "2022-11-09T19:42:40Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 917,
+      "title": "Kani primitive to query max allocation size",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/917",
+      "updatedAt": "2022-11-09T19:32:14Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 896,
+      "title": "Add better support for `MaybeUninit`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/896",
+      "updatedAt": "2025-01-24T00:15:45Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 891,
+      "title": "Model checking allocation failure",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/891",
+      "updatedAt": "2022-11-14T17:00:39Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] Unsupported Construct"
+      ]
+    },
+    {
+      "number": 888,
+      "title": "Automatically check test coverage, and block PRs that decrease coverage.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/888",
+      "updatedAt": "2026-04-01T01:44:39Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 859,
+      "title": "Missing test cases for unions",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/859",
+      "updatedAt": "2025-03-30T22:15:05Z",
+      "labels": [
+        "[E] Performance",
+        "[C] Internal",
+        "[I] CI / Infrastructure"
+      ]
+    },
+    {
+      "number": 852,
+      "title": "Saturating operations could use CBMC's native support",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/852",
+      "updatedAt": "2022-11-09T19:44:05Z",
+      "labels": [
+        "[I] Refactoring / Clean Up"
+      ]
+    },
+    {
+      "number": 847,
+      "title": "Tutorial: proof harness patterns",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/847",
+      "updatedAt": "2026-08-18T16:11:41Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 840,
+      "title": "Doc example: signed to unsigned conversion",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/840",
+      "updatedAt": "2025-05-19T16:37:30Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[C] Documentation"
+      ]
+    },
+    {
+      "number": 810,
+      "title": "Unimplemented intrinsic: `frem_fast`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/810",
+      "updatedAt": "2024-10-02T19:23:04Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] Unsupported Construct"
+      ]
+    },
+    {
+      "number": 809,
+      "title": "Some fast math results cannot be practically compared",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/809",
+      "updatedAt": "2024-10-02T19:22:59Z",
+      "labels": [
+        "[E] Performance",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 802,
+      "title": "Function Pointer Restrictions Imprecision",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/802",
+      "updatedAt": "2026-04-01T22:51:04Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 752,
+      "title": "Normalize type projection when checking Pointee trait",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/752",
+      "updatedAt": "2025-01-24T00:15:17Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 723,
+      "title": "`HashMap::new` fails to verify: `syscall` undefined",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/723",
+      "updatedAt": "2026-04-01T01:54:59Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 707,
+      "title": "Add support for binding sub-arrays using slice patterns",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/707",
+      "updatedAt": "2026-01-12T22:17:28Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] Unsupported Construct"
+      ]
+    },
+    {
+      "number": 692,
+      "title": "Add support to stack unwind panic strategy",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/692",
+      "updatedAt": "2022-11-14T16:52:46Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] Unsupported Construct"
+      ]
+    },
+    {
+      "number": 686,
+      "title": "In function.rs spread arguments are added to the symbol table but never declared in the function",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/686",
+      "updatedAt": "2022-11-14T23:16:55Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 681,
+      "title": "Add Report, YAML Display Options to Output",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/681",
+      "updatedAt": "2022-11-09T19:42:30Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 671,
+      "title": "Update vtable restrictions once CBMC side lands. ",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/671",
+      "updatedAt": "2022-11-14T23:17:43Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 646,
+      "title": "Implement checks for unchecked_* operations",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/646",
+      "updatedAt": "2022-11-09T19:42:29Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 598,
+      "title": "Organize the output from Kani to make it more user friendly",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/598",
+      "updatedAt": "2023-05-19T17:39:46Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 585,
+      "title": "Cargo rmc subcommand should be able to use dev-dependencies",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/585",
+      "updatedAt": "2022-11-09T19:29:10Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 578,
+      "title": "Fix is_lvalue",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/578",
+      "updatedAt": "2022-11-09T19:31:46Z",
+      "labels": [
+        "[I] Refactoring / Clean Up"
+      ]
+    },
+    {
+      "number": 568,
+      "title": "Support for unsized rvalues",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/568",
+      "updatedAt": "2022-11-09T19:29:11Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 555,
+      "title": "Fix regression tests that require \"rmc-flags: --no-undefined-function-checks\"",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/555",
+      "updatedAt": "2026-04-01T01:54:59Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 450,
+      "title": "Rethink naming for external C libraries",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/450",
+      "updatedAt": "2026-04-01T01:54:59Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 448,
+      "title": "Handle `Variant` check in projection assertion",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/448",
+      "updatedAt": "2026-04-01T01:54:58Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 434,
+      "title": "Figure out why `trim-diagnostic-paths=no` needs to be passed",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/434",
+      "updatedAt": "2022-11-14T23:18:47Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 427,
+      "title": "Utils code for fat pointers should be refactored",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/427",
+      "updatedAt": "2022-11-15T00:36:22Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 374,
+      "title": "Handle new `caller_location` intrinsic the right way",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/374",
+      "updatedAt": "2026-07-22T19:19:33Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] Unsupported Construct"
+      ]
+    },
+    {
+      "number": 350,
+      "title": "Flag to convert RMC warnings to errors unless actively ignored.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/350",
+      "updatedAt": "2022-03-16T17:56:09Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 316,
+      "title": "Global ASM is not supported",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/316",
+      "updatedAt": "2026-03-27T19:46:44Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[F] Soundness",
+        "[E] Unsupported Construct"
+      ]
+    },
+    {
+      "number": 314,
+      "title": "Object aliasing violations are not detected",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/314",
+      "updatedAt": "2026-03-27T19:46:44Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[F] Soundness",
+        "[E] Unsupported UB"
+      ]
+    },
+    {
+      "number": 310,
+      "title": "Audit Correctness of CBMC backend",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/310",
+      "updatedAt": "2026-03-27T19:46:43Z",
+      "labels": [
+        "[C] Internal",
+        "[F] Soundness"
+      ]
+    },
+    {
+      "number": 307,
+      "title": "Tracking issue: Tests with default checks disabled",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/307",
+      "updatedAt": "2025-01-24T00:14:49Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 303,
+      "title": "Linking may not follow Rust rules",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/303",
+      "updatedAt": "2026-03-27T19:46:43Z",
+      "labels": [
+        "[F] Soundness",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 302,
+      "title": "Correctness of CBMC Serialization",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/302",
+      "updatedAt": "2026-03-27T19:46:42Z",
+      "labels": [
+        "[F] Soundness",
+        "T-CBMC"
+      ]
+    },
+    {
+      "number": 299,
+      "title": "Audit Vtable generation for dynamic traits",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/299",
+      "updatedAt": "2026-03-27T19:46:42Z",
+      "labels": [
+        "[C] Internal",
+        "[F] Soundness"
+      ]
+    },
+    {
+      "number": 298,
+      "title": "Feature request: detect when Rustc hides UB (undefined behavior) when generating MIR ",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/298",
+      "updatedAt": "2026-03-27T19:46:41Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[F] Soundness"
+      ]
+    },
+    {
+      "number": 297,
+      "title": "Feature request: check for possible UB due to non-determinstic layouts",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/297",
+      "updatedAt": "2026-03-27T19:46:41Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[F] Soundness"
+      ]
+    },
+    {
+      "number": 286,
+      "title": "Add better checks against silent failures for tests that use expected failures.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/286",
+      "updatedAt": "2022-11-14T23:24:39Z",
+      "labels": [
+        "[C] Internal",
+        "[I] CI / Infrastructure"
+      ]
+    },
+    {
+      "number": 285,
+      "title": "Create a mapping from test file names to lines with expected failures.",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/285",
+      "updatedAt": "2022-11-14T23:24:55Z",
+      "labels": [
+        "[C] Internal",
+        "[I] CI / Infrastructure"
+      ]
+    },
+    {
+      "number": 267,
+      "title": "Unimplemented: `catch_unwind` intrinsic",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/267",
+      "updatedAt": "2024-10-02T19:39:32Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] Unsupported Construct"
+      ]
+    },
+    {
+      "number": 221,
+      "title": "`codegen_drop` doesn't handle unwinding",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/221",
+      "updatedAt": "2026-04-01T01:54:58Z",
+      "labels": [
+        "[C] Bug",
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 216,
+      "title": "Confirm that `codegen_ty_ref` does the right thing for `ty::Never`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/216",
+      "updatedAt": "2022-11-14T23:25:48Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 215,
+      "title": "Confirm that `codegen_ty_ref` does the right thing for `ty::FnDef`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/215",
+      "updatedAt": "2022-11-14T23:25:55Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 214,
+      "title": "Confirm that `codegen_ty_ref` does the right thing for `ty::FnPtr`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/214",
+      "updatedAt": "2025-01-24T00:12:59Z",
+      "labels": [
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 190,
+      "title": "Issues with failure traces on regression tests",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/190",
+      "updatedAt": "2022-11-14T23:27:13Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 183,
+      "title": "Give MIR temporaries better pretty names when possible",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/183",
+      "updatedAt": "2022-11-14T23:27:37Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] User Experience"
+      ]
+    },
+    {
+      "number": 118,
+      "title": "Standardize verifier intrinsics",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/118",
+      "updatedAt": "2022-11-14T23:30:52Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 73,
+      "title": "Unsupported tests for foreign items",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/73",
+      "updatedAt": "2026-04-01T01:54:57Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 72,
+      "title": "Support for variadic `extern` function calls",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/72",
+      "updatedAt": "2026-04-01T01:54:57Z",
+      "labels": [
+        "[C] Bug"
+      ]
+    },
+    {
+      "number": 65,
+      "title": "Cleanup: Codegen allocation code",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/65",
+      "updatedAt": "2022-11-14T23:24:11Z",
+      "labels": [
+        "[I] Refactoring / Clean Up",
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 57,
+      "title": "Additional test cases for ProjectionElement::ConstantIndex",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/57",
+      "updatedAt": "2022-11-14T23:31:31Z",
+      "labels": [
+        "[C] Internal",
+        "[I] CI / Infrastructure"
+      ]
+    },
+    {
+      "number": 48,
+      "title": "Refactor: review `codegen_alloc_in_memory`",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/48",
+      "updatedAt": "2022-11-14T23:24:10Z",
+      "labels": [
+        "[I] Refactoring / Clean Up",
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 47,
+      "title": "Reorganize the current test folder structure",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/47",
+      "updatedAt": "2024-10-02T19:21:15Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 45,
+      "title": "Cleanup: consistent names for typing contexts",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/45",
+      "updatedAt": "2025-05-12T14:34:42Z",
+      "labels": [
+        "[I] Refactoring / Clean Up",
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 41,
+      "title": "Ensure that every `codegen_unimplemented` feature has a matching run-make test",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/41",
+      "updatedAt": "2022-11-09T19:28:33Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 25,
+      "title": "Extend unstable atomic tests with generic types",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/25",
+      "updatedAt": "2022-11-14T23:24:09Z",
+      "labels": [
+        "[I] Refactoring / Clean Up",
+        "[C] Internal"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Find a more elegant replacement for the `codegen_simple_intrinsic` macro",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/5",
+      "updatedAt": "2022-11-09T19:43:57Z",
+      "labels": [
+        "[I] Refactoring / Clean Up"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "`Option<&foo>` does not decay to `*foo` in extern C mode",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/3",
+      "updatedAt": "2026-04-01T01:54:57Z",
+      "labels": [
+        "[C] Bug",
+        "[C] Feature / Enhancement"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Add support for inline ASM",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/2",
+      "updatedAt": "2024-12-29T18:25:18Z",
+      "labels": [
+        "[C] Feature / Enhancement",
+        "[E] Unsupported Construct"
+      ]
+    },
+    {
+      "number": 1,
+      "title": "Consider having our own CBMC mode instead of just using \"C\"",
+      "state": "open",
+      "url": "https://github.com/model-checking/kani/issues/1",
+      "updatedAt": "2022-11-14T23:31:51Z",
+      "labels": [
+        "[C] Feature / Enhancement"
+      ]
+    }
+  ]
+}

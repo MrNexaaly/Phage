@@ -1,0 +1,85 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "counterexample",
+  "detail": "Rust panic call _RNvNtNtCsevLNFiNqfJP_4core9panicking11panic_const24panic_const_add_overflow at LLVM line 20",
+  "source": "/home/zero/Dev/Nexaaly/Phage/examples/overflow.rs",
+  "function": "phage_target",
+  "rustc": "rustc 1.99.0 (b940084d7 2026-09-28)\nbinary: rustc\ncommit-hash: b940084d7eb6a299eb4bfeb8e34901bc051e7ac4\ncommit-date: 2026-09-28\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.0\nLLVM version: 23.1.1",
+  "compilerPath": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc",
+  "compilerSysroot": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "artifactSha256": "7d8e0ec5da30d3983901df7b6c52282aa6cd3e90a78734bbf10b6cf4741a7d90",
+  "llvmSha256": "7d8e0ec5da30d3983901df7b6c52282aa6cd3e90a78734bbf10b6cf4741a7d90",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/examples/overflow.rs",
+      "sha256": "cd8218e082801dad32acef1ae3526f8eb7509a7c1659f1e5e3d2f5a8aef77d2f"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/target/release/phage",
+      "sha256": "57402fafabb9bdccf4e1f1f149366ea3c74f02fda96c546949418574a6032061"
+    },
+    {
+      "path": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "f3834d26669b03f6855fa54bd2381443123e860167bc0c7a8dd137e5cf6e5e4f"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 0,
+  "states": 2,
+  "queries": 4,
+  "elapsedSeconds": 0.371264,
+  "solverChecks": 4,
+  "solverAssertions": 5,
+  "solverWallSeconds": 0.012354,
+  "diagnostics": [
+    {
+      "code": "rustPanic",
+      "message": "Rust panic call _RNvNtNtCsevLNFiNqfJP_4core9panicking11panic_const24panic_const_add_overflow at LLVM line 20",
+      "llvmLine": 20,
+      "mirLine": null,
+      "source": {
+        "file": "/home/zero/Dev/Nexaaly/Phage/examples/overflow.rs",
+        "line": 4,
+        "column": 16
+      }
+    }
+  ],
+  "slowestQuerySeconds": 0.011473,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "x"
+  ],
+  "model": "((input0 #xff))\n",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [
+    "core bodies come from the rustc sysroot's embedded LLVM bitcode"
+  ],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

@@ -1,0 +1,8 @@
+run: results/1790773917877392613-2800796
+unknown: unmodeled call external_result at LLVM line 9
+function: ruhealth_target | completed paths: 0 | states: 1 | solver queries: 1 | elapsed: 0.064s
+[unsupportedCall] /home/zero/Dev/Nexaaly/RuHealth/examples/unsupported.rs:8:14
+slowest query: 0.008s (path entering block start)
+solver: 1 checks, 1 assertions, 0.008s
+artifact: results/1790773917877392613-2800796/artifact.ll | block visit bound: 32
+report: results/1790773917877392613-2800796/RESULT.json

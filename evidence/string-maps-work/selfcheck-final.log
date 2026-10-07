@@ -1,0 +1,12 @@
+cache: original: unknown-timeout (expected proved) 180.2s FAIL
+cache: wrong value returned from cache: unknown-timeout (expected counterexample) 180.0s FAIL
+transfer: original: proved (expected proved) 2.2s ok
+transfer: bvor known zeros: counterexample (expected counterexample) 2.0s ok
+transfer: bvadd lower bound: counterexample (expected counterexample) 1.7s ok
+transfer: bvashr sign fill: counterexample (expected counterexample) 0.3s ok
+transfer: add_carry carry-in: counterexample (expected counterexample) 1.9s ok
+transfer: bvmul trailing zeros: counterexample (expected counterexample) 1.6s ok
+transfer: not lower bound: counterexample (expected counterexample) 0.9s ok
+literal: original: proved (expected proved) 8.8s ok
+literal: hex digits read as decimal: counterexample (expected counterexample) 0.5s ok
+selfcheck: 2 failed; work in /home/zero/.cache/phage/selfcheck/1790875911430162769

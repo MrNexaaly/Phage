@@ -1,0 +1,391 @@
+{
+  "platform": "Linux-6.18.21-nexaOS-x86_64-with-glibc2.44",
+  "processor": "",
+  "kani": "Kani Rust Verifier 0.68.0 (cargo plugin)\nCBMC 6.11.0",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "sourceSha256": {
+    "/home/zero/Dev/Nexaaly/Phage/src/symbols.rs": "511df7a2d5a0268a7fee9e026414236d239b073a79ba7de2e5757907d52f8a30",
+    "/home/zero/Dev/Nexaaly/Phage/src/program.rs": "391f84a2e39c3288915ec0012db138ee08dad54272b7e9ec10cad30659d0bd6f",
+    "/home/zero/Dev/Nexaaly/Phage/src/library.rs": "aa7fc1f80dfbe5ad13240c76e1a4f4b73d82d33ec7bf9849e351ae27c3702bc9",
+    "/home/zero/Dev/Nexaaly/Phage/src/engine.rs": "ecdc56d308356dc3ecde1a9e234132a4dcb89d9ace2886d4533a58dee8a0f916",
+    "/home/zero/Dev/Nexaaly/Phage/src/heap.rs": "42fcb7437744093187eec1c661ce5080e0b1a2f19aa94c9917355e3de1e86872",
+    "/home/zero/Dev/Nexaaly/Phage/src/memory.rs": "984e995281027bcee08ba9f137dd6c988dd0a3aab74179a29bf74b7acfbeb467",
+    "/home/zero/Dev/Nexaaly/Phage/src/solver.rs": "d0e043f2f85e03b39e0725f05863b0320da165f4c30db08c730bd0b3e7dde3d4",
+    "/home/zero/Dev/Nexaaly/Phage/src/canonical.rs": "24ff71ada84bc6fd70cfee9149c27069de2333e0512083d1821c57903ca764d0",
+    "/home/zero/Dev/Nexaaly/Phage/src/intrinsics.rs": "d598396d0de041628d99677f495195195460223293a490abb7523ba1aa3573bc",
+    "/home/zero/Dev/Nexaaly/Phage/src/environment.rs": "ec7362d443a27e27fde9e4814887cccfa9ce5f67b034a0e5f2693f5662931a3d",
+    "/home/zero/Dev/Nexaaly/Phage/src/ir.rs": "2462f69c479f82902e3dbe626f4292d05033fc8a4d8641344d4aa9e10d808719",
+    "/home/zero/Dev/Nexaaly/Phage/src/partial.rs": "a55714bc930d50d28d5580a6f7d1b5cb1435602807cef29f3df8cbdb50eca151",
+    "/home/zero/Dev/Nexaaly/Phage/src/layout.rs": "fef96c17c4507ad72ba4175b64c81ecd1379b89b64fbc2825e1df7645320c9f7",
+    "/home/zero/Dev/Nexaaly/Phage/src/constants.rs": "c5f5708d3963e6c72adc642abbda767b3165469f628bd8f9a4f03cabe4a538e8",
+    "/home/zero/Dev/Nexaaly/Phage/src/atomics.rs": "7fe5847e16bed0698fe98b1eb19b9adfb352543abe4ca365613595eb8f1d778b",
+    "/home/zero/Dev/Nexaaly/Phage/src/bytes.rs": "d66e6ec1249ba5a7ee9e5033fec78eb4785080dc0a004ea9f48d98ce6ab715ee",
+    "/home/zero/Dev/Nexaaly/Phage/src/debug.rs": "a69e0e93317655d4f79120d1a27d8ad9ee2da1665e7f58146638035f6831fb41",
+    "/home/zero/Dev/Nexaaly/Phage/src/ground.rs": "d51d96fa658d2737d7ac31ed5a614c3b2b7c5402a89fd365ee30a145293f5997",
+    "/home/zero/Dev/Nexaaly/Phage/src/vectors.rs": "db52b0209741c16d9a8be2b20d2dec47bc4d4dbdda1dbb74b5c08968ff0d8393",
+    "/home/zero/Dev/Nexaaly/Phage/src/execute.rs": "a13e927036777dea851d3c5f3f39b088175d115e9a79c71ead2c921e3d745094",
+    "/home/zero/Dev/Nexaaly/Phage/src/diagnostics.rs": "76f9e9074bcfdb0fe35c97d2482f5032e76e82238b9d2b327d508ddd045dc50c",
+    "/home/zero/Dev/Nexaaly/Phage/src/floats.rs": "63704b3285a506ceed25b7b2c955a0f5cef42f1fef8fa55ba3f0dc46304eedd0",
+    "/home/zero/Dev/Nexaaly/Phage/src/report.rs": "230c6f1733d41f14125ca3a7d42c922263e43002ead80770aecc42422fe7efb7",
+    "/home/zero/Dev/Nexaaly/Phage/src/opaque.rs": "2ee547999338add975affdda86d8f4dedfb5255b1bdf1df230d9f6bf33666662",
+    "/home/zero/Dev/Nexaaly/Phage/src/value.rs": "e2b155833e6cb84e11a8efe459a21e866ee96319e19b03369d174c6f87c1fefa",
+    "/home/zero/Dev/Nexaaly/Phage/src/operands.rs": "00b55d02f972dc844324f83ae25f14ba33a8c8cc8a09d18277c677f5d1631cd8",
+    "/home/zero/Dev/Nexaaly/Phage/src/pointers.rs": "859df133e1eeb1a9ea62086c74f8ba31c32870f9bdea8735fd2d3ee23539f9c1",
+    "/home/zero/Dev/Nexaaly/Phage/src/main.rs": "a730c4df54eadadd7d0428fd057e35dba95d0f4e31063a967c0800f136e97623",
+    "/home/zero/Dev/Nexaaly/Phage/src/calls.rs": "66e32ede6c96b448c2f0d45f22539141a524eaca52bf098b4e8d270ff32f1981",
+    "/home/zero/Dev/Nexaaly/Phage/src/knownbits.rs": "3d08f20aa046e4afb2e40e0d39408be74b1b4b6d516d489175a576529b56d0af",
+    "/home/zero/Dev/Nexaaly/Phage/src/floats/tests.rs": "6acc223887b4222eabb263d4dec56bfcc675c66293d3fb531205414e9c2d373e",
+    "/home/zero/Dev/Nexaaly/Phage/src/environment/tests.rs": "b3574fabbea71a3c7d473e55951487ae56868275bd57974acfe55b35de530441",
+    "/home/zero/Dev/Nexaaly/Phage/src/knownbits/tests.rs": "0958f491e15a08ef1d9abee7dddf4561b5553d24431b74653f8289dbab6213dc",
+    "/home/zero/Dev/Nexaaly/Phage/src/knownbits/rewrite.rs": "49352bc905875f42eb004bf6e5955b2f1c27638adde6d25dd8bbb7a901f4d4ec",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/collections.rs": "0fd2f7efa088129fce305cadecbe3797d0318d6b5885a98a78eb226e867a4d8a",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/models.rs": "4cb40c686f2fad27d0049741858b0b1882c20545004f1f108703066d6b8a91c1",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/frontend.rs": "fec9ac7fb11d0518b19c9c4b9531a209c83e71db5a2db26626a58bcad2717d92",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/parse.rs": "47ec8f89983c9d7e9ac3095e4bb2e17d79bdb1458fe69fc97b79c0e0c1a8beba",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/registry.rs": "58a319e5578a07747415007c488c7da862d725c9e3d5b14aadc5f0bec34aac56",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/steps.rs": "3a9915df98291b9c5b9e4cc2dbe838bcfd067245346727e34bcbd1df6ce11cbb",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/run.rs": "72696a7f637c49df7e087f343d3aaff259f6e8de54b0ce0f30e5b65cd1df7304",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/mod.rs": "54588bf3ccbe488c636fe11573a23e534f6b1f8eaea5eb118d0424366cd80060",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/places.rs": "7b6acfd1d9c6b301b1ee5e960d5a9dd8af93a36f50ec9d3ee51eef6b7fe2333a",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/eval.rs": "ed58a532076b91986b80b998e5e416ad0c5791b7b30b6cdc570fce927a35dd79",
+    "/home/zero/Dev/Nexaaly/Phage/src/solver/slice.rs": "0d7a2375f36b5f1f654b29b385243719057844d110013264a35588820f34aa93",
+    "/home/zero/Dev/Nexaaly/Phage/src/solver/tests.rs": "2ee52123c014a30b7d8b387f39302f6fbe16aa81f6f4fd0a7abe135064f397e9",
+    "/home/zero/Dev/Nexaaly/Phage/src/heap/tests.rs": "4aed3b00d3500c49df1571406f4b55b16c2670b47519a60ae2962f6bcef41c4a",
+    "/home/zero/Dev/Nexaaly/Phage/src/heap/provenance_tests.rs": "fccd615775394e2347c85be441bff35420401052a82ad5c63d81f7d8a9133593",
+    "/home/zero/Dev/Nexaaly/Phage/src/intrinsics/tests.rs": "3c8ff4bc7454ab2a3b1bd13f1e6a0882d18e86d9845bcd52a52592ad2846734c",
+    "/home/zero/Dev/Nexaaly/Phage/src/calls/tests.rs": "59c84afc3729ea9e49cecb4027fb0c835bcd9385186e7941fc4e8a238c3e3f70",
+    "/home/zero/Dev/Nexaaly/Phage/src/engine/repomap_tests.rs": "1c4faecd5bf2cfc59d25882f373a3ac96b775f7b7718706369f4f7ad864c85af",
+    "/home/zero/Dev/Nexaaly/Phage/src/engine/tests.rs": "ad969de0624baa3eee3258a49d6c5e4d0d1310a7de7d85c160d565b19eaae0e3",
+    "/home/zero/Dev/Nexaaly/Phage/comparison/src/lib.rs": "6b1015b180530e8af69f4f1735f7473ce98df4c5d2c9688938bc4ade1f46e25e",
+    "/home/zero/Dev/Nexaaly/Phage/tools/compare_kani.py": "4311a6c0e6659028806c45adfa6e0a087b91bba75a3bbc5d8cfa7316110d7a8b",
+    "/home/zero/Dev/Nexaaly/Phage/Cargo.toml": "6a956e551d227191b8ec013593808af29bfc78cb2879c6ce0f7137b3128dcecd",
+    "/home/zero/Dev/Nexaaly/Phage/comparison/Cargo.toml": "a3059f25e347984a8b9d1f9afe77135eb1239e50656f63fa2e775675da3f0acf",
+    "/home/zero/Dev/Nexaaly/Phage/target/release/phage": "47399cdbb4f26adcb27eed33cc06f8c5d4d8650301abfb0e2d78ad89180dcf77",
+    "/home/zero/Dev/Nexaaly/Phage/examples/string-map.rs": "440ea29d23e140660c433a6de1fada49c6a39f36f1e76e1597711e50a689de5f",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/huffman.rs": "6368eb7e52effd73a3e5e011f9286e17026a1f0db6a5b86e77427ddbb7b74b70",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/table.rs": "202030730c82ff287d5c13b2636066acfb0d009208929b22d88e96cc0368b07f",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/encoder.rs": "a31d61f7920d627ffebbbd6c0337fd60bb6ad17b5fc8f452605a9d03e5f86f55",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/tables.rs": "32964a232d8ca23940544576729ec906e901df775b7c022eaa911ee789058ab5",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/mod.rs": "f071e61537cc86949b061b399f7b47e9cf192e9eec56e32be0eab6eff9a5a2b3",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/decoder.rs": "183d3f0662fb97a804f2b70d073bd92a26380087f83353eade3a5bdc587126df",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/huffman.rs": "6368eb7e52effd73a3e5e011f9286e17026a1f0db6a5b86e77427ddbb7b74b70",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/table.rs": "202030730c82ff287d5c13b2636066acfb0d009208929b22d88e96cc0368b07f",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/encoder.rs": "a31d61f7920d627ffebbbd6c0337fd60bb6ad17b5fc8f452605a9d03e5f86f55",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/tables.rs": "32964a232d8ca23940544576729ec906e901df775b7c022eaa911ee789058ab5",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/mod.rs": "4beb2e2659d80146be95c4e9e553f7c4095f6cbc6f3cda4736702ea8e4a57951",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/decoder.rs": "183d3f0662fb97a804f2b70d073bd92a26380087f83353eade3a5bdc587126df",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-quic/src/varint.rs": "b5946c35f6705de501d649b271404dc3fff4566540c6a8558b03f096f398d911",
+    "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/phage-before": "7373a4f5946d9ba72f139628f4c3a21913ee96aa1de42e4e47d750ae812182b9"
+  },
+  "cpuAffinity": null,
+  "hostCpuPressureBefore": "some avg10=0.00 avg60=1.34 avg300=3.81 total=2992037403\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+  "hostLoadBefore": [
+    50.56298828125,
+    173.4248046875,
+    118.587890625
+  ],
+  "repeats": 1,
+  "timeoutSeconds": 60,
+  "timingScope": "full CLI process wall time; one unmeasured warmup per tool/case retained",
+  "runs": [
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-before",
+        "check",
+        "examples/string-map.rs"
+      ],
+      "exit": 2,
+      "wallSeconds": 6.402197688992601,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-baseline-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790875911563901366-3039671/RESULT.json",
+      "solverSeconds": 5.866693,
+      "status": "unknown",
+      "case": "string-map",
+      "warmup": true
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/string-map.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 17.58723545097746,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-phage-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790875917966948595-3042887/RESULT.json",
+      "solverSeconds": 16.924284,
+      "status": "proved",
+      "case": "string-map",
+      "warmup": true
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "string-map",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": null,
+      "wallSeconds": 60.05821146100061,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-kani-warmup.log",
+      "solverSeconds": null,
+      "status": "unknown-timeout",
+      "case": "string-map",
+      "warmup": true
+    },
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-before",
+        "check",
+        "examples/string-map.rs"
+      ],
+      "exit": 2,
+      "wallSeconds": 5.114614038961008,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-baseline-0.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790875995614493390-3049545/RESULT.json",
+      "solverSeconds": 4.645623,
+      "status": "unknown",
+      "case": "string-map",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/string-map.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 16.50600904301973,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-phage-0.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790876000729846542-3050170/RESULT.json",
+      "solverSeconds": 15.878243,
+      "status": "proved",
+      "case": "string-map",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "string-map",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": null,
+      "wallSeconds": 60.058725733018946,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-kani-0.log",
+      "solverSeconds": null,
+      "status": "unknown-timeout",
+      "case": "string-map",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-before",
+        "check",
+        "examples/string-map.rs",
+        "--function",
+        "string_map_bad"
+      ],
+      "exit": 2,
+      "wallSeconds": 5.823332898959052,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-bad-baseline-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790876077297257092-3054594/RESULT.json",
+      "solverSeconds": 5.246358,
+      "status": "unknown",
+      "case": "string-map-bad",
+      "warmup": true
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/string-map.rs",
+        "--function",
+        "string_map_bad"
+      ],
+      "exit": 1,
+      "wallSeconds": 7.573469438008033,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-bad-phage-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790876083120119111-3055062/RESULT.json",
+      "solverSeconds": 7.057697,
+      "status": "counterexample",
+      "case": "string-map-bad",
+      "warmup": true
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "string-map-bad",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": null,
+      "wallSeconds": 60.05978820100427,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-bad-kani-warmup.log",
+      "solverSeconds": null,
+      "status": "unknown-timeout",
+      "case": "string-map-bad",
+      "warmup": true
+    },
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-before",
+        "check",
+        "examples/string-map.rs",
+        "--function",
+        "string_map_bad"
+      ],
+      "exit": 2,
+      "wallSeconds": 5.196059643989429,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-bad-baseline-0.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790876150754346912-3057803/RESULT.json",
+      "solverSeconds": 4.645677,
+      "status": "unknown",
+      "case": "string-map-bad",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/string-map.rs",
+        "--function",
+        "string_map_bad"
+      ],
+      "exit": 1,
+      "wallSeconds": 8.249628957011737,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-bad-phage-0.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790876155950786596-3058267/RESULT.json",
+      "solverSeconds": 7.776366,
+      "status": "counterexample",
+      "case": "string-map-bad",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "string-map-bad",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": null,
+      "wallSeconds": 60.059904289024416,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/string-map-bad-kani-0.log",
+      "solverSeconds": null,
+      "status": "unknown-timeout",
+      "case": "string-map-bad",
+      "trial": 0,
+      "warmup": false
+    }
+  ],
+  "summaries": [
+    {
+      "case": "string-map",
+      "tool": "baseline",
+      "statuses": [
+        "unknown"
+      ],
+      "medianWallSeconds": 5.114614038961008,
+      "minWallSeconds": 5.114614038961008,
+      "maxWallSeconds": 5.114614038961008
+    },
+    {
+      "case": "string-map",
+      "tool": "phage",
+      "statuses": [
+        "proved"
+      ],
+      "medianWallSeconds": 16.50600904301973,
+      "minWallSeconds": 16.50600904301973,
+      "maxWallSeconds": 16.50600904301973
+    },
+    {
+      "case": "string-map",
+      "tool": "kani",
+      "statuses": [
+        "unknown-timeout"
+      ],
+      "medianWallSeconds": 60.058725733018946,
+      "minWallSeconds": 60.058725733018946,
+      "maxWallSeconds": 60.058725733018946
+    },
+    {
+      "case": "string-map-bad",
+      "tool": "baseline",
+      "statuses": [
+        "unknown"
+      ],
+      "medianWallSeconds": 5.196059643989429,
+      "minWallSeconds": 5.196059643989429,
+      "maxWallSeconds": 5.196059643989429
+    },
+    {
+      "case": "string-map-bad",
+      "tool": "phage",
+      "statuses": [
+        "counterexample"
+      ],
+      "medianWallSeconds": 8.249628957011737,
+      "minWallSeconds": 8.249628957011737,
+      "maxWallSeconds": 8.249628957011737
+    },
+    {
+      "case": "string-map-bad",
+      "tool": "kani",
+      "statuses": [
+        "unknown-timeout"
+      ],
+      "medianWallSeconds": 60.059904289024416,
+      "minWallSeconds": 60.059904289024416,
+      "maxWallSeconds": 60.059904289024416
+    }
+  ],
+  "hostCpuPressureAfter": "some avg10=0.00 avg60=0.00 avg300=1.32 total=2992817115\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+  "hostLoadAfter": [
+    6.63037109375,
+    66.12841796875,
+    87.05615234375
+  ]
+}

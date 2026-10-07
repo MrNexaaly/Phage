@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "ruhealth": "0.1.0",
+  "status": "proved",
+  "detail": "all reachable paths within the explicit block bound completed",
+  "source": "/home/zero/Dev/Nexaaly/RuHealth/examples/issue-4876-const-generics.rs",
+  "function": "ruhealth_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "llvmSha256": "4de9ca3073974e14bb8cd3c4a8d51e9b34fd4057bb36d46f4eff0cace2fcc9c7",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/examples/issue-4876-const-generics.rs",
+      "sha256": "cf55d9b9434191172aafc8c91ecf35b4ec7388a2da6347b1f1ab52c00dfa044f"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/target/release/ruhealth",
+      "sha256": "80fc795100ea8bbc5f35ffb6a5e9b8368784eb5f008f53d0e0385f00c2022994"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 1,
+  "states": 1,
+  "queries": 3,
+  "elapsedSeconds": 0.064581,
+  "solverChecks": 1,
+  "solverAssertions": 1,
+  "solverWallSeconds": 0.008769,
+  "diagnostics": [],
+  "slowestQuerySeconds": 0.008769,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "x"
+  ],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

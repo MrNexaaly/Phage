@@ -1,0 +1,8 @@
+run: results/1790879914639607773-4
+proved: all reachable paths within the explicit block bound completed
+function: phage_target | completed paths: 33 | states: 230 | solver queries: 1104 | elapsed: 2.867s
+assumption: 3 solver queries were decided by a racing fresh Z3 or cvc5 (int-blasting)
+slowest query: 1.072s (path entering block _ZN5check9knownbits9selfcheck5check17h87964cb262bdf1e7E.exit)
+solver: 481 checks, 1125 assertions, 2.460s, 3 interrupted, 0 restarts
+artifact: results/1790879914639607773-4/artifact.ll | block visit bound: 32
+report: results/1790879914639607773-4/RESULT.json

@@ -1,0 +1,7 @@
+string-map baseline: ['unknown'], median 5.115s
+string-map phage: ['proved'], median 16.506s
+string-map kani: ['unknown-timeout'], median 60.059s
+string-map-bad baseline: ['unknown'], median 5.196s
+string-map-bad phage: ['counterexample'], median 8.250s
+string-map-bad kani: ['unknown-timeout'], median 60.060s
+comparison: /home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405

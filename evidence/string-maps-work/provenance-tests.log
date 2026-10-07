@@ -1,0 +1,39 @@
+   Compiling phage v0.1.0 (/home/zero/Dev/Nexaaly/Phage)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.85s
+     Running unittests src/main.rs (target/debug/deps/phage-2caba36495d166fe)
+
+running 8 tests
+proved: all reachable paths within the explicit block bound completed
+unknown: access through a pointer without provenance at LLVM line 18
+proved: all reachable paths within the explicit block bound completed
+unknown: access through a pointer without provenance at LLVM line 15
+counterexample: null or poison pointer dereference at LLVM line 15
+test heap::provenance_tests::residual_slots_do_not_gain_provenance_from_equal_addresses ... ok
+counterexample: property returned false at LLVM line 18
+unknown: access through a pointer without provenance at LLVM line 15
+proved: all reachable paths within the explicit block bound completed
+unknown: state exploration limit reached
+test heap::provenance_tests::symbolic_pointer_loads_select_the_stored_slot ... ok
+proved: all reachable paths within the explicit block bound completed
+counterexample: null or poison pointer dereference at LLVM line 15
+proved: all reachable paths within the explicit block bound completed
+counterexample: property returned false at LLVM line 21
+test heap::provenance_tests::symbolic_whole_integer_copy_preserves_provenance ... ok
+counterexample: property returned false at LLVM line 22
+counterexample: invalid memory read at LLVM line 15
+unknown: access through a pointer without provenance at LLVM line 18
+test heap::provenance_tests::symbolic_fill_invalidates_only_its_written_range ... ok
+proved: all reachable paths within the explicit block bound completed
+counterexample: invalid memory read at LLVM line 14
+test heap::provenance_tests::selected_slots_keep_byte_integrity_poison_and_lifetimes ... ok
+counterexample: invalid memory read at LLVM line 19
+test heap::provenance_tests::realloc_preserves_only_whole_symbolic_slots_in_the_retained_prefix ... ok
+proved: all reachable paths within the explicit block bound completed
+test heap::provenance_tests::symbolic_pointer_stores_replace_only_the_selected_slot ... ok
+unknown: access through a pointer without provenance at LLVM line 19
+proved: all reachable paths within the explicit block bound completed
+unknown: access through a pointer without provenance at LLVM line 17
+test heap::provenance_tests::whole_pointer_copies_support_symbolic_source_destination_and_length ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 137 filtered out; finished in 0.33s
+

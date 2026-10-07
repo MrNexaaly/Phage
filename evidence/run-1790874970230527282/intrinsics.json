@@ -1,0 +1,67 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "proved",
+  "detail": "all reachable paths within the explicit block bound completed",
+  "source": "/home/zero/Dev/Nexaaly/Phage/examples/intrinsics.rs",
+  "function": "phage_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "artifactSha256": "fe9f1d8d63305effe19838c0ec3cfd3277d84c3f547519fbc0dd9396e128a326",
+  "llvmSha256": "fe9f1d8d63305effe19838c0ec3cfd3277d84c3f547519fbc0dd9396e128a326",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/examples/intrinsics.rs",
+      "sha256": "c5667dd5bd4cd9c2aaa95eebc6c50da59fcc3234edc2abce69dd0ee2305d3fe6"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/target/release/phage",
+      "sha256": "b72ff22a0c8358c7e1cd65bfaa4760bd7307932b1f03af41fc044dbcd339a73e"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 37,
+  "states": 320,
+  "queries": 1076,
+  "elapsedSeconds": 0.339479,
+  "solverChecks": 752,
+  "solverAssertions": 1240,
+  "solverWallSeconds": 0.195995,
+  "diagnostics": [],
+  "slowestQuerySeconds": 0.009715,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "0",
+    "y",
+    "k"
+  ],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

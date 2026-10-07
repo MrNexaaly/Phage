@@ -1,0 +1,8 @@
+run: results/1790774057625204329-2830317
+counterexample: Rust panic call _ZN4core9panicking5panic17h8bbbe005ba322b34E at LLVM line 18
+function: ruhealth_target | completed paths: 0 | states: 2 | solver queries: 4 | elapsed: 0.076s
+artifact: results/1790774057625204329-2830317/artifact.ll | block visit bound: 32
+report: results/1790774057625204329-2830317/RESULT.json
+input mapping: input0=x
+((input0 #xff))
+

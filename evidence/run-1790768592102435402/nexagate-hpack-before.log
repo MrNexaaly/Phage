@@ -1,0 +1,21 @@
+run: results/1790768593952770140-1434147
+counterexample: Rust panic call _ZN4core9panicking11panic_const24panic_const_shl_overflow17hc69eab5018f16ee8E at LLVM line 677
+function: ruhealth_target | completed paths: 29 | states: 217 | solver queries: 554 | elapsed: 60.615s
+artifact: results/1790768593952770140-1434147/artifact.ll | block visit bound: 32
+report: results/1790768593952770140-1434147/RESULT.json
+input mapping: input0=a, input1=b, input2=c, input3=d, input4=e, input5=f, input6=g, input7=h, input8=i, input9=j, input10=k, input11=l, input12=len, input13=prefix
+((input0 #x03)
+(input1 #x80)
+(input2 #x80)
+(input3 #x81)
+(input4 #x80)
+(input5 #x80)
+(input6 #x80)
+(input7 #x80)
+(input8 #x80)
+(input9 #x80)
+(input10 #x80)
+(input11 #x00)
+(input12 #x0c)
+(input13 #x01))
+

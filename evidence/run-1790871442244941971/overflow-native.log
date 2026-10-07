@@ -1,0 +1,5 @@
+confirmed: Rust panicked
+
+thread 'main' (2876740) panicked at /home/zero/Dev/Nexaaly/Phage/results/1790871442348370156-2876650/sources/home/zero/Dev/Nexaaly/Phage/examples/overflow.rs:4:16:
+attempt to add with overflow
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

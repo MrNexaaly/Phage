@@ -1,0 +1,52 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "unknown",
+  "detail": "reachable block loop of phage_target exceeds visit bound 2",
+  "source": "/home/zero/Dev/Nexaaly/Phage/fixtures/reachable-loop.ll",
+  "function": "phage_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [],
+  "artifactSha256": "6da71f66322ac4bf92b6291e0dd3e89e32f0f6140a886326ef78669fde6c6da8",
+  "llvmSha256": "6da71f66322ac4bf92b6291e0dd3e89e32f0f6140a886326ef78669fde6c6da8",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/fixtures/reachable-loop.ll",
+      "sha256": "6da71f66322ac4bf92b6291e0dd3e89e32f0f6140a886326ef78669fde6c6da8"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/target/release/phage",
+      "sha256": "06c491c4e2962d36f5863eb5648b10b65123bf8d22ab2d681f7907db746e5299"
+    }
+  ],
+  "blockVisitBound": 2,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 0,
+  "states": 4,
+  "queries": 4,
+  "elapsedSeconds": 0.043014,
+  "solverChecks": 4,
+  "solverAssertions": 4,
+  "solverWallSeconds": 0.013069,
+  "diagnostics": [
+    {
+      "code": "blockLimit",
+      "message": "reachable block loop of phage_target exceeds visit bound 2",
+      "llvmLine": null,
+      "mirLine": null,
+      "source": null
+    }
+  ],
+  "slowestQuerySeconds": 0.012905,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

@@ -1,0 +1,13 @@
+run: results/1791179245099075887-1733368
+counterexample: Rust panic call _ZN4core9panicking11panic_const24panic_const_add_overflow17h26fd19dc5797cca9E at LLVM line 20
+function: phage_target | completed paths: 0 | states: 2 | solver queries: 4 | elapsed: 0.374s
+assumption: core bodies come from the rustc sysroot's embedded LLVM bitcode
+[rustPanic] /home/zero/Dev/Nexaaly/Phage/examples/overflow.rs:4:16
+slowest query: 0.014s (path entering block start)
+solver: 4 checks, 5 assertions, 0.015s, 0 interrupted, 0 restarts
+memory budget: 8192 MiB (sampled process-tree RSS)
+artifact: results/1791179245099075887-1733368/artifact.ll | block visit bound: 32
+report: results/1791179245099075887-1733368/RESULT.json
+input mapping: input0=x
+((input0 #xff))
+

@@ -1,0 +1,5 @@
+confirmed: Rust panicked
+
+thread 'main' (3042708) panicked at /home/zero/Dev/Nexaaly/Phage/results/1790875917407148173-3042612/sources/home/zero/Dev/Nexaaly/Phage/examples/issue-4874-false-assert.rs:8:14:
+assertion failed: x != 255
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

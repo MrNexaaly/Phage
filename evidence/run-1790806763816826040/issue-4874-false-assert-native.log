@@ -1,0 +1,5 @@
+confirmed: Rust panicked
+
+thread 'main' (814650) panicked at /home/zero/Dev/Nexaaly/RuHealth/results/1790806766794089881-814566/sources/home/zero/Dev/Nexaaly/RuHealth/examples/issue-4874-false-assert.rs:8:14:
+assertion failed: x != 255
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

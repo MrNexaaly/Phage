@@ -1,0 +1,63 @@
+{
+  "scope": "bounded compiled sequential LLVM; two five-byte String keys selected by key parity; all key/value u8 inputs",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "kani": "Kani Rust Verifier 0.68.0 (cargo plugin)\nCBMC 6.11.0",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "positiveReport": "/home/zero/Dev/Nexaaly/Phage/results/1790879843771718208-3/RESULT.json",
+  "negativeReport": "/home/zero/Dev/Nexaaly/Phage/results/1790879843770912894-3/RESULT.json",
+  "comparison": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790875911444622405/RESULT.json",
+  "nativeInputsPerProperty": 65536,
+  "nativeReplay": "confirmed false property for key=0,value=255",
+  "unitTests": 147,
+  "defaultCacheSelfcheck": "proved; wrong-value mutant counterexample",
+  "fullSimplifySelfcheck": "original and identity mutant runner timeouts at 180 seconds, inconclusive",
+  "inputBounds": {
+    "key": "0..=255",
+    "value": "0..=255"
+  },
+  "bounds": {
+    "blockVisitBound": 32,
+    "stateLimit": 10000,
+    "queryTimeoutMs": 15000,
+    "callDepth": 32
+  },
+  "sourceSha256": {
+    "src/heap.rs": "42fcb7437744093187eec1c661ce5080e0b1a2f19aa94c9917355e3de1e86872",
+    "src/memory.rs": "984e995281027bcee08ba9f137dd6c988dd0a3aab74179a29bf74b7acfbeb467",
+    "src/bytes.rs": "d66e6ec1249ba5a7ee9e5033fec78eb4785080dc0a004ea9f48d98ce6ab715ee",
+    "src/program.rs": "391f84a2e39c3288915ec0012db138ee08dad54272b7e9ec10cad30659d0bd6f",
+    "src/heap/provenance_tests.rs": "2815a0d2ea3d53d38a1cff2f25baa81046bf6a17e421fc53b1531d0601a51841",
+    "tools/selfcheck.py": "993fa04f621cb20efd330b7950864b318fcc5c7c64154f7007bad81ad28ffffb",
+    "examples/string-map.rs": "440ea29d23e140660c433a6de1fada49c6a39f36f1e76e1597711e50a689de5f",
+    "src/knownbits.rs": "a292939dc234d59e2d07218786c42fe4839c1d5b868ea1cb94cbf2bbbf89afdb",
+    "src/knownbits/tests.rs": "5a31a86b5de9218ec03849f1470924dc09f746b1f7e54bbbf79d91cd207048b8",
+    "src/operands.rs": "5596ca3385c88788be18e9fcdcccba9b0c9b79b688f719d73e2232c9a6f6bfef",
+    "src/constants.rs": "36ab03d215d6fe37b5779a4e652090ee04111ab77597bee1655d2f90bb30876b",
+    "src/engine/tests.rs": "0e2150800d08895478c4bddb62182067afc237a11d4a7db6bf9f38134a68017c",
+    "target/release/phage": "d8d532eaad8c0e553cc765f3f5d634d0c9c300ccbc82f47eba406d06f66039eb"
+  },
+  "productionComparison": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/RESULT.json",
+  "establishedSelfchecks": "all 11 passed",
+  "issueControls": "all 7 passed",
+  "endToEndExamples": "all 11 passed"
+}

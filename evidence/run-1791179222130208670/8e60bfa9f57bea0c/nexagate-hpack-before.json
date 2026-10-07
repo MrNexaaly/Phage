@@ -1,0 +1,125 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "counterexample",
+  "detail": "Rust panic call _ZN4core9panicking11panic_const24panic_const_shl_overflow17hc69eab5018f16ee8E at LLVM line 677",
+  "source": "/home/zero/Dev/Nexaaly/Phage/examples/nexagate-hpack-before.rs",
+  "function": "phage_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "compilerPath": "/home/zero/.rustup/toolchains/1.94.1-x86_64-unknown-linux-gnu/bin/rustc",
+  "compilerSysroot": "/home/zero/.rustup/toolchains/1.94.1-x86_64-unknown-linux-gnu",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "artifactSha256": "b566a0148de370d615822c2d16fe6054ebc192c9824078b6c7cce52a80ecd919",
+  "llvmSha256": "b566a0148de370d615822c2d16fe6054ebc192c9824078b6c7cce52a80ecd919",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/examples/nexagate-hpack-before.rs",
+      "sha256": "70ec96761015183a3e499244cffcfdcce44b9ab76222d98a48c73f433d871b7c"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/target/release/phage",
+      "sha256": "acb84548f1586eb05c89d2f0bfc211864e5736b0cb89b99fcdc6c508a25a8d01"
+    },
+    {
+      "path": "/home/zero/.rustup/toolchains/1.94.1-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "ef6d716e5d1c6c93def277c0afa037c21e7a74f7de3aed4ee0700646c3301b1d"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/mod.rs",
+      "sha256": "4beb2e2659d80146be95c4e9e553f7c4095f6cbc6f3cda4736702ea8e4a57951"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/huffman.rs",
+      "sha256": "6368eb7e52effd73a3e5e011f9286e17026a1f0db6a5b86e77427ddbb7b74b70"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/table.rs",
+      "sha256": "202030730c82ff287d5c13b2636066acfb0d009208929b22d88e96cc0368b07f"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/decoder.rs",
+      "sha256": "183d3f0662fb97a804f2b70d073bd92a26380087f83353eade3a5bdc587126df"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/encoder.rs",
+      "sha256": "a31d61f7920d627ffebbbd6c0337fd60bb6ad17b5fc8f452605a9d03e5f86f55"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/tables.rs",
+      "sha256": "32964a232d8ca23940544576729ec906e901df775b7c022eaa911ee789058ab5"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "maxMemoryMiB": 8192,
+  "completedPaths": 29,
+  "states": 217,
+  "queries": 490,
+  "elapsedSeconds": 0.614238,
+  "solverChecks": 305,
+  "solverInterrupts": 0,
+  "solverRestarts": 0,
+  "solverAssertions": 493,
+  "solverWallSeconds": 0.087051,
+  "diagnostics": [
+    {
+      "code": "rustPanic",
+      "message": "Rust panic call _ZN4core9panicking11panic_const24panic_const_shl_overflow17hc69eab5018f16ee8E at LLVM line 677",
+      "llvmLine": 677,
+      "mirLine": null,
+      "source": {
+        "file": "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/mod.rs",
+        "line": 78,
+        "column": 18
+      }
+    }
+  ],
+  "slowestQuerySeconds": 0.01037,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "len",
+    "prefix"
+  ],
+  "model": "((input0 #xff)\n(input1 #x80)\n(input2 #x80)\n(input3 #x80)\n(input4 #x80)\n(input5 #x80)\n(input6 #x80)\n(input7 #x80)\n(input8 #x80)\n(input9 #x80)\n(input10 #x80)\n(input11 #x00)\n(input12 #x0c)\n(input13 #x08))\n",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [
+    "core bodies come from the rustc sysroot's embedded LLVM bitcode"
+  ],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

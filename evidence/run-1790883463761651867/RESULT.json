@@ -1,0 +1,74 @@
+[
+  {
+    "case": "safe-add",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.12082905299030244,
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1790883463763061559-3174582/RESULT.json"
+  },
+  {
+    "case": "overflow",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.10566906299209222,
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1790883463887502046-3174627/RESULT.json",
+    "nativeReplayBuildExit": 0,
+    "nativeReplayExit": 0,
+    "solverReplayExit": 0
+  },
+  {
+    "case": "nexagate-hpack-before",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.42173774098046124,
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1790883464112629953-3174708/RESULT.json",
+    "nativeReplayBuildExit": 0,
+    "nativeReplayExit": 0,
+    "solverReplayExit": 0
+  },
+  {
+    "case": "unsupported",
+    "expectedExit": 2,
+    "exit": 2,
+    "wallSeconds": 0.19346681499155238,
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1790883464795626151-3174801/RESULT.json"
+  },
+  {
+    "case": "issue-4874-assert-forms",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.11343462497461587,
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1790883464993276968-3174866/RESULT.json"
+  },
+  {
+    "case": "issue-4874-false-assert",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.11385604197857901,
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1790883465110489838-3174909/RESULT.json",
+    "nativeReplayBuildExit": 0,
+    "nativeReplayExit": 0,
+    "solverReplayExit": 0
+  },
+  {
+    "case": "issue-4876-const-generics",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.12098732800222933,
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1790883465343435624-3174990/RESULT.json"
+  },
+  {
+    "case": "intrinsics",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.3434071079827845,
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1790883465467089562-3175033/RESULT.json"
+  },
+  {
+    "case": "string-map",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 19.793682913004886,
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1790883465814515235-3175076/RESULT.json"
+  }
+]

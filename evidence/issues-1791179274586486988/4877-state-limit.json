@@ -1,0 +1,61 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "unknown",
+  "detail": "state exploration limit reached",
+  "source": "/home/zero/Dev/Nexaaly/Phage/fixtures/reachable-loop.ll",
+  "function": "phage_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "compilerPath": "/home/zero/.rustup/toolchains/1.94.1-x86_64-unknown-linux-gnu/bin/rustc",
+  "compilerSysroot": "/home/zero/.rustup/toolchains/1.94.1-x86_64-unknown-linux-gnu",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [],
+  "artifactSha256": "6da71f66322ac4bf92b6291e0dd3e89e32f0f6140a886326ef78669fde6c6da8",
+  "llvmSha256": "6da71f66322ac4bf92b6291e0dd3e89e32f0f6140a886326ef78669fde6c6da8",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/fixtures/reachable-loop.ll",
+      "sha256": "6da71f66322ac4bf92b6291e0dd3e89e32f0f6140a886326ef78669fde6c6da8"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/target/release/phage",
+      "sha256": "acb84548f1586eb05c89d2f0bfc211864e5736b0cb89b99fcdc6c508a25a8d01"
+    },
+    {
+      "path": "/home/zero/.rustup/toolchains/1.94.1-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "ef6d716e5d1c6c93def277c0afa037c21e7a74f7de3aed4ee0700646c3301b1d"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 1,
+  "queryTimeoutMs": 15000,
+  "maxMemoryMiB": 8192,
+  "completedPaths": 0,
+  "states": 2,
+  "queries": 2,
+  "elapsedSeconds": 0.084428,
+  "solverChecks": 2,
+  "solverInterrupts": 0,
+  "solverRestarts": 0,
+  "solverAssertions": 2,
+  "solverWallSeconds": 0.013252,
+  "diagnostics": [
+    {
+      "code": "stateLimit",
+      "message": "state exploration limit reached",
+      "llvmLine": null,
+      "mirLine": null,
+      "source": null
+    }
+  ],
+  "slowestQuerySeconds": 0.013128,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

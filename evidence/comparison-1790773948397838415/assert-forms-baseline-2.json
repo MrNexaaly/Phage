@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "ruhealth": "0.1.0",
+  "status": "proved",
+  "detail": "all reachable paths within the explicit block bound completed",
+  "source": "/home/zero/Dev/Nexaaly/RuHealth/examples/issue-4874-assert-forms.rs",
+  "function": "ruhealth_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "llvmSha256": "071c5032d90951f78f4bcff1dfcaa13151f6a1c7b01af721fd0453850ca9d25f",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/examples/issue-4874-assert-forms.rs",
+      "sha256": "dfa57d9d5ce352624240949fddf8cc09009763ae907d9471e8bb3786c7fa01f1"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/evidence/improvements/ruhealth-baseline",
+      "sha256": "114f83ada6b5be002b2cc8eb943a753bf75315a7bb1b6830053d27debcfa7488"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 1,
+  "states": 1,
+  "queries": 3,
+  "elapsedSeconds": 0.062953,
+  "inputLabels": [
+    "x"
+  ],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

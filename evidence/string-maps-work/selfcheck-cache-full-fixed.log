@@ -1,0 +1,3 @@
+cache: original: unknown-timeout (expected proved) 180.2s FAIL
+cache: wrong identity through cache: unknown-timeout (expected counterexample) 180.1s FAIL
+selfcheck: 2 failed; work in /home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-work-btree/1790879063123349154

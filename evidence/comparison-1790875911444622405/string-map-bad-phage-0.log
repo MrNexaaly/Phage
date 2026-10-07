@@ -1,0 +1,24 @@
+run: results/1790876155950786596-3058267
+counterexample: property returned false at LLVM line 1996
+function: string_map_bad | completed paths: 0 | states: 141 | solver queries: 595 | elapsed: 8.248s
+assumption: gimli bodies come from the rustc sysroot's embedded LLVM bitcode
+assumption: heap allocation succeeds (the allocator never returns null)
+assumption: mutable statics start at their initializers: a fresh program, as in Kani
+assumption: one thread: a thread-local is the global's own copy
+assumption: std bodies come from the rustc sysroot's embedded LLVM bitcode
+assumption: the OS random source (getrandom) fills the whole buffer with arbitrary bytes
+assumption: values mixed from the OS random source (e.g. hash keys) are uninterpreted functions of their inputs; counterexamples were confirmed with exact semantics
+assumption: 69 solver queries were decided by a racing fresh Z3 or cvc5 (int-blasting)
+[falseProperty] /home/zero/Dev/Nexaaly/Phage/examples/string-map.rs:21:2
+slowest query: 0.904s (instruction at LLVM line 141)
+solver: 207 checks, 3169 assertions, 7.776s, 66 interrupted, 3 restarts
+artifact: results/1790876155950786596-3058267/artifact.ll | block visit bound: 32
+report: results/1790876155950786596-3058267/RESULT.json
+input mapping: input0=key, input1=value
+((input0 #x00)
+ (input1 #xff)
+ (v59 #x0000000000000ffc)
+ (v39 #xfdffffffffffffff))
+placement: v59 = address of heap58 (declared alignment 1); a native run picks its own
+placement: v39 = address of std::@getrandom (declared alignment 1); a native run picks its own
+

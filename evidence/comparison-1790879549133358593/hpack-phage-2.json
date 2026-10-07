@@ -1,0 +1,102 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "proved",
+  "detail": "all reachable paths within the explicit block bound completed",
+  "source": "/home/zero/Dev/Nexaaly/Phage/examples/nexagate-hpack-after.rs",
+  "function": "phage_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "artifactSha256": "4d98b54d3e8da97821b527acbfb875af2ca563cdee342932ff27049d37190ec7",
+  "llvmSha256": "4d98b54d3e8da97821b527acbfb875af2ca563cdee342932ff27049d37190ec7",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/examples/nexagate-hpack-after.rs",
+      "sha256": "77a7f92d57baf2e22a988ebc0d89bc54d795e5ad0b110e9d79e5e1b2d5916fbb"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/target/release/phage",
+      "sha256": "fe1ff5929b5189b082424fd66034ad8d8c39c926388346c9d7e1b605664638d3"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/mod.rs",
+      "sha256": "f071e61537cc86949b061b399f7b47e9cf192e9eec56e32be0eab6eff9a5a2b3"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/huffman.rs",
+      "sha256": "6368eb7e52effd73a3e5e011f9286e17026a1f0db6a5b86e77427ddbb7b74b70"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/table.rs",
+      "sha256": "202030730c82ff287d5c13b2636066acfb0d009208929b22d88e96cc0368b07f"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/decoder.rs",
+      "sha256": "183d3f0662fb97a804f2b70d073bd92a26380087f83353eade3a5bdc587126df"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/encoder.rs",
+      "sha256": "a31d61f7920d627ffebbbd6c0337fd60bb6ad17b5fc8f452605a9d03e5f86f55"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/tables.rs",
+      "sha256": "32964a232d8ca23940544576729ec906e901df775b7c022eaa911ee789058ab5"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 16,
+  "states": 113,
+  "queries": 244,
+  "elapsedSeconds": 0.298745,
+  "solverChecks": 144,
+  "solverAssertions": 234,
+  "solverWallSeconds": 0.037678,
+  "diagnostics": [],
+  "slowestQuerySeconds": 0.011301,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "len",
+    "prefix"
+  ],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

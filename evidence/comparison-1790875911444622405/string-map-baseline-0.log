@@ -1,0 +1,17 @@
+run: results/1790875995614493390-3049545
+unknown: pointer load at a symbolic offset is unsupported at LLVM line 147; pointer load at a symbolic offset is unsupported at LLVM line 147
+function: phage_target | completed paths: 0 | states: 193 | solver queries: 864 | elapsed: 5.112s
+assumption: gimli bodies come from the rustc sysroot's embedded LLVM bitcode
+assumption: heap allocation succeeds (the allocator never returns null)
+assumption: mutable statics start at their initializers: a fresh program, as in Kani
+assumption: one thread: a thread-local is the global's own copy
+assumption: std bodies come from the rustc sysroot's embedded LLVM bitcode
+assumption: the OS random source (getrandom) fills the whole buffer with arbitrary bytes
+assumption: values mixed from the OS random source (e.g. hash keys) are uninterpreted functions of their inputs; counterexamples were confirmed with exact semantics
+assumption: 22 solver queries were decided by a racing fresh Z3 or cvc5 (int-blasting)
+[unsupportedFeature] pointer load at a symbolic offset is unsupported at LLVM line 147
+[unsupportedFeature] pointer load at a symbolic offset is unsupported at LLVM line 147
+slowest query: 0.125s (path entering block bb11.i.i.i.i)
+solver: 240 checks, 3745 assertions, 4.646s, 17 interrupted, 5 restarts
+artifact: results/1790875995614493390-3049545/artifact.ll | block visit bound: 32
+report: results/1790875995614493390-3049545/RESULT.json

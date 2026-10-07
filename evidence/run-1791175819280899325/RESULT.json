@@ -1,0 +1,196 @@
+[
+  {
+    "case": "safe-add",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.09867658300208859,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175819508742192-1426650/RESULT.json"
+  },
+  {
+    "case": "overflow",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.37556296399998246,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175819612810802-1426685/RESULT.json",
+    "nativeReplayBuildExit": 0,
+    "nativeReplayExit": 0,
+    "solverReplayExit": 0
+  },
+  {
+    "case": "nexagate-quic",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.13941703399905236,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175820076419468-1426975/RESULT.json"
+  },
+  {
+    "case": "nexagate-hpack-before",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.6222642329994414,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175820219301292-1427115/RESULT.json",
+    "nativeReplayBuildExit": 0,
+    "nativeReplayExit": 0,
+    "solverReplayExit": 0
+  },
+  {
+    "case": "nexagate-hpack-after",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.29856076299984124,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175821089162658-1427847/RESULT.json"
+  },
+  {
+    "case": "unsupported",
+    "expectedExit": 2,
+    "exit": 2,
+    "wallSeconds": 0.28325005499937106,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175821392353867-1428114/RESULT.json"
+  },
+  {
+    "case": "issue-4874-assert-forms",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.08741620600267197,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175821678766597-1428376/RESULT.json"
+  },
+  {
+    "case": "issue-4874-false-assert",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.3158308700003545,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175821769711733-1428487/RESULT.json",
+    "nativeReplayBuildExit": 0,
+    "nativeReplayExit": 0,
+    "solverReplayExit": 0
+  },
+  {
+    "case": "issue-4876-const-generics",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.08494850800343556,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175822182285234-1428861/RESULT.json"
+  },
+  {
+    "case": "intrinsics",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.25438361399938003,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175822270851248-1428953/RESULT.json"
+  },
+  {
+    "case": "string-map",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 17.29695992699999,
+    "toolchain": "stable-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175822528205559-1429183/RESULT.json"
+  },
+  {
+    "case": "safe-add",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.08695298100064974,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175839830497322-1433184/RESULT.json"
+  },
+  {
+    "case": "overflow",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.35170395399836707,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175839920891579-1433223/RESULT.json",
+    "nativeReplayBuildExit": 0,
+    "nativeReplayExit": 0,
+    "solverReplayExit": 0
+  },
+  {
+    "case": "nexagate-quic",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.13126150599782704,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175840362386163-1433515/RESULT.json"
+  },
+  {
+    "case": "nexagate-hpack-before",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.6157135520006705,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175840497093133-1433660/RESULT.json",
+    "nativeReplayBuildExit": 0,
+    "nativeReplayExit": 0,
+    "solverReplayExit": 0
+  },
+  {
+    "case": "nexagate-hpack-after",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.3082961209984205,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175841385639026-1434420/RESULT.json"
+  },
+  {
+    "case": "unsupported",
+    "expectedExit": 2,
+    "exit": 2,
+    "wallSeconds": 0.2985122729987779,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175841697899831-1434706/RESULT.json"
+  },
+  {
+    "case": "issue-4874-assert-forms",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.08945111700086272,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175842000606345-1434979/RESULT.json"
+  },
+  {
+    "case": "issue-4874-false-assert",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.2905745210009627,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175842093717896-1435095/RESULT.json",
+    "nativeReplayBuildExit": 0,
+    "nativeReplayExit": 0,
+    "solverReplayExit": 0
+  },
+  {
+    "case": "issue-4876-const-generics",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.08759845700114965,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175842471693405-1435475/RESULT.json"
+  },
+  {
+    "case": "intrinsics",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.3181932320003398,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175842563062032-1435566/RESULT.json"
+  },
+  {
+    "case": "string-map",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 21.013129699000274,
+    "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+    "report": "/home/zero/Dev/Nexaaly/Phage/results/1791175842885181454-1435845/RESULT.json"
+  }
+]

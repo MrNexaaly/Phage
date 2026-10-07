@@ -1,0 +1,48 @@
+{
+  "status": "unknown-timeout",
+  "runnerTimeoutSeconds": 180,
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "phageBinarySha256": "47399cdbb4f26adcb27eed33cc06f8c5d4d8650301abfb0e2d78ad89180dcf77",
+  "command": [
+    "target/release/phage",
+    "check",
+    "check.rs",
+    "--maxStates",
+    "10000",
+    "--queryTimeout",
+    "3000"
+  ],
+  "inputBounds": {
+    "v": "0..=255"
+  },
+  "blockVisitBound": 32,
+  "callDepth": 32,
+  "artifact": "/home/zero/.cache/phage/selfcheck/1790875911430162769/cache/mutant0/results/1790876091621990489-3056368/artifact.ll",
+  "artifactSha256": "dc4cc0c7350c6e8a0957546412f1c47d13ff054a759c6d479cd0049444264a0d",
+  "sourceSha256": {
+    "/home/zero/.cache/phage/selfcheck/1790875911430162769/cache/mutant0/check.rs": "3589d0922a206caa034fcfe12be99db5ee41d95a9c8584df1522c523afc19193",
+    "/home/zero/.cache/phage/selfcheck/1790875911430162769/cache/mutant0/knownbits.rs": "abf8f3bd904a6d3e4622be558b1e4a7be1e64a2b7e5a701caa86adaf536b8590",
+    "/home/zero/.cache/phage/selfcheck/1790875911430162769/cache/mutant0/knownbits/rewrite.rs": "49352bc905875f42eb004bf6e5955b2f1c27638adde6d25dd8bbb7a901f4d4ec"
+  }
+}

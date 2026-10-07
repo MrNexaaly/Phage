@@ -1,0 +1,75 @@
+[
+  {
+    "case": "safe-add",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.2068530800170265,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790790487262842344-3938859/RESULT.json"
+  },
+  {
+    "case": "overflow",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.08967899798881263,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790790487470070775-3938928/RESULT.json",
+    "nativeReplayExit": 0
+  },
+  {
+    "case": "nexagate-quic",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.18771310700685717,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790790487693494338-3939103/RESULT.json"
+  },
+  {
+    "case": "nexagate-hpack-before",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 1.1747489680128638,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790790487918917426-3939162/RESULT.json",
+    "nativeReplayExit": 0
+  },
+  {
+    "case": "nexagate-hpack-after",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.9261443819850683,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790790489506213168-3939870/RESULT.json"
+  },
+  {
+    "case": "unsupported",
+    "expectedExit": 2,
+    "exit": 2,
+    "wallSeconds": 0.08091617398895323,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790790490433536511-3940192/RESULT.json"
+  },
+  {
+    "case": "issue-4874-assert-forms",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.07714869899791665,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790790490514488011-3940235/RESULT.json"
+  },
+  {
+    "case": "issue-4874-false-assert",
+    "expectedExit": 1,
+    "exit": 1,
+    "wallSeconds": 0.06802088199765421,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790790490591856009-3940271/RESULT.json",
+    "nativeReplayExit": 0
+  },
+  {
+    "case": "issue-4876-const-generics",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.4101526740123518,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790790490779245793-3940374/RESULT.json"
+  },
+  {
+    "case": "intrinsics",
+    "expectedExit": 0,
+    "exit": 0,
+    "wallSeconds": 0.6387935600068886,
+    "report": "/home/zero/Dev/Nexaaly/RuHealth/results/1790790491703396341-3940792/RESULT.json"
+  }
+]

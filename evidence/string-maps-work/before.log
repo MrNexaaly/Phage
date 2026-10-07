@@ -1,0 +1,14 @@
+run: results/1790873969998145531-2998954
+unknown: symbolic allocation size is unsupported at gimli LLVM line 4169
+function: phage_target | completed paths: 0 | states: 20 | solver queries: 77 | elapsed: 0.800s
+assumption: gimli bodies come from the rustc sysroot's embedded LLVM bitcode
+assumption: mutable statics start at their initializers: a fresh program, as in Kani
+assumption: one thread: a thread-local is the global's own copy
+assumption: std bodies come from the rustc sysroot's embedded LLVM bitcode
+assumption: the OS random source (getrandom) fills the whole buffer with arbitrary bytes
+assumption: values mixed from the OS random source (e.g. hash keys) are uninterpreted functions of their inputs; counterexamples were confirmed with exact semantics
+[unsupportedFeature] symbolic allocation size is unsupported at gimli LLVM line 4169
+slowest query: 0.046s (instruction at LLVM line 4169)
+solver: 29 checks, 368 assertions, 0.444s, 0 interrupted, 0 restarts
+artifact: results/1790873969998145531-2998954/artifact.ll | block visit bound: 32
+report: results/1790873969998145531-2998954/RESULT.json

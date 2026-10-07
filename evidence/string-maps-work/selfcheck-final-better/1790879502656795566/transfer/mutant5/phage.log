@@ -1,0 +1,21 @@
+run: results/1790879513923374119-640
+counterexample: property returned false at LLVM line 917
+function: phage_target | completed paths: 12 | states: 120 | solver queries: 548 | elapsed: 0.953s
+[falseProperty] /home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/transfer/mutant5/check.rs:36:2
+slowest query: 0.131s (path entering block _ZN5check9knownbits9selfcheck5check17h87964cb262bdf1e7E.exit)
+solver: 251 checks, 531 assertions, 0.637s, 0 interrupted, 0 restarts
+artifact: results/1790879513923374119-640/artifact.ll | block visit bound: 32
+report: results/1790879513923374119-640/RESULT.json
+input mapping: input0=op, input1=za, input2=oa, input3=la, input4=ha, input5=x, input6=zb, input7=ob, input8=lb, input9=hb, input10=y
+((input0 #x05)
+(input1 #x05)
+(input2 #x08)
+(input3 #x44)
+(input4 #x00)
+(input5 #xfa)
+(input6 #x00)
+(input7 #x00)
+(input8 #x01)
+(input9 #x00)
+(input10 #x00))
+

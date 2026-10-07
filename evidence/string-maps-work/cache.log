@@ -1,0 +1,3 @@
+cache: original: unknown (expected proved) 1.0s FAIL
+cache: wrong and identity through cache: unknown (expected counterexample) 1.0s FAIL
+selfcheck: 2 failed; work in /home/zero/.cache/phage/selfcheck/1790874467430517523

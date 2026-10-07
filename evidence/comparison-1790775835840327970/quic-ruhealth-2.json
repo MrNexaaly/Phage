@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "ruhealth": "0.1.0",
+  "status": "proved",
+  "detail": "all reachable paths within the explicit block bound completed",
+  "source": "/home/zero/Dev/Nexaaly/RuHealth/examples/nexagate-quic.rs",
+  "function": "ruhealth_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "llvmSha256": "1bd07e17629b88f3d678ac65044ac410dcc007a4c0605cc31f2293539e926207",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/examples/nexagate-quic.rs",
+      "sha256": "baec5e32c94c2ff7e235f1eae9f430a8e142d41c22c5c251f395bdc7580d3f54"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/RuHealth/target/release/ruhealth",
+      "sha256": "e3efb8d9d1e3918fb5cbb753b9508edaf2e58562506623fa9c8daa5639557f52"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-quic/src/varint.rs",
+      "sha256": "b5946c35f6705de501d649b271404dc3fff4566540c6a8558b03f096f398d911"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 7,
+  "states": 51,
+  "queries": 148,
+  "elapsedSeconds": 0.274041,
+  "solverChecks": 130,
+  "solverAssertions": 401,
+  "solverWallSeconds": 0.112633,
+  "diagnostics": [],
+  "slowestQuerySeconds": 0.014757,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "len"
+  ],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

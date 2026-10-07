@@ -1,0 +1,11 @@
+run: results/1790790487470070775-3938928
+counterexample: Rust panic call _ZN4core9panicking11panic_const24panic_const_add_overflow17h26fd19dc5797cca9E at LLVM line 20
+function: ruhealth_target | completed paths: 0 | states: 2 | solver queries: 4 | elapsed: 0.088s
+[rustPanic] /home/zero/Dev/Nexaaly/RuHealth/examples/overflow.rs:4:16
+slowest query: 0.016s (path entering block start)
+solver: 4 checks, 8 assertions, 0.016s
+artifact: results/1790790487470070775-3938928/artifact.ll | block visit bound: 32
+report: results/1790790487470070775-3938928/RESULT.json
+input mapping: input0=x
+((input0 #xff))
+

@@ -1,0 +1,11 @@
+run: results/1790860835428937497-2753958
+counterexample: Rust panic call _ZN4core9panicking11panic_const24panic_const_add_overflow17h26fd19dc5797cca9E at LLVM line 20
+function: phage_target | completed paths: 0 | states: 2 | solver queries: 4 | elapsed: 0.069s
+[rustPanic] /home/zero/Dev/Nexaaly/Phage/examples/overflow.rs:4:16
+slowest query: 0.008s (path entering block start)
+solver: 4 checks, 5 assertions, 0.008s, 0 interrupted, 0 restarts
+artifact: results/1790860835428937497-2753958/artifact.ll | block visit bound: 32
+report: results/1790860835428937497-2753958/RESULT.json
+input mapping: input0=x
+((input0 #xff))
+

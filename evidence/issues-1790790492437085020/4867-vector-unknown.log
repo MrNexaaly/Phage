@@ -1,0 +1,8 @@
+run: results/1790790493029334372-3941030
+unknown: unsupported entry argument: <2 x ptr> %v
+function: ruhealth_target | completed paths: 0 | states: 0 | solver queries: 0 | elapsed: 0.035s
+[unsupportedType] unsupported entry argument: <2 x ptr> %v
+slowest query: 0.000s ()
+solver: 0 checks, 0 assertions, 0.000s
+artifact: results/1790790493029334372-3941030/artifact.ll | block visit bound: 32
+report: results/1790790493029334372-3941030/RESULT.json

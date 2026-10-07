@@ -1,0 +1,624 @@
+{
+  "platform": "Linux-6.18.21-nexaOS-x86_64-with-glibc2.44",
+  "processor": "",
+  "kani": "Kani Rust Verifier 0.68.0 (cargo plugin)\nCBMC 6.11.0",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "sourceSha256": {
+    "/home/zero/Dev/Nexaaly/Phage/src/symbols.rs": "511df7a2d5a0268a7fee9e026414236d239b073a79ba7de2e5757907d52f8a30",
+    "/home/zero/Dev/Nexaaly/Phage/src/program.rs": "391f84a2e39c3288915ec0012db138ee08dad54272b7e9ec10cad30659d0bd6f",
+    "/home/zero/Dev/Nexaaly/Phage/src/library.rs": "aa7fc1f80dfbe5ad13240c76e1a4f4b73d82d33ec7bf9849e351ae27c3702bc9",
+    "/home/zero/Dev/Nexaaly/Phage/src/engine.rs": "ecdc56d308356dc3ecde1a9e234132a4dcb89d9ace2886d4533a58dee8a0f916",
+    "/home/zero/Dev/Nexaaly/Phage/src/heap.rs": "42fcb7437744093187eec1c661ce5080e0b1a2f19aa94c9917355e3de1e86872",
+    "/home/zero/Dev/Nexaaly/Phage/src/memory.rs": "984e995281027bcee08ba9f137dd6c988dd0a3aab74179a29bf74b7acfbeb467",
+    "/home/zero/Dev/Nexaaly/Phage/src/solver.rs": "d0e043f2f85e03b39e0725f05863b0320da165f4c30db08c730bd0b3e7dde3d4",
+    "/home/zero/Dev/Nexaaly/Phage/src/canonical.rs": "24ff71ada84bc6fd70cfee9149c27069de2333e0512083d1821c57903ca764d0",
+    "/home/zero/Dev/Nexaaly/Phage/src/intrinsics.rs": "d598396d0de041628d99677f495195195460223293a490abb7523ba1aa3573bc",
+    "/home/zero/Dev/Nexaaly/Phage/src/environment.rs": "ec7362d443a27e27fde9e4814887cccfa9ce5f67b034a0e5f2693f5662931a3d",
+    "/home/zero/Dev/Nexaaly/Phage/src/ir.rs": "2462f69c479f82902e3dbe626f4292d05033fc8a4d8641344d4aa9e10d808719",
+    "/home/zero/Dev/Nexaaly/Phage/src/partial.rs": "a55714bc930d50d28d5580a6f7d1b5cb1435602807cef29f3df8cbdb50eca151",
+    "/home/zero/Dev/Nexaaly/Phage/src/layout.rs": "fef96c17c4507ad72ba4175b64c81ecd1379b89b64fbc2825e1df7645320c9f7",
+    "/home/zero/Dev/Nexaaly/Phage/src/constants.rs": "36ab03d215d6fe37b5779a4e652090ee04111ab77597bee1655d2f90bb30876b",
+    "/home/zero/Dev/Nexaaly/Phage/src/atomics.rs": "7fe5847e16bed0698fe98b1eb19b9adfb352543abe4ca365613595eb8f1d778b",
+    "/home/zero/Dev/Nexaaly/Phage/src/bytes.rs": "d66e6ec1249ba5a7ee9e5033fec78eb4785080dc0a004ea9f48d98ce6ab715ee",
+    "/home/zero/Dev/Nexaaly/Phage/src/debug.rs": "a69e0e93317655d4f79120d1a27d8ad9ee2da1665e7f58146638035f6831fb41",
+    "/home/zero/Dev/Nexaaly/Phage/src/ground.rs": "d51d96fa658d2737d7ac31ed5a614c3b2b7c5402a89fd365ee30a145293f5997",
+    "/home/zero/Dev/Nexaaly/Phage/src/vectors.rs": "db52b0209741c16d9a8be2b20d2dec47bc4d4dbdda1dbb74b5c08968ff0d8393",
+    "/home/zero/Dev/Nexaaly/Phage/src/execute.rs": "2efdbb6c0999a09117e85b1e27a37c4c607e109360caced80589c46fc792acbe",
+    "/home/zero/Dev/Nexaaly/Phage/src/diagnostics.rs": "76f9e9074bcfdb0fe35c97d2482f5032e76e82238b9d2b327d508ddd045dc50c",
+    "/home/zero/Dev/Nexaaly/Phage/src/floats.rs": "63704b3285a506ceed25b7b2c955a0f5cef42f1fef8fa55ba3f0dc46304eedd0",
+    "/home/zero/Dev/Nexaaly/Phage/src/report.rs": "230c6f1733d41f14125ca3a7d42c922263e43002ead80770aecc42422fe7efb7",
+    "/home/zero/Dev/Nexaaly/Phage/src/opaque.rs": "2ee547999338add975affdda86d8f4dedfb5255b1bdf1df230d9f6bf33666662",
+    "/home/zero/Dev/Nexaaly/Phage/src/value.rs": "e2b155833e6cb84e11a8efe459a21e866ee96319e19b03369d174c6f87c1fefa",
+    "/home/zero/Dev/Nexaaly/Phage/src/operands.rs": "2cf2c793932e05b4ee07fc76aca095bf7e6c9b7666e0cdcc44e0bcb76f495f8b",
+    "/home/zero/Dev/Nexaaly/Phage/src/pointers.rs": "859df133e1eeb1a9ea62086c74f8ba31c32870f9bdea8735fd2d3ee23539f9c1",
+    "/home/zero/Dev/Nexaaly/Phage/src/main.rs": "a730c4df54eadadd7d0428fd057e35dba95d0f4e31063a967c0800f136e97623",
+    "/home/zero/Dev/Nexaaly/Phage/src/calls.rs": "66e32ede6c96b448c2f0d45f22539141a524eaca52bf098b4e8d270ff32f1981",
+    "/home/zero/Dev/Nexaaly/Phage/src/knownbits.rs": "a292939dc234d59e2d07218786c42fe4839c1d5b868ea1cb94cbf2bbbf89afdb",
+    "/home/zero/Dev/Nexaaly/Phage/src/floats/tests.rs": "6acc223887b4222eabb263d4dec56bfcc675c66293d3fb531205414e9c2d373e",
+    "/home/zero/Dev/Nexaaly/Phage/src/environment/tests.rs": "b3574fabbea71a3c7d473e55951487ae56868275bd57974acfe55b35de530441",
+    "/home/zero/Dev/Nexaaly/Phage/src/knownbits/tests.rs": "5a31a86b5de9218ec03849f1470924dc09f746b1f7e54bbbf79d91cd207048b8",
+    "/home/zero/Dev/Nexaaly/Phage/src/knownbits/rewrite.rs": "49352bc905875f42eb004bf6e5955b2f1c27638adde6d25dd8bbb7a901f4d4ec",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/collections.rs": "0fd2f7efa088129fce305cadecbe3797d0318d6b5885a98a78eb226e867a4d8a",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/models.rs": "4cb40c686f2fad27d0049741858b0b1882c20545004f1f108703066d6b8a91c1",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/frontend.rs": "fec9ac7fb11d0518b19c9c4b9531a209c83e71db5a2db26626a58bcad2717d92",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/parse.rs": "47ec8f89983c9d7e9ac3095e4bb2e17d79bdb1458fe69fc97b79c0e0c1a8beba",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/registry.rs": "58a319e5578a07747415007c488c7da862d725c9e3d5b14aadc5f0bec34aac56",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/steps.rs": "3a9915df98291b9c5b9e4cc2dbe838bcfd067245346727e34bcbd1df6ce11cbb",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/run.rs": "72696a7f637c49df7e087f343d3aaff259f6e8de54b0ce0f30e5b65cd1df7304",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/mod.rs": "54588bf3ccbe488c636fe11573a23e534f6b1f8eaea5eb118d0424366cd80060",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/places.rs": "7b6acfd1d9c6b301b1ee5e960d5a9dd8af93a36f50ec9d3ee51eef6b7fe2333a",
+    "/home/zero/Dev/Nexaaly/Phage/src/mir/eval.rs": "ed58a532076b91986b80b998e5e416ad0c5791b7b30b6cdc570fce927a35dd79",
+    "/home/zero/Dev/Nexaaly/Phage/src/solver/slice.rs": "0d7a2375f36b5f1f654b29b385243719057844d110013264a35588820f34aa93",
+    "/home/zero/Dev/Nexaaly/Phage/src/solver/tests.rs": "2ee52123c014a30b7d8b387f39302f6fbe16aa81f6f4fd0a7abe135064f397e9",
+    "/home/zero/Dev/Nexaaly/Phage/src/heap/tests.rs": "4aed3b00d3500c49df1571406f4b55b16c2670b47519a60ae2962f6bcef41c4a",
+    "/home/zero/Dev/Nexaaly/Phage/src/heap/provenance_tests.rs": "2815a0d2ea3d53d38a1cff2f25baa81046bf6a17e421fc53b1531d0601a51841",
+    "/home/zero/Dev/Nexaaly/Phage/src/intrinsics/tests.rs": "3c8ff4bc7454ab2a3b1bd13f1e6a0882d18e86d9845bcd52a52592ad2846734c",
+    "/home/zero/Dev/Nexaaly/Phage/src/calls/tests.rs": "59c84afc3729ea9e49cecb4027fb0c835bcd9385186e7941fc4e8a238c3e3f70",
+    "/home/zero/Dev/Nexaaly/Phage/src/engine/repomap_tests.rs": "1c4faecd5bf2cfc59d25882f373a3ac96b775f7b7718706369f4f7ad864c85af",
+    "/home/zero/Dev/Nexaaly/Phage/src/engine/tests.rs": "0e2150800d08895478c4bddb62182067afc237a11d4a7db6bf9f38134a68017c",
+    "/home/zero/Dev/Nexaaly/Phage/comparison/src/lib.rs": "6b1015b180530e8af69f4f1735f7473ce98df4c5d2c9688938bc4ade1f46e25e",
+    "/home/zero/Dev/Nexaaly/Phage/tools/compare_kani.py": "4311a6c0e6659028806c45adfa6e0a087b91bba75a3bbc5d8cfa7316110d7a8b",
+    "/home/zero/Dev/Nexaaly/Phage/Cargo.toml": "6a956e551d227191b8ec013593808af29bfc78cb2879c6ce0f7137b3128dcecd",
+    "/home/zero/Dev/Nexaaly/Phage/comparison/Cargo.toml": "a3059f25e347984a8b9d1f9afe77135eb1239e50656f63fa2e775675da3f0acf",
+    "/home/zero/Dev/Nexaaly/Phage/target/release/phage": "fe1ff5929b5189b082424fd66034ad8d8c39c926388346c9d7e1b605664638d3",
+    "/home/zero/Dev/Nexaaly/Phage/examples/nexagate-quic.rs": "7afcee70059390e4fba7500e1d03f7f4d4d8fc80c2bb13d378d507b2bb6cd3e1",
+    "/home/zero/Dev/Nexaaly/Phage/examples/nexagate-hpack-after.rs": "77a7f92d57baf2e22a988ebc0d89bc54d795e5ad0b110e9d79e5e1b2d5916fbb",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/huffman.rs": "6368eb7e52effd73a3e5e011f9286e17026a1f0db6a5b86e77427ddbb7b74b70",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/table.rs": "202030730c82ff287d5c13b2636066acfb0d009208929b22d88e96cc0368b07f",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/encoder.rs": "a31d61f7920d627ffebbbd6c0337fd60bb6ad17b5fc8f452605a9d03e5f86f55",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/tables.rs": "32964a232d8ca23940544576729ec906e901df775b7c022eaa911ee789058ab5",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/mod.rs": "f071e61537cc86949b061b399f7b47e9cf192e9eec56e32be0eab6eff9a5a2b3",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-http/src/hpack/decoder.rs": "183d3f0662fb97a804f2b70d073bd92a26380087f83353eade3a5bdc587126df",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/huffman.rs": "6368eb7e52effd73a3e5e011f9286e17026a1f0db6a5b86e77427ddbb7b74b70",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/table.rs": "202030730c82ff287d5c13b2636066acfb0d009208929b22d88e96cc0368b07f",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/encoder.rs": "a31d61f7920d627ffebbbd6c0337fd60bb6ad17b5fc8f452605a9d03e5f86f55",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/tables.rs": "32964a232d8ca23940544576729ec906e901df775b7c022eaa911ee789058ab5",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/mod.rs": "4beb2e2659d80146be95c4e9e553f7c4095f6cbc6f3cda4736702ea8e4a57951",
+    "/home/zero/Dev/Nexaaly/Phage/fixtures/nexagate-before/hpack/decoder.rs": "183d3f0662fb97a804f2b70d073bd92a26380087f83353eade3a5bdc587126df",
+    "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-quic/src/varint.rs": "b5946c35f6705de501d649b271404dc3fff4566540c6a8558b03f096f398d911",
+    "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/phage-hashmap-cache": "8da2ffc78689c88d49326e8076fabef809c99eb995bf2feb5bb9672b682c4ad0"
+  },
+  "cpuAffinity": null,
+  "hostCpuPressureBefore": "some avg10=0.00 avg60=0.12 avg300=0.05 total=2996643999\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+  "hostLoadBefore": [
+    2.77734375,
+    3.08203125,
+    5.27197265625
+  ],
+  "repeats": 3,
+  "timeoutSeconds": 180,
+  "timingScope": "full CLI process wall time; one unmeasured warmup per tool/case retained",
+  "runs": [
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-hashmap-cache",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.13073036802234128,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-baseline-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879549213717045-36/RESULT.json",
+      "solverSeconds": 0.025625,
+      "status": "proved",
+      "case": "quic",
+      "warmup": true
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.13911386905238032,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-phage-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879549345256181-71/RESULT.json",
+      "solverSeconds": 0.028813,
+      "status": "proved",
+      "case": "quic",
+      "warmup": true
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "quic",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 3.6322972520138137,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-kani-warmup.log",
+      "solverSeconds": 2.4992614,
+      "status": "proved",
+      "case": "quic",
+      "warmup": true
+    },
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-hashmap-cache",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.13276314997347072,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-baseline-0.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879553117661987-157/RESULT.json",
+      "solverSeconds": 0.024366,
+      "status": "proved",
+      "case": "quic",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.12692462699487805,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-phage-0.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879553250989750-192/RESULT.json",
+      "solverSeconds": 0.0231,
+      "status": "proved",
+      "case": "quic",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "quic",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 3.6193454780150205,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-kani-0.log",
+      "solverSeconds": 2.5007772,
+      "status": "proved",
+      "case": "quic",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "quic",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 3.581013013026677,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-kani-1.log",
+      "solverSeconds": 2.4522917,
+      "status": "proved",
+      "case": "quic",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.12530308199347928,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-phage-1.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879560579734235-329/RESULT.json",
+      "solverSeconds": 0.021276,
+      "status": "proved",
+      "case": "quic",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-hashmap-cache",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.12973340798635036,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-baseline-1.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879560705272206-364/RESULT.json",
+      "solverSeconds": 0.022335,
+      "status": "proved",
+      "case": "quic",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-hashmap-cache",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.1338318240013905,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-baseline-2.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879560836174825-399/RESULT.json",
+      "solverSeconds": 0.026731,
+      "status": "proved",
+      "case": "quic",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/nexagate-quic.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.1303112049936317,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-phage-2.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879560970787335-434/RESULT.json",
+      "solverSeconds": 0.025274,
+      "status": "proved",
+      "case": "quic",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "quic",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 3.619340638979338,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/quic-kani-2.log",
+      "solverSeconds": 2.5054524,
+      "status": "proved",
+      "case": "quic",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-hashmap-cache",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.3145450220326893,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-baseline-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879564734401339-520/RESULT.json",
+      "solverSeconds": 0.047034,
+      "status": "proved",
+      "case": "hpack",
+      "warmup": true
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.30877183098345995,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-phage-warmup.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879565049761722-560/RESULT.json",
+      "solverSeconds": 0.043996,
+      "status": "proved",
+      "case": "hpack",
+      "warmup": true
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 2.3721891050226986,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-kani-warmup.log",
+      "solverSeconds": 1.1742058,
+      "status": "proved",
+      "case": "hpack",
+      "warmup": true
+    },
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-hashmap-cache",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.29881753999507055,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-baseline-0.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879567731829614-651/RESULT.json",
+      "solverSeconds": 0.048004,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.32408699399093166,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-phage-0.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879568031524722-691/RESULT.json",
+      "solverSeconds": 0.052129,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 2.319074942963198,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-kani-0.log",
+      "solverSeconds": 1.2129039,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 0,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 2.307711962959729,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-kani-1.log",
+      "solverSeconds": 1.1410848,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.30582894099643454,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-phage-1.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879572983996843-833/RESULT.json",
+      "solverSeconds": 0.044368,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-hashmap-cache",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.2971288490225561,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-baseline-1.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879573290940084-873/RESULT.json",
+      "solverSeconds": 0.04408,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 1,
+      "warmup": false
+    },
+    {
+      "tool": "baseline",
+      "command": [
+        "evidence/string-maps-work/phage-hashmap-cache",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.31317005696473643,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-baseline-2.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879573589125164-913/RESULT.json",
+      "solverSeconds": 0.040399,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "phage",
+      "command": [
+        "target/release/phage",
+        "check",
+        "examples/nexagate-hpack-after.rs"
+      ],
+      "exit": 0,
+      "wallSeconds": 0.3034120919764973,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-phage-2.log",
+      "report": "/home/zero/Dev/Nexaaly/Phage/results/1790879573902675410-953/RESULT.json",
+      "solverSeconds": 0.037678,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 2,
+      "warmup": false
+    },
+    {
+      "tool": "kani",
+      "command": [
+        "cargo",
+        "kani",
+        "--manifest-path",
+        "comparison/Cargo.toml",
+        "--features",
+        "hpack",
+        "--harness",
+        "shared_property",
+        "--output-format",
+        "terse"
+      ],
+      "exit": 0,
+      "wallSeconds": 2.362444043974392,
+      "log": "/home/zero/Dev/Nexaaly/Phage/evidence/comparison-1790879549133358593/hpack-kani-2.log",
+      "solverSeconds": 1.1936461,
+      "status": "proved",
+      "case": "hpack",
+      "trial": 2,
+      "warmup": false
+    }
+  ],
+  "summaries": [
+    {
+      "case": "quic",
+      "tool": "baseline",
+      "statuses": [
+        "proved",
+        "proved",
+        "proved"
+      ],
+      "medianWallSeconds": 0.13276314997347072,
+      "minWallSeconds": 0.12973340798635036,
+      "maxWallSeconds": 0.1338318240013905
+    },
+    {
+      "case": "quic",
+      "tool": "phage",
+      "statuses": [
+        "proved",
+        "proved",
+        "proved"
+      ],
+      "medianWallSeconds": 0.12692462699487805,
+      "minWallSeconds": 0.12530308199347928,
+      "maxWallSeconds": 0.1303112049936317
+    },
+    {
+      "case": "quic",
+      "tool": "kani",
+      "statuses": [
+        "proved",
+        "proved",
+        "proved"
+      ],
+      "medianWallSeconds": 3.619340638979338,
+      "minWallSeconds": 3.581013013026677,
+      "maxWallSeconds": 3.6193454780150205
+    },
+    {
+      "case": "hpack",
+      "tool": "baseline",
+      "statuses": [
+        "proved",
+        "proved",
+        "proved"
+      ],
+      "medianWallSeconds": 0.29881753999507055,
+      "minWallSeconds": 0.2971288490225561,
+      "maxWallSeconds": 0.31317005696473643
+    },
+    {
+      "case": "hpack",
+      "tool": "phage",
+      "statuses": [
+        "proved",
+        "proved",
+        "proved"
+      ],
+      "medianWallSeconds": 0.30582894099643454,
+      "minWallSeconds": 0.3034120919764973,
+      "maxWallSeconds": 0.32408699399093166
+    },
+    {
+      "case": "hpack",
+      "tool": "kani",
+      "statuses": [
+        "proved",
+        "proved",
+        "proved"
+      ],
+      "medianWallSeconds": 2.319074942963198,
+      "minWallSeconds": 2.307711962959729,
+      "maxWallSeconds": 2.362444043974392
+    }
+  ],
+  "hostCpuPressureAfter": "some avg10=0.00 avg60=0.07 avg300=0.05 total=2996679547\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+  "hostLoadAfter": [
+    3.0029296875,
+    3.10595703125,
+    5.20947265625
+  ]
+}

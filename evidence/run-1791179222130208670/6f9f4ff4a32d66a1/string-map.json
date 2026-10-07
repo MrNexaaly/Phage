@@ -1,0 +1,85 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "proved",
+  "detail": "all reachable paths within the explicit block bound completed",
+  "source": "/home/zero/Dev/Nexaaly/Phage/examples/string-map.rs",
+  "function": "phage_target",
+  "rustc": "rustc 1.99.0 (b940084d7 2026-09-28)\nbinary: rustc\ncommit-hash: b940084d7eb6a299eb4bfeb8e34901bc051e7ac4\ncommit-date: 2026-09-28\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.0\nLLVM version: 23.1.1",
+  "compilerPath": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc",
+  "compilerSysroot": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "artifactSha256": "36db3c12a92c6dbb2d8e0b6d7a7164024aaf50defadaf1f1f2e4c3e19a2bde84",
+  "llvmSha256": "36db3c12a92c6dbb2d8e0b6d7a7164024aaf50defadaf1f1f2e4c3e19a2bde84",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/examples/string-map.rs",
+      "sha256": "440ea29d23e140660c433a6de1fada49c6a39f36f1e76e1597711e50a689de5f"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/target/release/phage",
+      "sha256": "acb84548f1586eb05c89d2f0bfc211864e5736b0cb89b99fcdc6c508a25a8d01"
+    },
+    {
+      "path": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "f3834d26669b03f6855fa54bd2381443123e860167bc0c7a8dd137e5cf6e5e4f"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "maxMemoryMiB": 8192,
+  "completedPaths": 2,
+  "states": 243,
+  "queries": 1355,
+  "elapsedSeconds": 19.468968,
+  "solverChecks": 525,
+  "solverInterrupts": 128,
+  "solverRestarts": 11,
+  "solverAssertions": 7281,
+  "solverWallSeconds": 18.577822,
+  "diagnostics": [],
+  "slowestQuerySeconds": 3.068806,
+  "slowestQueryContext": "instruction at LLVM line 2505",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "key",
+    "value"
+  ],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [
+    "gimli bodies come from the rustc sysroot's embedded LLVM bitcode",
+    "heap allocation succeeds (the allocator never returns null)",
+    "mutable statics start at their initializers: a fresh program, as in Kani",
+    "one thread: a thread-local is the global's own copy",
+    "std bodies come from the rustc sysroot's embedded LLVM bitcode",
+    "the OS random source (getrandom) fills the whole buffer with arbitrary bytes",
+    "the OS random source (getrandom) is available at link time",
+    "values mixed from the OS random source (e.g. hash keys) are uninterpreted functions of their inputs; counterexamples were confirmed with exact semantics",
+    "139 solver queries were decided by a racing fresh Z3 or cvc5 (int-blasting)"
+  ],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

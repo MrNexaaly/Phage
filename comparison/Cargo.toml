@@ -1,0 +1,21 @@
+[package]
+name = "phage-shared-comparison"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+# Kani is used only by this separate measurement workspace.
+[workspace]
+[dependencies]
+[features]
+quic = []
+hpack = []
+old-hpack = []
+assert-forms = []
+false-assert = []
+const-generics = []
+string-map = []
+string-map-bad = []
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }

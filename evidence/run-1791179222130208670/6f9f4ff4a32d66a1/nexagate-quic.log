@@ -1,0 +1,8 @@
+run: results/1791179222990421743-1727574
+proved: all reachable paths within the explicit block bound completed
+function: phage_target | completed paths: 7 | states: 51 | solver queries: 158 | elapsed: 0.133s
+slowest query: 0.013s (path entering block start)
+solver: 96 checks, 165 assertions, 0.024s, 0 interrupted, 0 restarts
+memory budget: 8192 MiB (sampled process-tree RSS)
+artifact: results/1791179222990421743-1727574/artifact.ll | block visit bound: 32
+report: results/1791179222990421743-1727574/RESULT.json

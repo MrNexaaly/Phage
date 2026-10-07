@@ -1,0 +1,77 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "counterexample",
+  "detail": "Rust panic call _ZN4core9panicking11panic_const24panic_const_add_overflow17h26fd19dc5797cca9E at LLVM line 20",
+  "source": "/home/zero/Dev/Nexaaly/Phage/examples/overflow.rs",
+  "function": "phage_target",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)\nbinary: rustc\ncommit-hash: e408947bfd200af42db322daf0fadfe7e26d3bd1\ncommit-date: 2026-03-25\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.1\nLLVM version: 21.1.8",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "artifactSha256": "386fdb9a346a52dfc20cb3d931605fbd3270d4b38133434b94c8c91bc9b46270",
+  "llvmSha256": "386fdb9a346a52dfc20cb3d931605fbd3270d4b38133434b94c8c91bc9b46270",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/examples/overflow.rs",
+      "sha256": "cd8218e082801dad32acef1ae3526f8eb7509a7c1659f1e5e3d2f5a8aef77d2f"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/target/release/phage",
+      "sha256": "fe1ff5929b5189b082424fd66034ad8d8c39c926388346c9d7e1b605664638d3"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 0,
+  "states": 2,
+  "queries": 4,
+  "elapsedSeconds": 0.071353,
+  "solverChecks": 4,
+  "solverAssertions": 5,
+  "solverWallSeconds": 0.011621,
+  "diagnostics": [
+    {
+      "code": "rustPanic",
+      "message": "Rust panic call _ZN4core9panicking11panic_const24panic_const_add_overflow17h26fd19dc5797cca9E at LLVM line 20",
+      "llvmLine": 20,
+      "mirLine": null,
+      "source": {
+        "file": "/home/zero/Dev/Nexaaly/Phage/examples/overflow.rs",
+        "line": 4,
+        "column": 16
+      }
+    }
+  ],
+  "slowestQuerySeconds": 0.010184,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "x"
+  ],
+  "model": "((input0 #xff))\n",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

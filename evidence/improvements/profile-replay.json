@@ -1,0 +1,77 @@
+[
+  {
+    "case": "safe-add",
+    "query": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773893672111387-2789677/slowest-query.smt2",
+    "result": "sat",
+    "context": "path entering block start",
+    "source": null
+  },
+  {
+    "case": "overflow",
+    "query": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773893743012537-2789753/slowest-query.smt2",
+    "result": "sat",
+    "context": "path entering block start",
+    "source": null
+  },
+  {
+    "case": "nexagate-quic",
+    "query": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773893896389012-2789877/slowest-query.smt2",
+    "result": "unsat",
+    "context": "instruction at LLVM line 61",
+    "source": {
+      "file": "/home/zero/Dev/Nexaaly/Nexagate/crates/gate-quic/src/varint.rs",
+      "line": 14,
+      "column": 10
+    }
+  },
+  {
+    "case": "nexagate-hpack-before",
+    "query": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773894769283842-2790303/slowest-query.smt2",
+    "result": "unsat",
+    "context": "instruction at LLVM line 663",
+    "source": {
+      "file": "/home/zero/Dev/Nexaaly/RuHealth/fixtures/nexagate-before/hpack/mod.rs",
+      "line": 77,
+      "column": 14
+    }
+  },
+  {
+    "case": "nexagate-hpack-after",
+    "query": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773913051238332-2799520/slowest-query.smt2",
+    "result": "unsat",
+    "context": "instruction at LLVM line 711",
+    "source": {
+      "file": "/home/zero/Dev/Nexaaly/RuHealth/examples/nexagate-hpack-after.rs",
+      "line": 30,
+      "column": 2
+    }
+  },
+  {
+    "case": "unsupported",
+    "query": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773917877392613-2800796/slowest-query.smt2",
+    "result": "sat",
+    "context": "path entering block start",
+    "source": null
+  },
+  {
+    "case": "issue-4874-assert-forms",
+    "query": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773917944024588-2800834/slowest-query.smt2",
+    "result": "sat",
+    "context": "path entering block start",
+    "source": null
+  },
+  {
+    "case": "issue-4874-false-assert",
+    "query": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773918012882912-2800882/slowest-query.smt2",
+    "result": "sat",
+    "context": "path entering block start",
+    "source": null
+  },
+  {
+    "case": "issue-4876-const-generics",
+    "query": "/home/zero/Dev/Nexaaly/RuHealth/results/1790773918181635503-2801025/slowest-query.smt2",
+    "result": "sat",
+    "context": "path entering block start",
+    "source": null
+  }
+]

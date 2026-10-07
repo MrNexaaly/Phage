@@ -1,0 +1,73 @@
+{
+  "schema": 4,
+  "engine": "llvm",
+  "callDepth": 32,
+  "phage": "0.1.0",
+  "status": "proved",
+  "detail": "all reachable paths within the explicit block bound completed",
+  "source": "/home/zero/Dev/Nexaaly/Phage/examples/intrinsics.rs",
+  "function": "phage_target",
+  "rustc": "rustc 1.99.0 (b940084d7 2026-09-28)\nbinary: rustc\ncommit-hash: b940084d7eb6a299eb4bfeb8e34901bc051e7ac4\ncommit-date: 2026-09-28\nhost: x86_64-unknown-linux-gnu\nrelease: 1.99.0\nLLVM version: 23.1.1",
+  "compilerPath": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc",
+  "compilerSysroot": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu",
+  "z3": "Z3 version 4.16.0 - 64 bit",
+  "compilerFlags": [
+    "--edition=2024",
+    "--crate-type=lib",
+    "-C",
+    "opt-level=1",
+    "-C",
+    "overflow-checks=yes",
+    "-C",
+    "panic=abort",
+    "-C",
+    "codegen-units=1",
+    "-C",
+    "debuginfo=line-tables-only",
+    "-C",
+    "llvm-args=-vectorize-loops=false",
+    "-C",
+    "llvm-args=-vectorize-slp=false",
+    "-C",
+    "llvm-args=-unroll-threshold=0"
+  ],
+  "artifactSha256": "ced68fbf8be7adfd25a6a35b03fad1e672458fdf73b4b76fd61d19a8bad90d16",
+  "llvmSha256": "ced68fbf8be7adfd25a6a35b03fad1e672458fdf73b4b76fd61d19a8bad90d16",
+  "fingerprints": [
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/examples/intrinsics.rs",
+      "sha256": "c5667dd5bd4cd9c2aaa95eebc6c50da59fcc3234edc2abce69dd0ee2305d3fe6"
+    },
+    {
+      "path": "/home/zero/Dev/Nexaaly/Phage/target/release/phage",
+      "sha256": "57402fafabb9bdccf4e1f1f149366ea3c74f02fda96c546949418574a6032061"
+    },
+    {
+      "path": "/home/zero/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc",
+      "sha256": "f3834d26669b03f6855fa54bd2381443123e860167bc0c7a8dd137e5cf6e5e4f"
+    }
+  ],
+  "blockVisitBound": 32,
+  "stateLimit": 10000,
+  "queryTimeoutMs": 15000,
+  "completedPaths": 37,
+  "states": 320,
+  "queries": 1039,
+  "elapsedSeconds": 0.25056,
+  "solverChecks": 678,
+  "solverAssertions": 1166,
+  "solverWallSeconds": 0.119957,
+  "diagnostics": [],
+  "slowestQuerySeconds": 0.007904,
+  "slowestQueryContext": "path entering block start",
+  "slowestQuerySource": null,
+  "inputLabels": [
+    "0",
+    "y",
+    "k"
+  ],
+  "model": "",
+  "nativeReplay": "not run by verifier",
+  "assumptions": [],
+  "scope": "compiled sequential LLVM subset; reachable limits and unsupported behavior are unknown"
+}

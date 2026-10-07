@@ -1,0 +1,8 @@
+run: results/1790883368927035385-3157561
+unknown: state exploration limit reached
+function: phage_target | completed paths: 0 | states: 2 | solver queries: 2 | elapsed: 0.067s
+[stateLimit] state exploration limit reached
+slowest query: 0.014s (path entering block start)
+solver: 2 checks, 2 assertions, 0.014s, 0 interrupted, 0 restarts
+artifact: results/1790883368927035385-3157561/artifact.ll | block visit bound: 32
+report: results/1790883368927035385-3157561/RESULT.json

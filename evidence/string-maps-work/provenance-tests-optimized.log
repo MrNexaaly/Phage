@@ -1,0 +1,16 @@
+   Compiling phage v0.1.0 (/home/zero/Dev/Nexaaly/Phage)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.58s
+     Running unittests src/main.rs (target/debug/deps/phage-2caba36495d166fe)
+
+running 8 tests
+test heap::provenance_tests::residual_slots_do_not_gain_provenance_from_equal_addresses ... ok
+test heap::provenance_tests::symbolic_pointer_loads_select_the_stored_slot ... ok
+test heap::provenance_tests::symbolic_pointer_stores_replace_only_the_selected_slot ... ok
+test heap::provenance_tests::symbolic_whole_integer_copy_preserves_provenance ... ok
+test heap::provenance_tests::symbolic_fill_invalidates_only_its_written_range ... ok
+test heap::provenance_tests::realloc_preserves_only_whole_symbolic_slots_in_the_retained_prefix ... ok
+test heap::provenance_tests::selected_slots_keep_byte_integrity_poison_and_lifetimes ... ok
+test heap::provenance_tests::whole_pointer_copies_support_symbolic_source_destination_and_length ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 137 filtered out; finished in 0.35s
+

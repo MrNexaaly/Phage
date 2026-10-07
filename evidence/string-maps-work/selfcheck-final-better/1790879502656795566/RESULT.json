@@ -1,0 +1,90 @@
+[
+  {
+    "harness": "transfer",
+    "case": "original",
+    "status": "proved",
+    "expected": "proved",
+    "wallSeconds": 2.315404485038016,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/transfer/original"
+  },
+  {
+    "harness": "transfer",
+    "case": "bvor known zeros",
+    "status": "counterexample",
+    "expected": "counterexample",
+    "wallSeconds": 2.530329490022268,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/transfer/mutant0"
+  },
+  {
+    "harness": "transfer",
+    "case": "bvadd lower bound",
+    "status": "counterexample",
+    "expected": "counterexample",
+    "wallSeconds": 1.9093310920288786,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/transfer/mutant1"
+  },
+  {
+    "harness": "transfer",
+    "case": "bvashr sign fill",
+    "status": "counterexample",
+    "expected": "counterexample",
+    "wallSeconds": 0.31970099202590063,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/transfer/mutant2"
+  },
+  {
+    "harness": "transfer",
+    "case": "add_carry carry-in",
+    "status": "counterexample",
+    "expected": "counterexample",
+    "wallSeconds": 2.3841845939750783,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/transfer/mutant3"
+  },
+  {
+    "harness": "transfer",
+    "case": "bvmul trailing zeros",
+    "status": "counterexample",
+    "expected": "counterexample",
+    "wallSeconds": 1.8009436589782126,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/transfer/mutant4"
+  },
+  {
+    "harness": "transfer",
+    "case": "not lower bound",
+    "status": "counterexample",
+    "expected": "counterexample",
+    "wallSeconds": 0.9554459219798446,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/transfer/mutant5"
+  },
+  {
+    "harness": "cache",
+    "case": "original",
+    "status": "proved",
+    "expected": "proved",
+    "wallSeconds": 3.2498237480176613,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/cache/original"
+  },
+  {
+    "harness": "cache",
+    "case": "wrong value returned from cache",
+    "status": "counterexample",
+    "expected": "counterexample",
+    "wallSeconds": 4.607850036001764,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/cache/mutant0"
+  },
+  {
+    "harness": "literal",
+    "case": "original",
+    "status": "proved",
+    "expected": "proved",
+    "wallSeconds": 8.552235415962059,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/literal/original"
+  },
+  {
+    "harness": "literal",
+    "case": "hex digits read as decimal",
+    "status": "counterexample",
+    "expected": "counterexample",
+    "wallSeconds": 0.46827073203166947,
+    "directory": "/home/zero/Dev/Nexaaly/Phage/evidence/string-maps-work/selfcheck-final-better/1790879502656795566/literal/mutant0"
+  }
+]
